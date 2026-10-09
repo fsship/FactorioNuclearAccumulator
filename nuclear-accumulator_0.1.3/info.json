@@ -1,0 +1,11 @@
+{
+  "name": "nuclear-accumulator",
+  "version": "0.1.3",
+  "title": "Nuclear Accumulator",
+  "author": "Codex",
+  "factorio_version": "2.1",
+  "dependencies": [
+    "base >= 2.1.21"
+  ],
+  "description": "36 GJ nuclear accumulator, substation, radar and energy-scaled native nuclear chain reactions."
+}

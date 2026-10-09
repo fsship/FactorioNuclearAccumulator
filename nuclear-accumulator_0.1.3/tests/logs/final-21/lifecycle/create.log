@@ -1,0 +1,46 @@
+   0.000 2026-10-09 09:54:31; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/final-optimized21/lifecycle/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/final-optimized21/lifecycle/mods" "--create" "/workspace/FactorioNuclearAccumulator/work/final-optimized21/lifecycle/test.zip" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/final-optimized21/lifecycle/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/final-optimized21/lifecycle/runtime [29783/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.007 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.007 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.010 Running in headless mode
+   0.010 Audio is disabled
+   0.011 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.011 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.011 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.011 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.011 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.011 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.011 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.011 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.014 Loading mod core 0.0.0 (data.lua)
+   0.026 Loading mod base 2.1.21 (data.lua)
+   0.182 Loading mod nuclear-accumulator 0.1.3 (data.lua)
+   0.198 Loading mod recycler 2.1.21 (data.lua)
+   0.214 Loading mod base 2.1.21 (data-updates.lua)
+   0.226 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.243 Loading mod nuclear-accumulator 0.1.3 (data-final-fixes.lua)
+   0.355 Checksum for core: 2791302773
+   0.355 Checksum of base: 1834856243
+   0.355 Checksum of nuclear-accumulator: 979600839
+   0.355 Checksum of recycler: 3293728126
+   0.355 Checksum of zz-na-lifecycle: 0
+   0.523 Prototype list checksum: 1199701086
+   0.572 Info PlayerData.cpp:582: Local player-data.json unavailable
+   0.572 Info GlobalContext.cpp:1336: Resetting config.
+   0.572 Factorio initialised
+   0.573 Info Create.cpp:32: Creating new map /workspace/FactorioNuclearAccumulator/work/final-optimized21/lifecycle/test.zip
+   0.581 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   2.030 Loading level.dat: 954944 bytes.
+   2.030 Info Scenario.cpp:152: Map version 2.1.21-11
+   2.047 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   2.050 Checksum for script __level__/control.lua: 3704017257
+   2.051 Checksum for script __nuclear-accumulator__/control.lua: 2218093778
+   2.052 Checksum for script __zz-na-lifecycle__/control.lua: 3531695449
+   2.227 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: runtime GUI wave metadata exists
+Done.
+   2.313 Goodbye

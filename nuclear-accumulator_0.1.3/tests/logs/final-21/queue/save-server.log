@@ -1,0 +1,100 @@
+   0.000 2026-10-09 09:55:00; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/final-optimized21/queue/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/final-optimized21/queue/mods" "--start-server" "/workspace/FactorioNuclearAccumulator/work/final-optimized21/queue/test.zip" "--server-settings" "/workspace/FactorioNuclearAccumulator/work/final-optimized21/queue/server-settings.json" "--port" "34291" "--bind" "127.0.0.1" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/final-optimized21/queue/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/final-optimized21/queue/runtime [29779/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.007 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.007 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.009 Running in headless mode
+   0.009 Audio is disabled
+   0.010 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.010 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.010 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.010 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.010 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.010 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.010 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.010 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.013 Loading mod core 0.0.0 (data.lua)
+   0.023 Loading mod base 2.1.21 (data.lua)
+   0.166 Loading mod nuclear-accumulator 0.1.3 (data.lua)
+   0.181 Loading mod recycler 2.1.21 (data.lua)
+   0.198 Loading mod base 2.1.21 (data-updates.lua)
+   0.211 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.229 Loading mod nuclear-accumulator 0.1.3 (data-final-fixes.lua)
+   0.377 Checksum for core: 2791302773
+   0.377 Checksum of base: 1834856243
+   0.377 Checksum of nuclear-accumulator: 979600839
+   0.377 Checksum of recycler: 3293728126
+   0.377 Checksum of zz-na-queue-tests: 0
+   0.564 Prototype list checksum: 1199701086
+   0.618 Info PlayerData.cpp:580: Local player-data.json available
+   0.619 Info GlobalContext.cpp:1336: Resetting config.
+   0.619 Factorio initialised
+   0.619 Info ServerSynchronizer.cpp:22: nextHeartbeatSequenceNumber(0) initialized Synchronizer nextTickClosureTick(0).
+   0.619 Info ServerMultiplayerManager.cpp:809: updateTick(18446744073709551615) changing state from(Ready) to(PreparedToHostGame)
+   0.619 Info ServerMultiplayerManager.cpp:809: updateTick(18446744073709551615) changing state from(PreparedToHostGame) to(CreatingGame)
+   0.620 Loading map /workspace/FactorioNuclearAccumulator/work/final-optimized21/queue/test.zip: 1138097 bytes.
+   0.631 Loading level.dat: 1993468 bytes.
+   0.631 Info Scenario.cpp:152: Map version 2.1.21-11
+   0.655 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.655 Loading script.dat: 2555 bytes.
+   0.658 Checksum for script __level__/control.lua: 3704017257
+   0.659 Checksum for script __nuclear-accumulator__/control.lua: 2218093778
+   0.660 Checksum for script __zz-na-queue-tests__/control.lua: 846737763
+   0.661 Info UDPSocket.cpp:38: Opening socket at (IP ADDR:({127.0.0.1:34291}))
+   0.661 Hosting game at IP ADDR:({127.0.0.1:34291})
+   0.661 Info ServerMultiplayerManager.cpp:809: updateTick(0) changing state from(CreatingGame) to(InGame)
+   0.661 Info CommandLineMultiplayer.cpp:297: Maximum segment size = 100; minimum segment size = 25; maximum-segment-size peer count = 10; minimum-segment-size peer count = 20
+   0.678 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 0
+   0.702 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 1
+   0.702 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: load resumes saved explosion queue
+   0.712 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 2
+   0.728 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 3
+   0.745 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 4
+   0.762 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 5
+   0.778 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 6
+   0.804 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 7
+   0.832 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 8
+   0.856 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 9
+   0.886 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 10
+   0.918 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 11
+   0.958 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 12
+   0.998 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 13
+   1.037 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 14
+   1.084 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 15
+   1.127 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 16
+   1.173 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 17
+   1.213 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 18
+   1.264 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 19
+   1.300 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 20
+   1.334 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 21
+   1.362 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 22
+   1.391 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 23
+   1.418 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 24
+   1.439 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 25
+   1.439 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: save point contains a partially emitted explosion
+   1.457 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 26
+   1.457 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: partially emitted save retains its queue cursor and population
+   1.474 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 27
+   1.491 Info AppManager.cpp:424: Saving game as /workspace/FactorioNuclearAccumulator/work/final-optimized21/queue/runtime/saves/na-inflight
+   1.578 Info AppManagerStates.cpp:2131: Saving finished
+   1.578 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 28
+   1.608 Received SIGTERM, shutting down
+   1.608 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 29
+   1.629 Quitting: signal.
+   1.629 Info MainLoop.cpp:433: Saving map as /workspace/FactorioNuclearAccumulator/work/final-optimized21/queue/test.zip
+   1.656 Info MainLoop.cpp:444: Saving progress: 0.091827%
+   1.696 Info MainLoop.cpp:444: Saving progress: 100.000000%
+   1.710 Info ServerMultiplayerManager.cpp:120: Disconnecting multiplayer connection.
+   1.710 Info ServerMultiplayerManager.cpp:809: updateTick(30) changing state from(InGame) to(DisconnectingScheduled)
+   1.743 Info ServerMultiplayerManager.cpp:809: updateTick(30) changing state from(DisconnectingScheduled) to(Disconnecting)
+   1.777 Info ServerMultiplayerManager.cpp:809: updateTick(30) changing state from(Disconnecting) to(Disconnected)
+   1.777 Info ServerMultiplayerManager.cpp:147: Quitting multiplayer connection.
+   1.777 Info ServerMultiplayerManager.cpp:809: updateTick(30) changing state from(Disconnected) to(Closed)
+   1.777 Info ServerMultiplayerManager.cpp:167: Deleting active scenario (global = true).
+   1.963 Info UDPSocket.cpp:238: Closing socket
+   1.963 Info UDPSocket.cpp:268: Socket closed
+   1.991 Goodbye

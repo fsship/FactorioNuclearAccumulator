@@ -1,0 +1,115 @@
+   0.000 2026-10-09 09:53:39; Factorio 2.0.77 (build 84539, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/final-optimized20/acceptance/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/final-optimized20/acceptance/mods" "--benchmark" "/workspace/FactorioNuclearAccumulator/work/final-optimized20/acceptance/test.zip" "--benchmark-ticks" "3200" "--benchmark-runs" "1" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/final-optimized20/acceptance/config.ini
+   0.000 Read data path: /workspace/work/research/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/final-optimized20/acceptance/runtime [29783/32205MB]
+   0.000 Binaries path: /workspace/work/research/factorio/bin
+   0.008 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.008 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.008 Running in headless mode
+   0.008 Audio is disabled
+   0.009 Info ModManager.cpp:449: FeatureFlag expansion-shaders = false
+   0.009 Info ModManager.cpp:449: FeatureFlag freezing = false
+   0.009 Info ModManager.cpp:449: FeatureFlag quality = false
+   0.009 Info ModManager.cpp:449: FeatureFlag rail-bridges = false
+   0.009 Info ModManager.cpp:449: FeatureFlag segmented-units = false
+   0.009 Info ModManager.cpp:449: FeatureFlag space-travel = false
+   0.009 Info ModManager.cpp:449: FeatureFlag spoiling = false
+   0.011 Loading mod core 0.0.0 (data.lua)
+   0.021 Loading mod base 2.0.77 (data.lua)
+   0.139 Loading mod nuclear-accumulator 0.1.2 (data.lua)
+   0.154 Loading mod zz-na-tests 0.1.0 (data.lua)
+   0.167 Loading mod base 2.0.77 (data-updates.lua)
+   0.179 Loading mod nuclear-accumulator 0.1.2 (data-final-fixes.lua)
+   0.268 Loading mod zz-na-tests 0.1.0 (data-final-fixes.lua)
+   0.284 Script @__zz-na-tests__/data-final-fixes.lua:53: NA STATIC PASS: 101 tiers, exact area-scaled populations, bounded native batch launchers, native speed/damage/radius/falloff, recipe
+   0.344 Checksum for core: 4187927925
+   0.344 Checksum of base: 1879415942
+   0.344 Checksum of nuclear-accumulator: 979600839
+   0.344 Checksum of zz-na-tests: 3211916783
+   0.505 Prototype list checksum: 3176427284
+   0.551 Info PlayerData.cpp:64: Local player-data.json available, timestamp 1791539619
+   0.551 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   0.551 Info GlobalContext.cpp:1300: Resetting config.
+   0.552 Factorio initialised
+   0.552 Loading map /workspace/FactorioNuclearAccumulator/work/final-optimized20/acceptance/test.zip: 1315257 bytes.
+   0.564 Loading level.dat: 2325374 bytes.
+   0.564 Info Scenario.cpp:154: Map version 2.0.77-0
+   0.592 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.592 Loading script.dat: 2138 bytes.
+   0.595 Checksum for script __level__/control.lua: 3792629764
+   0.596 Checksum for script __nuclear-accumulator__/control.lua: 2218093778
+   0.597 Checksum for script __zz-na-tests__/control.lua: 345813999
+Running update 0
+   0.615 Script @__zz-na-tests__/control.lua:27: NA MEASURE discharge J/s=5000000.0001526
+   0.615 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: native output limit 5 MW under excess demand
+Running update 100
+   0.643 Script @__zz-na-tests__/control.lua:32: NA MEASURE radar J/s=300166.66666794
+   0.643 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: isolated radar consumes ~300 kW from real battery
+Running update 200
+   0.657 Script @__zz-na-tests__/control.lua:40: NA MEASURE charge J/s=5000000.0001526
+   0.657 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: native input limit 5 MW
+   0.657 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: E reads native stored MJ
+   0.657 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: H output
+   0.657 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: P output
+   0.657 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: normal script removal cleans helpers without death
+   0.730 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast0 first damage at 10 tick 265
+Running update 300
+   0.777 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast0 first damage at 25 tick 306
+Running update 400
+Running update 500
+Running update 600
+   0.949 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: zero charge blast destroys friendly walls within vanilla wave
+   0.949 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: zero charge leaves 50-tile target intact
+   0.949 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: damage arrives later at farther targets
+   0.949 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast50 first damage at 10 tick 600
+   0.949 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast50 first damage at 25 tick 600
+Running update 700
+   3.718 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast50 first damage at 50 tick 728
+Running update 800
+Running update 900
+Running update 1000
+   5.504 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast50 first damage at 150 tick 1003
+Running update 1100
+Running update 1200
+Running update 1300
+Running update 1400
+   6.477 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: 50% wave reaches friendly walls at 150 tiles
+   6.477 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: 50% wave leaves 300-tile targets intact
+   6.478 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast100 first damage at 10 tick 1400
+   6.478 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast100 first damage at 25 tick 1400
+   6.478 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast100 first damage at 50 tick 1400
+   6.478 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast100 first damage at 150 tick 1400
+   6.923 Script @__zz-na-tests__/control.lua:101: NA MEASURE fresh full-charge damage at 10 tick 1451
+   7.320 Script @__zz-na-tests__/control.lua:101: NA MEASURE fresh full-charge damage at 25 tick 1470
+Running update 1500
+Running update 1600
+Running update 1700
+Running update 1800
+Running update 1900
+Running update 2000
+Running update 2100
+Running update 2200
+  32.001 Script @__zz-na-tests__/control.lua:108: NA MEASURE blast100 first damage at 300 tick 2223
+  32.189 Script @__zz-na-tests__/control.lua:101: NA MEASURE fresh full-charge damage at 300 tick 2234
+Running update 2300
+Running update 2400
+Running update 2500
+Running update 2600
+Running update 2700
+Running update 2800
+  36.327 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: 100% wave reaches friendly walls at 300 tiles
+  36.327 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: 100% wave leaves 390-tile targets intact
+  36.327 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: native shockwave triggers station chain reaction
+  36.327 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: fresh full-charge targets receive nearby damage before 300-tile damage
+  36.327 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: fresh 390-tile target stays outside full-charge wave
+  36.664 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: green D positive detonates
+  36.664 Script @__zz-na-tests__/control.lua:95: NA TEST COMPLETE
+Running update 2900
+Running update 3000
+Running update 3100
+  Performed 3200 updates in 52901.986 ms
+  avg: 16.532 ms, min: 0.101 ms, max: 102.052 ms
+  checksum: 4288909689
+  53.703 Goodbye
