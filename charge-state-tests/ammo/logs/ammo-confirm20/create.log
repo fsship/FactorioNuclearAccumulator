@@ -1,0 +1,48 @@
+   0.000 2026-10-09 09:17:25; Factorio 2.0.77 (build 84539, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/factorio/bin/x64/factorio" "--config" "/workspace/work/ammo-confirm20/ammo/config.ini" "--mod-directory" "/workspace/work/ammo-confirm20/ammo/mods" "--create" "/workspace/work/ammo-confirm20/ammo/test.zip" 
+   0.000 Config path: /workspace/work/ammo-confirm20/ammo/config.ini
+   0.000 Read data path: /workspace/work/research/factorio/data
+   0.000 Write data path: /workspace/work/ammo-confirm20/ammo/runtime [29812/32205MB]
+   0.000 Binaries path: /workspace/work/research/factorio/bin
+   0.008 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.008 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.008 Running in headless mode
+   0.008 Audio is disabled
+   0.009 Info ModManager.cpp:449: FeatureFlag expansion-shaders = false
+   0.009 Info ModManager.cpp:449: FeatureFlag freezing = false
+   0.009 Info ModManager.cpp:449: FeatureFlag quality = false
+   0.009 Info ModManager.cpp:449: FeatureFlag rail-bridges = false
+   0.009 Info ModManager.cpp:449: FeatureFlag segmented-units = false
+   0.009 Info ModManager.cpp:449: FeatureFlag space-travel = false
+   0.009 Info ModManager.cpp:449: FeatureFlag spoiling = false
+   0.012 Loading mod core 0.0.0 (data.lua)
+   0.022 Loading mod base 2.0.77 (data.lua)
+   0.139 Loading mod nuclear-accumulator 0.2.0 (data.lua)
+   0.151 Loading mod base 2.0.77 (data-updates.lua)
+   0.161 Loading mod nuclear-accumulator 0.2.0 (data-final-fixes.lua)
+   0.196 Loading mod zz-na-ammo-tests 0.1.0 (data-final-fixes.lua)
+   0.196 Script @__zz-na-ammo-tests__/data-final-fixes.lua:6: NA PROTOTYPE PASS: stack_size=1, magazine_size=36001, not-stackable flag verified
+   0.244 Checksum for core: 4187927925
+   0.244 Checksum of base: 1879415942
+   0.244 Checksum of nuclear-accumulator: 136199968
+   0.244 Checksum of zz-na-ammo-tests: 4095041834
+   0.387 Prototype list checksum: 1968248794
+   0.422 Info PlayerData.cpp:66: Local player-data.json unavailable
+   0.422 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   0.422 Info GlobalContext.cpp:1300: Resetting config.
+   0.423 Factorio initialised
+   0.423 Info Create.cpp:31: Creating new map /workspace/work/ammo-confirm20/ammo/test.zip
+   0.428 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   1.877 Loading level.dat: 699676 bytes.
+   1.877 Info Scenario.cpp:154: Map version 2.0.77-0
+   1.888 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   1.890 Checksum for script __level__/control.lua: 3792629764
+   1.891 Checksum for script __nuclear-accumulator__/control.lua: 2065017812
+   1.892 Checksum for script __zz-na-ammo-tests__/control.lua: 2587550974
+   2.242 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: new ammo item defaults to factory full (36001)
+   2.242 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: native stack stores ammo 36001
+   2.242 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: native stack stores ammo 18001
+   2.242 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: native stack stores ammo 1
+Done.
+   2.329 Goodbye

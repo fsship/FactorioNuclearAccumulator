@@ -1,0 +1,3 @@
+9123d29428d1c7a7ef820f1c4cada287ce4fcbdd9a4f841ab9c19e1bf5e926f5  charge-state-tests.zip
+e11b76b43fc10c52582795cf54f1cb5605987c450abcd8cbf785d6561150685c  nuclear-accumulator_0.1.0.zip
+3933a1b5c22688690208ed04178e8ab4891d8056ed5befe5218183eb220b28bb  nuclear-accumulator_0.1.1.zip

@@ -1,0 +1,117 @@
+   0.000 2026-10-09 08:56:13; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/work/final-sprite-validation21/lifecycle/config.ini" "--mod-directory" "/workspace/work/final-sprite-validation21/lifecycle/mods" "--benchmark" "/workspace/work/final-sprite-validation21/lifecycle/test.zip" "--benchmark-ticks" "4900" "--benchmark-runs" "1" 
+   0.000 Config path: /workspace/work/final-sprite-validation21/lifecycle/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/work/final-sprite-validation21/lifecycle/runtime [29819/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.011 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.011 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.014 Running in headless mode
+   0.014 Audio is disabled
+   0.015 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.015 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.015 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.015 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.015 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.015 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.015 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.015 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.018 Loading mod core 0.0.0 (data.lua)
+   0.031 Loading mod base 2.1.21 (data.lua)
+   0.166 Loading mod nuclear-accumulator 0.1.0 (data.lua)
+   0.178 Loading mod recycler 2.1.21 (data.lua)
+   0.191 Loading mod base 2.1.21 (data-updates.lua)
+   0.204 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.247 Loading mod nuclear-accumulator 0.1.0 (data-final-fixes.lua)
+   0.339 Checksum for core: 2791302773
+   0.339 Checksum of base: 1834856243
+   0.339 Checksum of nuclear-accumulator: 3185254188
+   0.339 Checksum of recycler: 3293728126
+   0.339 Checksum of zz-na-lifecycle: 0
+   0.507 Prototype list checksum: 1611591271
+   0.569 Info PlayerData.cpp:580: Local player-data.json available
+   0.569 Info GlobalContext.cpp:1336: Resetting config.
+   0.570 Factorio initialised
+   0.570 Loading map /workspace/work/final-sprite-validation21/lifecycle/test.zip: 865053 bytes.
+   0.583 Loading level.dat: 1218236 bytes.
+   0.583 Info Scenario.cpp:152: Map version 2.1.21-11
+   0.606 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.606 Loading script.dat: 1950 bytes.
+   0.610 Checksum for script __level__/control.lua: 3704017257
+   0.612 Checksum for script __nuclear-accumulator__/control.lua: 588278163
+   0.612 Checksum for script __zz-na-lifecycle__/control.lua: 3531695449
+Running update 0
+   0.614 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: save/load retains helper references and real energy
+Running update 100
+Running update 200
+Running update 300
+Running update 400
+Running update 500
+Running update 600
+Running update 700
+Running update 800
+Running update 900
+Running update 1000
+Running update 1100
+Running update 1200
+   0.839 Script @__zz-na-lifecycle__/control.lua:31: NA DEBUG ghosts=0 chest fresh=0
+   0.839 Script @__zz-na-lifecycle__/control.lua:32: NA DEBUG port energy=100000000 robot count=5
+   0.839 Script @__zz-na-lifecycle__/control.lua:33: NA DEBUG placeable={{count = 1, name = "nuclear-accumulator"}}
+   0.839 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: native robots build station ghost
+   0.839 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: robot-built factory item starts full
+   0.839 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: real blueprint contains main only
+   0.839 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: automatic nuclear station map icon appears on charted map
+   0.840 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: clone cannot duplicate charge
+Running update 1300
+Running update 1400
+Running update 1500
+Running update 1600
+Running update 1700
+Running update 1800
+Running update 1900
+Running update 2000
+Running update 2100
+Running update 2200
+Running update 2300
+Running update 2400
+Running update 2500
+   1.067 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: isolated station powers actual mining drill
+   1.067 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: H follows actual health
+   1.067 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: separate station remains empty
+Running update 2600
+Running update 2700
+Running update 2800
+Running update 2900
+Running update 3000
+Running update 3100
+Running update 3200
+Running update 3300
+Running update 3400
+Running update 3500
+Running update 3600
+   1.251 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: native robot mining removes station without blast
+   1.251 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: mining removes automatic map icon
+   1.251 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: robot mining cleans helpers
+   1.251 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: robot recovery returns used item
+Running update 3700
+Running update 3800
+Running update 3900
+Running update 4000
+Running update 4100
+Running update 4200
+Running update 4300
+Running update 4400
+Running update 4500
+Running update 4600
+Running update 4700
+Running update 4800
+   1.445 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: robots can rebuild ghost using recovered used item
+   1.445 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: recovered used item never resets to 36 GJ
+   1.445 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: hidden radar completes real sector scans
+   1.475 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: red D positive detonates
+   1.475 Script @__zz-na-lifecycle__/control.lua:74: NA LIFECYCLE COMPLETE
+  Performed 4900 updates in 915.781 ms
+  avg: 0.187 ms, min: 0.065 ms, max: 5.060 ms
+  checksum: 2743322723
+   1.582 Goodbye
