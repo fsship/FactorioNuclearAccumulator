@@ -1,0 +1,11 @@
+{
+  "name": "nuclear-accumulator",
+  "version": "0.2.1",
+  "title": "Nuclear Accumulator",
+  "author": "Codex",
+  "factorio_version": "2.1",
+  "dependencies": [
+    "base >= 2.1.21"
+  ],
+  "description": "36 GJ native battery with precise recovered-charge tags, substation, radar and batched native nuclear chain reactions."
+}

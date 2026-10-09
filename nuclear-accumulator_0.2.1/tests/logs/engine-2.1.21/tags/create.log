@@ -1,0 +1,51 @@
+   0.000 2026-10-09 10:56:44; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/tag-integration/tag-live-save21/tags/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/tag-integration/tag-live-save21/tags/mods" "--create" "/workspace/FactorioNuclearAccumulator/work/tag-integration/tag-live-save21/tags/test.zip" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/tag-integration/tag-live-save21/tags/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/tag-integration/tag-live-save21/tags/runtime [29732/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.008 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.008 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.010 Running in headless mode
+   0.010 Audio is disabled
+   0.011 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.011 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.011 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.011 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.011 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.011 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.011 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.011 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.014 Loading mod core 0.0.0 (data.lua)
+   0.025 Loading mod base 2.1.21 (data.lua)
+   0.166 Loading mod nuclear-accumulator 0.2.1 (data.lua)
+   0.178 Loading mod recycler 2.1.21 (data.lua)
+   0.189 Loading mod base 2.1.21 (data-updates.lua)
+   0.199 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.214 Loading mod nuclear-accumulator 0.2.1 (data-final-fixes.lua)
+   0.283 Loading mod zz-na-tag-tests 0.1.0 (data-final-fixes.lua)
+   0.283 Script @__zz-na-tag-tests__/data-final-fixes.lua:5: NA PROTOTYPE PASS: one tag item, one main entity, same recovery and blueprint item
+   0.338 Checksum for core: 2791302773
+   0.338 Checksum of base: 1834856243
+   0.338 Checksum of nuclear-accumulator: 3023417350
+   0.338 Checksum of recycler: 3293728126
+   0.338 Checksum of zz-na-tag-tests: 1964310995
+   0.495 Prototype list checksum: 2090654350
+   0.558 Info PlayerData.cpp:582: Local player-data.json unavailable
+   0.558 Info GlobalContext.cpp:1336: Resetting config.
+   0.559 Factorio initialised
+   0.559 Info Create.cpp:32: Creating new map /workspace/FactorioNuclearAccumulator/work/tag-integration/tag-live-save21/tags/test.zip
+   0.572 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   2.026 Loading level.dat: 1006368 bytes.
+   2.026 Info Scenario.cpp:152: Map version 2.1.21-11
+   2.041 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   2.044 Checksum for script __level__/control.lua: 3704017257
+   2.045 Checksum for script __nuclear-accumulator__/control.lua: 2380957964
+   2.046 Checksum for script __zz-na-tag-tests__/control.lua: 1868643626
+   2.493 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: new item defaults to untagged factory-new state
+   2.493 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native stack stores joules 36000000000
+   2.493 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native stack stores joules 18000000000
+   2.493 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native stack stores joules 0
+Done.
+   2.592 Goodbye

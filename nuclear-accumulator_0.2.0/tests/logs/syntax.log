@@ -1,0 +1,1 @@
+PASS: 15 Lua files parse with luac5.2; all project JSON parses; Python runner compiles.
