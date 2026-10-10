@@ -1,0 +1,477 @@
+{
+  "source_snapshot": "a67c4ca",
+  "files": {
+    "nuclear-accumulator_0.1.0/tests/logs/gui-unit.log": {
+      "path": "test-results/releases/0.1.0/gui-unit.log",
+      "sha256": "1aeab7bdc1886b274cd1df5eb510eabba27add1a38f23599d185306dd43eb02b"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.1.21/lifecycle-create.log": {
+      "path": "test-results/releases/0.1.0/2.1.21/lifecycle-create.log",
+      "sha256": "bbfb2182a661b48c652906391ba80dd355ea6ac112ecb6a0c1b55850378b6bee"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.1.21/lifecycle-runtime.log": {
+      "path": "test-results/releases/0.1.0/2.1.21/lifecycle-runtime.log",
+      "sha256": "f2c31cfeaa1a39bcd1ccc439b98892c791263f470d4f2d2b6335c5529e8a61f7"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.1.21/acceptance-runtime.log": {
+      "path": "test-results/releases/0.1.0/2.1.21/acceptance-runtime.log",
+      "sha256": "1870f184aa40a04843e03a79dead478d240e5126ce2e2b7fc3e5e9a27f67e505"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.1.21/acceptance-create.log": {
+      "path": "test-results/releases/0.1.0/2.1.21/acceptance-create.log",
+      "sha256": "0cb685774c5d110f752fbe17d97d479f3f70123e706f2ad9224a658becbf504b"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.1.21/final-sprite-lifecycle-create.log": {
+      "path": "test-results/releases/0.1.0/2.1.21/final-sprite-lifecycle-create.log",
+      "sha256": "f46974b23db766bf96a1cfd625968ee44f30333b8e6e5f1ebf03766ce5bc2352"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.1.21/final-sprite-lifecycle-runtime.log": {
+      "path": "test-results/releases/0.1.0/2.1.21/final-sprite-lifecycle-runtime.log",
+      "sha256": "1f8236b90f61ded766146cdd1369528697f9686a8d8072acacb7b4174e416624"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.0.77/lifecycle-create.log": {
+      "path": "test-results/releases/0.1.0/2.0.77/lifecycle-create.log",
+      "sha256": "734b5a94d8aa662f8fd9f79445bfef34760046b138d642f409d744c316662756"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.0.77/lifecycle-runtime.log": {
+      "path": "test-results/releases/0.1.0/2.0.77/lifecycle-runtime.log",
+      "sha256": "8bba99198d0179796838c4b84b83d8b60bcb048caf51d29c3caa668f293069d7"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.0.77/acceptance-runtime.log": {
+      "path": "test-results/releases/0.1.0/2.0.77/acceptance-runtime.log",
+      "sha256": "c761fc5cafe354781839b58e723ea4e4427ba5448b9eb56ff3e7a051e6609d5f"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.0.77/acceptance-create.log": {
+      "path": "test-results/releases/0.1.0/2.0.77/acceptance-create.log",
+      "sha256": "1439d0f285a471c79cc22bd2bd0869292cc47a4a6c86666f128ae898016618f2"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.0.77/final-sprite-lifecycle-create.log": {
+      "path": "test-results/releases/0.1.0/2.0.77/final-sprite-lifecycle-create.log",
+      "sha256": "dc225a77d6a37d33790becb09f3c164e7732bd78f1f4c303f86e4c2964b5bd0d"
+    },
+    "nuclear-accumulator_0.1.0/tests/logs/2.0.77/final-sprite-lifecycle-runtime.log": {
+      "path": "test-results/releases/0.1.0/2.0.77/final-sprite-lifecycle-runtime.log",
+      "sha256": "1920439c25b045a48d0eefe115b10c26aaace97b1453d2a58e1ced7f890244ab"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/gui-unit.log": {
+      "path": "test-results/releases/0.1.1/gui-unit.log",
+      "sha256": "1aeab7bdc1886b274cd1df5eb510eabba27add1a38f23599d185306dd43eb02b"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.1.21/lifecycle-create.log": {
+      "path": "test-results/releases/0.1.1/2.1.21/lifecycle-create.log",
+      "sha256": "bbfb2182a661b48c652906391ba80dd355ea6ac112ecb6a0c1b55850378b6bee"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.1.21/lifecycle-runtime.log": {
+      "path": "test-results/releases/0.1.1/2.1.21/lifecycle-runtime.log",
+      "sha256": "f2c31cfeaa1a39bcd1ccc439b98892c791263f470d4f2d2b6335c5529e8a61f7"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.1.21/acceptance-runtime.log": {
+      "path": "test-results/releases/0.1.1/2.1.21/acceptance-runtime.log",
+      "sha256": "1870f184aa40a04843e03a79dead478d240e5126ce2e2b7fc3e5e9a27f67e505"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.1.21/acceptance-create.log": {
+      "path": "test-results/releases/0.1.1/2.1.21/acceptance-create.log",
+      "sha256": "0cb685774c5d110f752fbe17d97d479f3f70123e706f2ad9224a658becbf504b"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.1.21/final-sprite-lifecycle-create.log": {
+      "path": "test-results/releases/0.1.1/2.1.21/final-sprite-lifecycle-create.log",
+      "sha256": "f46974b23db766bf96a1cfd625968ee44f30333b8e6e5f1ebf03766ce5bc2352"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.1.21/final-sprite-lifecycle-runtime.log": {
+      "path": "test-results/releases/0.1.1/2.1.21/final-sprite-lifecycle-runtime.log",
+      "sha256": "1f8236b90f61ded766146cdd1369528697f9686a8d8072acacb7b4174e416624"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.0.77/lifecycle-create.log": {
+      "path": "test-results/releases/0.1.1/2.0.77/lifecycle-create.log",
+      "sha256": "734b5a94d8aa662f8fd9f79445bfef34760046b138d642f409d744c316662756"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.0.77/lifecycle-runtime.log": {
+      "path": "test-results/releases/0.1.1/2.0.77/lifecycle-runtime.log",
+      "sha256": "8bba99198d0179796838c4b84b83d8b60bcb048caf51d29c3caa668f293069d7"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.0.77/acceptance-runtime.log": {
+      "path": "test-results/releases/0.1.1/2.0.77/acceptance-runtime.log",
+      "sha256": "c761fc5cafe354781839b58e723ea4e4427ba5448b9eb56ff3e7a051e6609d5f"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.0.77/acceptance-create.log": {
+      "path": "test-results/releases/0.1.1/2.0.77/acceptance-create.log",
+      "sha256": "1439d0f285a471c79cc22bd2bd0869292cc47a4a6c86666f128ae898016618f2"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.0.77/final-sprite-lifecycle-create.log": {
+      "path": "test-results/releases/0.1.1/2.0.77/final-sprite-lifecycle-create.log",
+      "sha256": "dc225a77d6a37d33790becb09f3c164e7732bd78f1f4c303f86e4c2964b5bd0d"
+    },
+    "nuclear-accumulator_0.1.1/tests/logs/2.0.77/final-sprite-lifecycle-runtime.log": {
+      "path": "test-results/releases/0.1.1/2.0.77/final-sprite-lifecycle-runtime.log",
+      "sha256": "1920439c25b045a48d0eefe115b10c26aaace97b1453d2a58e1ced7f890244ab"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/gui-unit.log": {
+      "path": "test-results/releases/0.1.2/gui-unit.log",
+      "sha256": "1aeab7bdc1886b274cd1df5eb510eabba27add1a38f23599d185306dd43eb02b"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/install-zip.log": {
+      "path": "test-results/releases/0.1.2/install-zip.log",
+      "sha256": "7f8ba3c2ac0b862b5f3328523e6e8591fe17ebcd242118a699421922145a357f"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-integer-falloff/create.log": {
+      "path": "test-results/releases/0.1.2/final-integer-falloff/create.log",
+      "sha256": "7c5d875c9c4a46d43c237228ead77b01185ffca9f10bb50b1ebc655470865a46"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-integer-falloff/runtime.log": {
+      "path": "test-results/releases/0.1.2/final-integer-falloff/runtime.log",
+      "sha256": "0d0450c0fee202488a769ae71e15a53c313faa6f0c2c506b642a5221e5913543"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-integer-falloff/chain-count-runtime.log": {
+      "path": "test-results/releases/0.1.2/final-integer-falloff/chain-count-runtime.log",
+      "sha256": "2e7ae8df14b8fb310a7c0e59e16b91af0b6692c0812fce1f03b2c289e1f640e8"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/comparison-20/results.json": {
+      "path": "test-results/releases/0.1.2/comparison-20/results.json",
+      "sha256": "94d52f16dd96d3b8f43a165de3ccf34ec8744432490b05fe96b9f019e8707284"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/upgrade/upgraded-runtime.log": {
+      "path": "test-results/releases/0.1.2/upgrade/upgraded-runtime.log",
+      "sha256": "54911f3e53c9c30535bb1d6ce86ceab9a5e6c5b8455b684703e70637911c6eb4"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/upgrade/old-create.log": {
+      "path": "test-results/releases/0.1.2/upgrade/old-create.log",
+      "sha256": "06697371da5f0bd1c4d61db0aea6d7e9ef3ab3671be2c9f75e40a6162c465554"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/prototype-limits/valid.log": {
+      "path": "test-results/releases/0.1.2/prototype-limits/valid.log",
+      "sha256": "ded67fdf7ceddc6d497410e381e9420888cf4c4d32e6c2bffc7351b4f76778be"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/prototype-limits/repeat-overflow.log": {
+      "path": "test-results/releases/0.1.2/prototype-limits/repeat-overflow.log",
+      "sha256": "28c90c60c10eeadb898b2d2422600f6a438171c40e5303e1098d77abcfff905e"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/prototype-limits/threshold-overflow.log": {
+      "path": "test-results/releases/0.1.2/prototype-limits/threshold-overflow.log",
+      "sha256": "e1add51d8a30f663da44a788dabc92c0acdb4d86df7765adbe2be70e2e500f0b"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/comparison-20/baseline/create.log": {
+      "path": "test-results/releases/0.1.2/comparison-20/baseline/create.log",
+      "sha256": "3d69d5789e0da5b9b8d84c2a2db26224134ad221def7e4d7a92400061d1c9ccc"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/comparison-20/baseline/runtime.log": {
+      "path": "test-results/releases/0.1.2/comparison-20/baseline/runtime.log",
+      "sha256": "04b049b1883a995f574608e0f4b3182998ce222432f7c2ddedda7b47d260fd5f"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/comparison-20/batched/create.log": {
+      "path": "test-results/releases/0.1.2/comparison-20/batched/create.log",
+      "sha256": "2f0b175b4f61bc82a4a3092d345e85a2f5f188ca11933982806457103121a525"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/comparison-20/batched/runtime.log": {
+      "path": "test-results/releases/0.1.2/comparison-20/batched/runtime.log",
+      "sha256": "77041402f37cd95103e55b1bbdf943a6e6f33a0747e498f69bebb1027f5180a7"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-20/acceptance/create.log": {
+      "path": "test-results/releases/0.1.2/final-20/acceptance/create.log",
+      "sha256": "529455cef40e8c080e575ac3e4624f91f703e9df2b92df6b74cd357e1e285e65"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-20/acceptance/runtime.log": {
+      "path": "test-results/releases/0.1.2/final-20/acceptance/runtime.log",
+      "sha256": "33417b065dbf0ac2a0917b7ed0298f5b0edf98ba9782faf6f5f4990d60c84d4c"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-20/lifecycle/create.log": {
+      "path": "test-results/releases/0.1.2/final-20/lifecycle/create.log",
+      "sha256": "1940948041676dc81130ada74e7835442fe24d3493b48bb4b86fc3f0cc88509a"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-20/lifecycle/runtime.log": {
+      "path": "test-results/releases/0.1.2/final-20/lifecycle/runtime.log",
+      "sha256": "5ca158e10e7f92d04d4acac7d2c2fd2f6f1427699752b9d0a355b20035a6896e"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-20/queue/create.log": {
+      "path": "test-results/releases/0.1.2/final-20/queue/create.log",
+      "sha256": "765893c8540b891586a712b7f2e4f06525d449f1a4d56b596ddcd1e7edcd121f"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-20/queue/save-server.log": {
+      "path": "test-results/releases/0.1.2/final-20/queue/save-server.log",
+      "sha256": "d2df15b6ca56e8cafedfbcf8f8b2efab067d7914afbfcd013e33c0a07205bf1c"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-20/queue/runtime.log": {
+      "path": "test-results/releases/0.1.2/final-20/queue/runtime.log",
+      "sha256": "f86ff9819dcc4ca204fac494231f761001de3aafe81d4b72e636bd5417442b81"
+    },
+    "nuclear-accumulator_0.1.2/tests/logs/final-20/queue/resume.log": {
+      "path": "test-results/releases/0.1.2/final-20/queue/resume.log",
+      "sha256": "dbe6bbaf31f8157e64aca4c572ab874750194c0c237a1ac2052410466c5e9228"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/gui-unit.log": {
+      "path": "test-results/releases/0.1.3/gui-unit.log",
+      "sha256": "1aeab7bdc1886b274cd1df5eb510eabba27add1a38f23599d185306dd43eb02b"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/install-zip.log": {
+      "path": "test-results/releases/0.1.3/install-zip.log",
+      "sha256": "98c986d6e35a976e3f74cc19ffe952f69a0461660f2a05424dc0010804c6b65e"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-integer-falloff/create.log": {
+      "path": "test-results/releases/0.1.3/final-integer-falloff/create.log",
+      "sha256": "d035207c2b11794da7eda30934982a384deca38ab553e5e4c80da76adafbf7e1"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-integer-falloff/runtime.log": {
+      "path": "test-results/releases/0.1.3/final-integer-falloff/runtime.log",
+      "sha256": "17e0a6e33a1030b41aea86c2e932fe036f5da07e4fa0cb18c07cfbc27550701f"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-integer-falloff/chain-count-runtime.log": {
+      "path": "test-results/releases/0.1.3/final-integer-falloff/chain-count-runtime.log",
+      "sha256": "4e0cbaf5383c020fae241f3fa2b2e78965ea8a4e18eab84c93a560921083851c"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/upgrade/upgraded-runtime.log": {
+      "path": "test-results/releases/0.1.3/upgrade/upgraded-runtime.log",
+      "sha256": "525ca616e46d4428fa3321ee7dcefcb919b68d2d253549ada0c079f3d3522700"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/upgrade/old-create.log": {
+      "path": "test-results/releases/0.1.3/upgrade/old-create.log",
+      "sha256": "ff6bf111f1947ad44378f7a66c7c80f5316ae9667aede17f0011e190e06ee7e3"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/comparison-21/results.json": {
+      "path": "test-results/releases/0.1.3/comparison-21/results.json",
+      "sha256": "9c425316121541747d0123c67798149645007f47970083e6ca8e4543fea6111a"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/prototype-limits/valid.log": {
+      "path": "test-results/releases/0.1.3/prototype-limits/valid.log",
+      "sha256": "d3c3ee6e3723076bad4c05559aae852d1151c188e46ce61837f11053c1ba4e85"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/prototype-limits/repeat-overflow.log": {
+      "path": "test-results/releases/0.1.3/prototype-limits/repeat-overflow.log",
+      "sha256": "107cc0e3a50d8787580c8a24bced9c0b5778efa7ee54e8f1c2dd945bb8e42e53"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/prototype-limits/threshold-overflow.log": {
+      "path": "test-results/releases/0.1.3/prototype-limits/threshold-overflow.log",
+      "sha256": "b533ca2e20ab5963ba50df04840e81fb4046bac27a88c079b17d83c9b6400dbb"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/comparison-21/baseline/create.log": {
+      "path": "test-results/releases/0.1.3/comparison-21/baseline/create.log",
+      "sha256": "33efceb646f78e7b1834ffa9b3cd6858d0839bcca3a4a8aa4d5ca76727612d14"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/comparison-21/baseline/runtime.log": {
+      "path": "test-results/releases/0.1.3/comparison-21/baseline/runtime.log",
+      "sha256": "bdfc00b0782a6051230db25d27f3fd09b74f5786dcfbc7c6df893719453d641e"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/comparison-21/batched/create.log": {
+      "path": "test-results/releases/0.1.3/comparison-21/batched/create.log",
+      "sha256": "58d9d51c4452dfa528e718e9f34fb9650b96f0a6c49681d9ab3ee912539385cd"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/comparison-21/batched/runtime.log": {
+      "path": "test-results/releases/0.1.3/comparison-21/batched/runtime.log",
+      "sha256": "7e5f271ab4a689bf480ba363bf729afbe3933cd6744828cf0ba61e8aeb5a288b"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-21/acceptance/create.log": {
+      "path": "test-results/releases/0.1.3/final-21/acceptance/create.log",
+      "sha256": "c65aaee8245e618a191c683e7717d348f7abcf663c6e4ad6460d14799826dff7"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-21/acceptance/runtime.log": {
+      "path": "test-results/releases/0.1.3/final-21/acceptance/runtime.log",
+      "sha256": "a5ac005522768540a8cb6cdd214dac641b3efb0962d6084984d1d95e94c4da26"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-21/lifecycle/create.log": {
+      "path": "test-results/releases/0.1.3/final-21/lifecycle/create.log",
+      "sha256": "bca9a94c3d497d8516d834a1e06354ef16147dacf438e05bd812b5d0d0bdee49"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-21/lifecycle/runtime.log": {
+      "path": "test-results/releases/0.1.3/final-21/lifecycle/runtime.log",
+      "sha256": "7728c23b9f68121abf2e44c8961957feee11722f4b8c7b2ee37eb1186fca520f"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-21/queue/create.log": {
+      "path": "test-results/releases/0.1.3/final-21/queue/create.log",
+      "sha256": "0fe05f4a763426309f1e06c7974a27c8e1f331dbed2a0d285ff96756e9f4b873"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-21/queue/save-server.log": {
+      "path": "test-results/releases/0.1.3/final-21/queue/save-server.log",
+      "sha256": "5dc02e5f0918de0f82685b74bccf9c2f1e5872f168054920de0b16221776f504"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-21/queue/runtime.log": {
+      "path": "test-results/releases/0.1.3/final-21/queue/runtime.log",
+      "sha256": "aa55243ae1fcb21b6d54068c9b1ad87b5c06060c4de35d2704ef83827b9f4580"
+    },
+    "nuclear-accumulator_0.1.3/tests/logs/final-21/queue/resume.log": {
+      "path": "test-results/releases/0.1.3/final-21/queue/resume.log",
+      "sha256": "2d659bd4b1afa201060f675f47dfdc884ac3d5ebf20516124efaec7eaeec5240"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/gui-unit.log": {
+      "path": "test-results/releases/0.2.0/gui-unit.log",
+      "sha256": "dfe84e939ceb7fb3b6de8940d3addc49d757d938c7b4e9fb7b9d0aea17a1d8e0"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/syntax.log": {
+      "path": "test-results/releases/0.2.0/syntax.log",
+      "sha256": "6cfe90f9b39af40e7681247e06aa0a41a00e2f750f820bfa32a02827310afd7e"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/acceptance/create.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/acceptance/create.log",
+      "sha256": "e5c298690d5ab6cebe1b61e7fdb8d5c6faf76d0e9aa46ae2cbdb619be1f1a5b6"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/acceptance/runtime.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/acceptance/runtime.log",
+      "sha256": "b510f71397fd8b1a78a875974bd078b296fededd474a5665f3d000add05c7347"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/lifecycle/create.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/lifecycle/create.log",
+      "sha256": "6bd4019ff24c8a64e8071fb5282f409198bcae316d73d1a0bf3decbadb3a439b"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/lifecycle/runtime.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/lifecycle/runtime.log",
+      "sha256": "22cad42da678b2f1c3f3a0440d87f2c34b1d88d4d256c5556d2f3c7f59fc3d5e"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/tags/create.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/tags/create.log",
+      "sha256": "2deae58523adc3c82d35bbe585bd28977c8f3b719552a8ca6f439003005e21fe"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/tags/save-server.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/tags/save-server.log",
+      "sha256": "cb38678a2a4a66477e2b0b2a9434cbbb3e29b79350010d38edcdcd7a2d69bebc"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/tags/runtime.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/tags/runtime.log",
+      "sha256": "2cbbd0f23a1d2b782ba0802fac89d819a16387f35b5eafafbcadc245d698b7e5"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/tags/resume.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/tags/resume.log",
+      "sha256": "101ab8ad57d1208a0181511b14313f915697cb17e9e413db17ff390171d613c3"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/queue/create.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/queue/create.log",
+      "sha256": "8977dc29257644039f43c0dca81f75965b9bba9387c4d06c00841eefe0a2f0ce"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/queue/save-server.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/queue/save-server.log",
+      "sha256": "a1c82aa45ae0e4a6fda62c1fc5d837fefd36f1c301598b8963e41b76b6329ea9"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/queue/runtime.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/queue/runtime.log",
+      "sha256": "d24ab618047907b348a7cd3dd13f512143e3d259b5ecdde6c32c958c8c00ac13"
+    },
+    "nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/queue/resume.log": {
+      "path": "test-results/releases/0.2.0/engine-2.0.77/queue/resume.log",
+      "sha256": "9e2e3eef2bdf95049a30cef5e3175d1085b47650a2d1f07a3c8179fce433ed25"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/gui-unit.log": {
+      "path": "test-results/releases/0.2.1/gui-unit.log",
+      "sha256": "dfe84e939ceb7fb3b6de8940d3addc49d757d938c7b4e9fb7b9d0aea17a1d8e0"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/syntax.log": {
+      "path": "test-results/releases/0.2.1/syntax.log",
+      "sha256": "6cfe90f9b39af40e7681247e06aa0a41a00e2f750f820bfa32a02827310afd7e"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/acceptance/create.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/acceptance/create.log",
+      "sha256": "822343b267c943bb306990338bf235238a8813105a494945a09134998c71f82b"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/acceptance/runtime.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/acceptance/runtime.log",
+      "sha256": "f3cbffc35294ec832b84c5c13e3083accbd4844718e0776262e0669c287714fa"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/lifecycle/create.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/lifecycle/create.log",
+      "sha256": "0d27a4c770f5b43a6df9166ecc9a80311ffa362f14099220f7b503cc8deaad9e"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/lifecycle/runtime.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/lifecycle/runtime.log",
+      "sha256": "66ee419aea565c65bb7a7a2af123a30bf3b5ea3c00554c14a0a8f9c6450fdbe4"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/tags/create.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/tags/create.log",
+      "sha256": "c23351c93a68a6f05285826cb0df2be5fe9521c9fee437db99a039782002cd68"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/tags/save-server.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/tags/save-server.log",
+      "sha256": "5b6777032f108ea9815f52511d7c18e3091119f4672a61e22116fccd7b38b891"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/tags/runtime.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/tags/runtime.log",
+      "sha256": "33f72d686cf3483ca32e64fb2174a23bc805ab138c17d201ecae2bbcdc84b4cf"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/tags/resume.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/tags/resume.log",
+      "sha256": "c7f6f4bd3af4037ba44b4308c8a69735e32f5994b96d946b1fbc01e4d3fb8d1c"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/queue/create.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/queue/create.log",
+      "sha256": "5e3c2ee4f9ca620d1d63a1f3e73970d438b1ea16a818f664fba8535b63c6acb8"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/queue/save-server.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/queue/save-server.log",
+      "sha256": "627eb9bbbcd92109ac8e87bf2c2dcadd369f48c4fb8ac8dda978a25020859ee7"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/queue/runtime.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/queue/runtime.log",
+      "sha256": "c461a5ac3d25c45a4e0e73e4ca4ab5a06e17c19624c5078abdd2d5616c605672"
+    },
+    "nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/queue/resume.log": {
+      "path": "test-results/releases/0.2.1/engine-2.1.21/queue/resume.log",
+      "sha256": "b98cfd49312797001ede4648c85029c5f8b0b3c99c2bbaa710bc8b713d270068"
+    },
+    "nuclear-accumulator_0.2.2/tests/logs/gui-unit.log": {
+      "path": "test-results/releases/0.2.2/gui-unit.log",
+      "sha256": "dfe84e939ceb7fb3b6de8940d3addc49d757d938c7b4e9fb7b9d0aea17a1d8e0"
+    },
+    "nuclear-accumulator_0.2.2/tests/logs/static-check.log": {
+      "path": "test-results/releases/0.2.2/static-check.log",
+      "sha256": "b3d74a471c00b3efa0e8edc9c93ff56e4d502544c59a0fa63a8e2f4cb02ebac2"
+    },
+    "nuclear-accumulator_0.2.2/tests/logs/lifecycle/create.log": {
+      "path": "test-results/releases/0.2.2/lifecycle/create.log",
+      "sha256": "bfb09aef1933ceeff1f1250088bde7022f4f67225e1f8396edc6129bfd852122"
+    },
+    "nuclear-accumulator_0.2.2/tests/logs/lifecycle/runtime.log": {
+      "path": "test-results/releases/0.2.2/lifecycle/runtime.log",
+      "sha256": "5aa736ffc034c60e5fbed1a62d309254d6288d1ab6e0054deae907f45f5d68c0"
+    },
+    "nuclear-accumulator_0.2.3/tests/logs/gui-unit.log": {
+      "path": "test-results/releases/0.2.3/gui-unit.log",
+      "sha256": "dfe84e939ceb7fb3b6de8940d3addc49d757d938c7b4e9fb7b9d0aea17a1d8e0"
+    },
+    "nuclear-accumulator_0.2.3/tests/logs/static-check.log": {
+      "path": "test-results/releases/0.2.3/static-check.log",
+      "sha256": "b3d74a471c00b3efa0e8edc9c93ff56e4d502544c59a0fa63a8e2f4cb02ebac2"
+    },
+    "nuclear-accumulator_0.2.3/tests/logs/lifecycle/create.log": {
+      "path": "test-results/releases/0.2.3/lifecycle/create.log",
+      "sha256": "b1b12a9f64affb9572eb8b85563b245bdf987157ae49d37794c043d45de818f8"
+    },
+    "nuclear-accumulator_0.2.3/tests/logs/lifecycle/runtime.log": {
+      "path": "test-results/releases/0.2.3/lifecycle/runtime.log",
+      "sha256": "d468eb8caeef08a2ce9f3c22411a14b76dfe48059dde115099f44eb73b1859f2"
+    },
+    "charge-state-tests/ammo/logs/ammo-confirm20/create.log": {
+      "path": "test-results/experiments/ammo/ammo-confirm20/create.log",
+      "sha256": "5dac380b4727e765d7f223b59dd2f91f0c21e3fb12bf7728481b7b13ff42f67b"
+    },
+    "charge-state-tests/ammo/logs/ammo-confirm20/runtime.log": {
+      "path": "test-results/experiments/ammo/ammo-confirm20/runtime.log",
+      "sha256": "53a05f24cf379ed4c46e6bd2029db6f4908a23039d3f713fe62a12ef3f23793f"
+    },
+    "charge-state-tests/ammo/logs/ammo-confirm21/create.log": {
+      "path": "test-results/experiments/ammo/ammo-confirm21/create.log",
+      "sha256": "69e52b45ffee5382e8fb70e3f72bdfea25e2d93c3bf03c6a2f622a7d5204dbc5"
+    },
+    "charge-state-tests/ammo/logs/ammo-confirm21/runtime.log": {
+      "path": "test-results/experiments/ammo/ammo-confirm21/runtime.log",
+      "sha256": "b0b2405f240840537ae5b051177141416333c3248399aec78d3c00df58a6a297"
+    },
+    "charge-state-tests/tags/logs/tag-final21/create.log": {
+      "path": "test-results/experiments/tags/tag-final21/create.log",
+      "sha256": "514806c90eaae67f6c2fd1b1e4aff763bc55278af8bb44d3868413aeeba23f41"
+    },
+    "charge-state-tests/tags/logs/tag-final21/runtime.log": {
+      "path": "test-results/experiments/tags/tag-final21/runtime.log",
+      "sha256": "8e5f3eae0ef34d8f760bc5771a70ee75b7e4e6909bf24bc098ce6ff3f292a4a4"
+    },
+    "charge-state-tests/tags/logs/tag-confirm20/create.log": {
+      "path": "test-results/experiments/tags/tag-confirm20/create.log",
+      "sha256": "a89f5fb72c018ddcd4fff4c09c3018f24ca1a2bda7e2d9e007afb3fb54d6e455"
+    },
+    "charge-state-tests/tags/logs/tag-confirm20/runtime.log": {
+      "path": "test-results/experiments/tags/tag-confirm20/runtime.log",
+      "sha256": "447788d031f6dd0596723eced099da33bb967c33ef57230ea52d4a19824c750c"
+    },
+    "docs/install-zip-20.log": {
+      "path": "test-results/releases/0.1.0/install-zip-20.log",
+      "sha256": "71862603178bfe561cef57b427ae0ab7be3913828c39499ca245a1a08dc16e71"
+    },
+    "docs/install-zip-21.log": {
+      "path": "test-results/releases/0.1.1/install-zip-21.log",
+      "sha256": "9e26581a45d9681ab873aec00e3c8f2bb102f97cf7719dd9edf67fa4c8fcf4c3"
+    }
+  }
+}

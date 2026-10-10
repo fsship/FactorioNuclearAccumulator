@@ -60,13 +60,15 @@
 
 ## 原始证据与复现
 
-- [2.0.77 原始日志](../nuclear-accumulator_0.2.0/tests/logs/engine-2.0.77/)；[2.1.21 原始日志](../nuclear-accumulator_0.2.1/tests/logs/engine-2.1.21/)。每版含 acceptance、lifecycle、tags、queue 的创建/运行日志，tags 和 queue 还含实际服务器保存及独立进程读取日志。
+- [2.0.77 原始日志](../test-results/releases/0.2.0/engine-2.0.77/)；[2.1.21 原始日志](../test-results/releases/0.2.1/engine-2.1.21/)。每版含 acceptance、lifecycle、tags、queue 的创建/运行日志，tags 和 queue 还含实际服务器保存及独立进程读取日志。
 - [机器可读结果和 SHA-256](tag-integration-results.json)，[所有安装包校验值](../releases/SHA256SUMS.txt)。两个新 ZIP 各 12 个运行/说明文件，逐文件与对应源码检查相等。测试和日志不放入安装 ZIP，源码目录仍包含完整测试。
-- GUI 和玩家消耗物品分支的 API doubles 日志分别位于两个源码目录的 `tests/logs/gui-unit.log`，明确不作为真实客户端操作证据。
+- GUI 和玩家消耗物品分支的 API doubles 日志分别位于 `test-results/releases/0.2.0/gui-unit.log` 和 `test-results/releases/0.2.1/gui-unit.log`，明确不作为真实客户端操作证据。
 
-在仓库根目录执行；`--work` 必须为新的路径，保存测试使用只绑定 127.0.0.1、没有外部玩家的本地 headless server：
+以下为历史 0.2.0/0.2.1 原始复现命令。结构整理后先检出历史工作树，再在其中执行；当前共享入口见 [仓库结构说明](REPOSITORY-STRUCTURE.md)。`--work` 必须为新的路径，保存测试使用只绑定 127.0.0.1、没有外部玩家的本地 headless server：
 
 ```sh
+git worktree add --detach work/history a67c4ca
+cd work/history
 python3 scripts/package.py nuclear-accumulator_0.2.0
 python3 nuclear-accumulator_0.2.0/tests/run.py --factorio /path/to/factorio-2.0/bin/x64/factorio --mod-zip releases/nuclear-accumulator_0.2.0.zip --work work/recheck20
 python3 nuclear-accumulator_0.2.1/tests/run.py --factorio /path/to/factorio-2.1/bin/x64/factorio --mod-zip releases/nuclear-accumulator_0.2.1.zip --work work/recheck21

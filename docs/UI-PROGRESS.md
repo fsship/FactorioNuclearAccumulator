@@ -13,6 +13,6 @@
 - 两版最新安装 ZIP 的真实引擎生命周期场景通过：原生加载、机器人建造/精确回收/再放置、孤立采矿实际产出、雷达扫描、信号、克隆和回收清理。
 - ZIP 运行文件与源码逐文件一致，校验值更新至 releases/SHA256SUMS.txt。
 
-原始日志位于 `nuclear-accumulator_0.2.2/tests/logs/` 和 `nuclear-accumulator_0.2.3/tests/logs/`。完整标签与核爆回归仍对应历史 0.2.0/0.2.1 的 [TAG-INTEGRATION.md](TAG-INTEGRATION.md)；此次 UI 修改不冒用历史完整回归为新 ZIP 全套验收。
+原始日志位于 `test-results/releases/0.2.2/` 和 `test-results/releases/0.2.3/`。完整标签与核爆回归仍对应历史 0.2.0/0.2.1 的 [TAG-INTEGRATION.md](TAG-INTEGRATION.md)；此次 UI 修改不冒用历史完整回归为新 ZIP 全套验收。
 
 尚未执行真实图形客户端的进度条视觉和玩家点击验收。可在游戏中选中建筑，按 Ctrl+Shift+N，观察满电、半电、零电量及充放电时的条形与数字变化。

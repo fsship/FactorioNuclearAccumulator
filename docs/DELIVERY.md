@@ -1,5 +1,7 @@
 # Nuclear Accumulator / 核能蓄电站
 
+历史报告说明（2026-10-10）：本报告对应当时的版本和目录。旧源码及测试脚本可在 Git 快照 `a67c4ca` 查看，原始日志已原样集中到 [test-results/](../test-results/README.md)，旧路径对照见 [history-paths.json](../test-results/history-paths.json)。历史复现命令须在对应快照的原源码目录执行；当前开发入口见 [REPOSITORY-STRUCTURE.md](REPOSITORY-STRUCTURE.md)。
+
 完整 Factorio Mod，原版游戏即可运行，无需 Space Age。包含源码、中文/英文游戏文本、原生电网实现、原生核爆原型和可复现无界面测试。
 
 ## 安装与版本

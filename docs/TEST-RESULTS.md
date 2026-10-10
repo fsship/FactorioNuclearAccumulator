@@ -1,5 +1,7 @@
 # 验收结果 — 2026-10-09
 
+历史报告说明（2026-10-10）：本报告对应当时的版本和目录。旧源码及测试脚本可在 Git 快照 `a67c4ca` 查看，原始日志已原样集中到 [test-results/](../test-results/README.md)，旧路径对照见 [history-paths.json](../test-results/history-paths.json)。历史复现命令须在对应快照的原源码目录执行；当前开发入口见 [REPOSITORY-STRUCTURE.md](REPOSITORY-STRUCTURE.md)。
+
 使用实际官方 Linux headless **Factorio 2.0.77 stable** 和 **Factorio 2.1.21 experimental**。均只启用 base、主 Mod 和专用测试 Mod，Space Age / quality / elevated-rails 全部禁用。
 
 本报告不把未执行项目标为通过。两版各运行一个 2,900 tick 的核爆/电网场景、一个 4,900 tick 的机器人生命周期场景。最终隐藏雷达图片改为与 1×1 empty.png 匹配的 `direction_count=1` 后，两版均再次加载并完整运行生命周期回归。爆炸代码没有随这项视觉修正改变。

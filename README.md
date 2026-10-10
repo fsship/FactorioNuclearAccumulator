@@ -1,22 +1,46 @@
 # Nuclear Accumulator
 
-完整 Factorio Mod 源码、安装 ZIP 与真实引擎测试结果。
+完整 Factorio Mod，原版游戏即可运行，无需 Space Age。当前版本 **0.2.4** 使用一份源码，为 Factorio 2.0 和 2.1 生成不同清单的安装包。
 
-最新版本已合并 **item-with-tags 精确电量回收**：只有一种建筑物品，首次放置新制品为 36 GJ，回收保存真实电池的焦耳数，再放置恢复余电，显式零标签也能保留。同一张蓝图可使用任意电量的物品；每个物品占一格。按当前尚无在用存档的决定，不实现旧版本迁移。[正式整合与两版最终 ZIP 测试报告](docs/TAG-INTEGRATION.md)。
+建筑具有真实 36 GJ 原生电池、5 MW 充放电限制、配电站、雷达和电路信号。物品标签保存精确回收电量，包括零值；蓝图统一请求同一种物品。GUI 用原生进度条显示剩余电量。核爆保留原生空间分布与传播，满电共 200,000 个伤害弹道，按全局每 tick 最多 1,024 个调度，支持连锁和中途保存。
 
-GUI 顶部新增原生电量进度条，显示实际剩余百分比，每 30 tick 刷新，保留精确 MJ 读数。此次 UI 更新与验证范围见 [UI-PROGRESS.md](docs/UI-PROGRESS.md)。
+- [Factorio 2.0.77 安装包](releases/factorio-2.0/nuclear-accumulator_0.2.4.zip)
+- [Factorio 2.1.21 experimental 安装包](releases/factorio-2.1/nuclear-accumulator_0.2.4.zip)
+- [使用说明与功能限制](mod/README.md) · [校验值](releases/SHA256SUMS.txt)
 
-- [Factorio 2.0.77：0.2.2 安装包](releases/nuclear-accumulator_0.2.2.zip)，[完整源码与使用说明](nuclear-accumulator_0.2.2/README.md)。
-- [Factorio 2.1.21：0.2.3 安装包](releases/nuclear-accumulator_0.2.3.zip)，[完整源码与使用说明](nuclear-accumulator_0.2.3/README.md)。2.1.21 为本次取得的 experimental 版本。
-- 0.1.0～0.2.1 源码与对应 ZIP 保留为历史基线，可运行前后对照测试。
-- [电量携带机制实验报告](docs/CHARGE-STATE-TEST-RESULTS.md)，`charge-state-tests/` 包含弹匣与 item-with-tags 的源码、测试和日志。
-- [最初验收结果](docs/TEST-RESULTS.md)，[原始开发需求](docs/USER_SPEC.md)。
-- [独立评审与未决事项](docs/RELEASE-REVIEW.md)、[已确认决策](docs/DECISIONS.md)。
+两个 ZIP 同名，下载目录区分游戏目标。只安装对应游戏版本的一个 ZIP。
 
-分帧核爆继续保留：伤害数量与密度保持不变，每 tick 全局最多调度 1,024 个新伤害弹道，连锁爆炸共享持久队列。此前 0.1.2/0.1.3 对照实测单 tick 峰值下降约 89%–90%，外圈逐渐传播；这组性能数字属于历史性能对照。标签整合版 0.2.0/0.2.1 最终 ZIP 的完整核爆及保存回归见标签报告，0.2.2/0.2.3 的 UI 更新另见 UI 报告。[性能与传播报告](docs/WAVE-OPTIMIZATION.md)。
+## 开发结构
 
-严格雷达本电池供能和约 4.7 MW 外部保留方案仍待独立实现验收，本次标签整合继承共享电网雷达。图形客户端的真实玩家操作、GUI 点击及多人会话尚未验收；大型核爆仍可能降低 UPS。完整限制与复现方式见对应报告。
+```text
+mod/            唯一运行源码与默认 info.json
+tests/          共享测试场景和运行器
+scripts/        打包脚本及目标清单配置
+releases/       当前与历史安装包
+test-results/   原始日志和结果，按版本/目标归档
+docs/           需求、决策和报告
+work/           Git 忽略的临时文件及测试存档
+```
 
-安装包可用 `python3 scripts/package.py nuclear-accumulator_0.2.2` 重新生成。运行文件、许可证与 README 包含在安装 ZIP 中，测试脚本和原始日志保留在源码目录。只安装与游戏版本对应的一个包。
+版本号只在 `mod/info.json` 修改。两版目标通过 `scripts/build-targets.json` 调整 `factorio_version` 和 `dependencies`，不创建新的源码目录。完整结构与历史恢复方式见 [REPOSITORY-STRUCTURE.md](docs/REPOSITORY-STRUCTURE.md)。
 
-游戏程序和原版资源不随仓库分发。
+```sh
+python3 scripts/package.py
+python3 scripts/package.py --target 2.1
+python3 tests/run.py --factorio /path/to/factorio/bin/x64/factorio --work work/new-test-run
+lua5.2 tests/gui-unit.lua mod/control.lua
+```
+
+打包默认生成两个目标并更新 SHA-256；测试自动选择游戏目标，使用同一打包模块。也可通过 `--mod-zip` 验收指定发布 ZIP。测试套件、权限和图形客户端步骤见 [tests/README.md](tests/README.md)。
+
+## 历史与验证
+
+旧源码副本及实验代码在 Git 快照 `a67c4ca` 保留，当前树只维护一份运行源码。旧 ZIP 未重打包，118 个历史证据文件原样移到 [test-results/](test-results/README.md)，附逐文件路径/校验对照。
+
+- [目录重构验证](docs/REPOSITORY-STRUCTURE.md)
+- [标签整合历史实测](docs/TAG-INTEGRATION.md) · [电量携带机制实验](docs/CHARGE-STATE-TEST-RESULTS.md)
+- [核爆性能对照](docs/WAVE-OPTIMIZATION.md) · [进度条更新](docs/UI-PROGRESS.md)
+- [最初验收](docs/TEST-RESULTS.md) · [原始需求](docs/USER_SPEC.md)
+- [独立评审](docs/RELEASE-REVIEW.md) · [已确认决策](docs/DECISIONS.md)
+
+雷达目前使用共享电网；严格仅本电池供能及固定外部功率保留仍待实现。真实图形客户端、实际多人和任意第三方 Mod 组合尚未完整验收。旧存档迁移按用户明确要求不在范围内；大型核爆仍可能降低 UPS。游戏程序和原版资源不随仓库分发。

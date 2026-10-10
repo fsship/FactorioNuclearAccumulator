@@ -1,0 +1,52 @@
+{
+  "mod_version": "0.2.4",
+  "date": "2026-10-10",
+  "unchanged_runtime_snapshot": "a67c4ca",
+  "targets": {
+    "2.0": {
+      "engine": "2.0.77",
+      "artifact": "releases/factorio-2.0/nuclear-accumulator_0.2.4.zip",
+      "sha256": "61eb4d22a4a09889adcae387258f08d9c399d56277b6338f75f3560b2f626550",
+      "installed_zip_suites": [
+        "acceptance",
+        "lifecycle",
+        "tags",
+        "queue"
+      ],
+      "mid_run_resumes": [
+        "tags",
+        "queue"
+      ]
+    },
+    "2.1": {
+      "engine": "2.1.21 experimental",
+      "artifact": "releases/factorio-2.1/nuclear-accumulator_0.2.4.zip",
+      "sha256": "d0b064717ed91677ead9384b9b930b3c96bbab548b9c9e471eb43fe2bd992b90",
+      "installed_zip_suites": [
+        "acceptance",
+        "lifecycle",
+        "tags",
+        "queue"
+      ],
+      "mid_run_resumes": [
+        "tags",
+        "queue"
+      ]
+    }
+  },
+  "preserved_history": {
+    "zip_files": 9,
+    "evidence_files": 118
+  },
+  "source_entry": "PASS: outside repository cwd, source mode builds Factorio 2.1 ZIP through shared packaging module and completes real lifecycle",
+  "build_validation": [
+    "two target manifests",
+    "same runtime bytes across targets",
+    "source not mutated",
+    "byte-reproducible builds from outside repository cwd",
+    "all historical file checksums",
+    "local Markdown links",
+    "Lua/JSON/Python syntax"
+  ],
+  "gui_validation": "Existing API doubles pass; no graphical-client acceptance claimed"
+}

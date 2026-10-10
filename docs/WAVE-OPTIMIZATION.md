@@ -1,5 +1,7 @@
 # 核爆分帧优化与实测 — 2026-10-09
 
+历史报告说明（2026-10-10）：本报告对应当时的版本和目录。旧源码及测试脚本可在 Git 快照 `a67c4ca` 查看，原始日志已原样集中到 [test-results/](../test-results/README.md)，旧路径对照见 [history-paths.json](../test-results/history-paths.json)。历史复现命令须在对应快照的原源码目录执行；当前开发入口见 [REPOSITORY-STRUCTURE.md](REPOSITORY-STRUCTURE.md)。
+
 版本：0.1.2（Factorio 2.0.77）、0.1.3（Factorio 2.1.21 experimental）。无 Space Age。
 
 ## 结果

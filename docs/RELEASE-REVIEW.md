@@ -1,5 +1,7 @@
 # Nuclear Accumulator release review
 
+Repository maintenance note (2026-10-10): this is a historical review of the pinned commit below. Original evidence files have moved unchanged to [test-results/](../test-results/README.md); [history-paths.json](../test-results/history-paths.json) maps every old evidence path to its current path. Pinned source URLs and review conclusions remain historical.
+
 Reviewed commit: 7a9d5e4d47fbeab46f24efb44ee83e4fc725c212 (work), read-only, 2026-10-09.
 Specification: [USER_SPEC.md](https://github.com/fsship/FactorioNuclearAccumulator/blob/main/docs/USER_SPEC.md).
 This review inspected repository implementation and recorded engine logs; it did not rerun Factorio.

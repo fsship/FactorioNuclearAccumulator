@@ -1,5 +1,7 @@
 # 建筑回收电量携带机制：真实引擎测试
 
+历史报告说明（2026-10-10）：本报告对应当时的版本和目录。旧源码及测试脚本可在 Git 快照 `a67c4ca` 查看，原始日志已原样集中到 [test-results/](../test-results/README.md)，旧路径对照见 [history-paths.json](../test-results/history-paths.json)。历史复现命令须在对应快照的原源码目录执行；当前开发入口见 [REPOSITORY-STRUCTURE.md](REPOSITORY-STRUCTURE.md)。
+
 测试版本：Factorio 2.0.77、2.1.21，无 Space Age。使用独立存档、原生施工机器人、物流储物箱和蓝图；没有修改原 0.1.x 发布目录或 ZIP。
 
 ## 结论
@@ -45,7 +47,7 @@ item-with-tags 保存的是回收瞬间的真实 energy，放置后仍由原生�
 
 ## 文件与复现
 
-ammo/、tags/ 分别包含完整实验 Mod 源码和原生测试 harness。两套 logs/ 保存对应版本的数据加载及运行日志。
+实验源码和原生测试 harness 可从 Git 快照 `a67c4ca` 的 `charge-state-tests/` 或保留的 `releases/charge-state-tests.zip` 获取。原始日志分别位于 `test-results/experiments/ammo/` 和 `test-results/experiments/tags/`。
 在源码目录执行：
 
     python3 tests/run.py --factorio /path/to/factorio --work /tmp/a-new-directory --suite ammo
