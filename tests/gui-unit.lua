@@ -30,7 +30,9 @@ end
 local screen=gui(nil,{name='screen'})
 local p={index=1,valid=true,force=force,surface=surface,gui={screen=screen}}
 game={tick=0,get_player=function()return p end}
-dofile(arg[1] or 'mod/control.lua');init_fn()
+local control_path=arg[1] or 'mod/control.lua'
+package.path=(control_path:match('^(.*[/\\])')or '')..'?.lua;'..package.path
+dofile(control_path);init_fn()
 local e=surface.create_entity{name='nuclear-accumulator',position={x=0,y=0},force=force}
 handlers.script_raised_built{entity=e,name=defines.events.script_raised_built};p.selected=e
 handlers['na-open']{player_index=1}

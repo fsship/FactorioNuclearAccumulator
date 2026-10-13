@@ -1,12 +1,14 @@
 # Nuclear Accumulator
 
-完整 Factorio Mod，原版游戏即可运行，无需 Space Age。当前版本 **0.2.4** 使用一份源码，为 Factorio 2.0 和 2.1 生成不同清单的安装包。
+完整 Factorio Mod，原版游戏即可运行，无需 Space Age。当前版本 **0.3.0** 使用一份源码，为 Factorio 2.0 和 2.1 生成不同清单的安装包。
 
 建筑具有真实 36 GJ 原生电池、5 MW 充放电限制、配电站、雷达和电路信号。物品标签保存精确回收电量，包括零值；蓝图统一请求同一种物品。GUI 用原生进度条显示剩余电量。核爆保留原生空间分布与传播，满电共 200,000 个伤害弹道，按全局每 tick 最多 1,024 个调度，支持连锁和中途保存。
 
-- [Factorio 2.0.77 安装包](releases/factorio-2.0/nuclear-accumulator_0.2.4.zip)
-- [Factorio 2.1.21 experimental 安装包](releases/factorio-2.1/nuclear-accumulator_0.2.4.zip)
+- [Factorio 2.0.77 安装包](releases/factorio-2.0/nuclear-accumulator_0.3.0.zip)
+- [Factorio 2.1.21 experimental 安装包](releases/factorio-2.1/nuclear-accumulator_0.3.0.zip)
 - [使用说明与功能限制](mod/README.md) · [校验值](releases/SHA256SUMS.txt)
+
+新增 [强化裂变坦克](docs/ENHANCED-TANK.md)：15×17 全可用网格、10,000 基础血量、电力驱动/75% 稳态速度、原生远程驾驶、10 MW 内置裂变电站、六门 72 格/十倍基础伤害自动激光、雷达，以及 120 格主炮与远程炮弹。
 
 两个 ZIP 同名，下载目录区分游戏目标。只安装对应游戏版本的一个 ZIP。
 

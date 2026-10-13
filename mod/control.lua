@@ -1,8 +1,10 @@
 local MAIN, CAP = "nuclear-accumulator", 36000000000
 local ENERGY_TAG = "na-energy-joules"
+local Tank=require("runtime.tank")
 local W = defines.wire_connector_id
 local function ismain(e) return e.name==MAIN end
 local function init()
+ Tank.init()
  storage.stations=storage.stations or {}; storage.buckets=storage.buckets or {}
  storage.destroyed=storage.destroyed or {}; storage.gui=storage.gui or {}
  storage.blast_queue=storage.blast_queue or {jobs={},head=1,tail=0,emitted=0,completed=0}
@@ -113,6 +115,7 @@ local function item_energy(stack)
  return math.max(0,math.min(CAP,value)) -- Preserve fractional joules, including explicit zero.
 end
 local function built(event)
+ Tank.build(event)
  local e=event.entity
  if not valid(e) or not ismain(e) then return end
  local amount
@@ -134,6 +137,7 @@ end
 script.on_init(function() init() end)
 script.on_configuration_changed(function()
  init()
+ Tank.configuration()
  -- Repair registration on configuration changes; no legacy item/entity migration is supported.
  for _,surface in pairs(game.surfaces) do
   for _,e in ipairs(surface.find_entities_filtered{name=MAIN}) do create(e,0) end
@@ -145,6 +149,7 @@ end)
 script.on_event({defines.events.on_built_entity,defines.events.on_robot_built_entity,
  defines.events.script_raised_built,defines.events.script_raised_revive},built)
 script.on_event(defines.events.on_entity_cloned,function(event)
+ if Tank.cloned(event)then return end
  if ismain(event.destination) then create(event.destination,0)
  elseif event.destination.name=="na-battery" or event.destination.name=="na-radar" or event.destination.name=="na-output" then
   event.destination.destroy()
@@ -152,6 +157,7 @@ script.on_event(defines.events.on_entity_cloned,function(event)
 end)
 script.on_event({defines.events.on_player_mined_entity,defines.events.on_robot_mined_entity,
  defines.events.script_raised_destroy},function(event)
+ Tank.remove(event)
  local e=event.entity
  if valid(e) and ismain(e) then
   local s=storage.stations[e.unit_number]
@@ -168,10 +174,12 @@ script.on_event({defines.events.on_player_mined_entity,defines.events.on_robot_m
  end
 end)
 script.on_event(defines.events.on_entity_died,function(event)
+ Tank.remove(event)
  local e=event.entity
  if valid(e) and ismain(e) then blast(storage.stations[e.unit_number]) end
 end)
 script.on_event(defines.events.on_object_destroyed,function(event)
+ Tank.object_destroyed(event)
  local id=storage.destroyed[event.registration_number]
  local s=id and storage.stations[id]
  if s then clear(s) end
@@ -229,6 +237,7 @@ script.on_event(defines.events.on_gui_click,function(event)
  end
 end)
 script.on_event(defines.events.on_tick,function(event)
+ Tank.tick(event)
  advance_blast()
  for id in pairs(storage.buckets[event.tick%30]) do
   local s=storage.stations[id]

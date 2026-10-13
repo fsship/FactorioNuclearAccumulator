@@ -8,7 +8,7 @@ from scripts.package import build_package
 parser=argparse.ArgumentParser()
 parser.add_argument('--factorio',required=True,help='Path to headless Factorio binary')
 parser.add_argument('--work',default=str(REPO/'work/na-tests'),help='Fresh intermediate test directory')
-parser.add_argument('--suite',choices=['all','acceptance','lifecycle','tags','queue'],default='all')
+parser.add_argument('--suite',choices=['all','acceptance','lifecycle','tags','queue','tank'],default='all')
 parser.add_argument('--mod-zip',help='Install this exact ZIP instead of copying/adapting the source')
 args=parser.parse_args()
 exe=pathlib.Path(args.factorio).resolve()
@@ -17,7 +17,7 @@ version=subprocess.check_output([str(exe),'--version'],text=True)
 match=re.search(r'Version: (2\.[01])\.',version)
 if not match: raise SystemExit('Only Factorio 2.0 / 2.1 are supported by this test runner')
 minor=match[1]
-for suite in ['acceptance','lifecycle','tags','queue']:
+for suite in ['acceptance','lifecycle','tags','queue','tank']:
  if args.suite not in ['all',suite]:continue
  folder=work/suite
  if folder.exists():raise SystemExit(f'{folder} already exists; use a fresh --work path to preserve logs')
@@ -44,7 +44,7 @@ for suite in ['acceptance','lifecycle','tags','queue']:
  config.write_text(f'[path]\nread-data=__PATH__executable__/../../data\nwrite-data={runtime}\n')
  common=[str(exe),'--config',str(config),'--mod-directory',str(mods)]
  save=folder/'test.zip'
- for stage,tail in [('create',['--create',str(save)]),('runtime',['--benchmark',str(save),'--benchmark-ticks',{'acceptance':'3200','lifecycle':'4900','tags':'16000','queue':'350'}[suite],'--benchmark-runs','1'])]:
+ for stage,tail in [('create',['--create',str(save)]),('runtime',['--benchmark',str(save),'--benchmark-ticks',{'acceptance':'3200','lifecycle':'4900','tags':'16000','queue':'350','tank':'3400'}[suite],'--benchmark-runs','1'])]:
   logfile=folder/(stage+'.log')
   with logfile.open('w') as out:
    result=subprocess.run(common+tail,stdout=out,stderr=subprocess.STDOUT)
@@ -52,12 +52,12 @@ for suite in ['acceptance','lifecycle','tags','queue']:
   if result.returncode or 'NA TEST FAIL:' in logtext or 'Error Util.cpp' in logtext or 'Error: The mod' in logtext:
    raise SystemExit(f'{suite}/{stage} failed: inspect {logfile}')
   if stage=='runtime':
-   marker={'acceptance':'NA TEST COMPLETE','lifecycle':'NA LIFECYCLE COMPLETE','tags':'NA TAG COMPLETE','queue':'NA QUEUE COMPLETE'}[suite]
+   marker={'acceptance':'NA TEST COMPLETE','lifecycle':'NA LIFECYCLE COMPLETE','tags':'NA TAG COMPLETE','queue':'NA QUEUE COMPLETE','tank':'NA TANK COMPLETE'}[suite]
    if marker not in logtext:raise SystemExit(f'Missing completion marker in {logfile}')
   print(f'PASS {minor} {suite}/{stage}: {logfile}')
 
 
- if suite in ['tags','queue']:
+ if suite in ['tags','queue','tank']:
   # Benchmark mode intentionally does not write autosaves; briefly run a private local server.
   settings=folder/'server-settings.json'
   server_settings=json.loads((exe.parents[2]/'data/server-settings.example.json').read_text())
@@ -71,7 +71,7 @@ for suite in ['acceptance','lifecycle','tags','queue']:
    try:
     deadline=time.monotonic()+45; saved=None
     while time.monotonic()<deadline and server.poll() is None:
-     files=list((runtime/'saves').glob('*'+('na-inflight' if suite=='queue' else 'na-tags-recovered')+'*.zip'))
+     files=list((runtime/'saves').glob('*'+{'queue':'na-inflight','tags':'na-tags-recovered','tank':'na-tank-moving'}[suite]+'*.zip'))
      if files:
       try:
        with zipfile.ZipFile(files[0]) as archive:
@@ -87,7 +87,7 @@ for suite in ['acceptance','lifecycle','tags','queue']:
   with logfile.open('w') as out:
    result=subprocess.run(common+['--benchmark',str(saved),'--benchmark-ticks',('350' if suite=='queue' else '14000'),'--benchmark-runs','1'],stdout=out,stderr=subprocess.STDOUT)
   logtext=logfile.read_text()
-  marker='NA QUEUE COMPLETE' if suite=='queue' else 'NA TAG COMPLETE'
+  marker={'queue':'NA QUEUE COMPLETE','tags':'NA TAG COMPLETE','tank':'NA TANK COMPLETE'}[suite]
   if result.returncode or 'NA TEST FAIL:' in logtext or marker not in logtext:
    raise SystemExit(f'Mid-run {suite} reload failed: inspect {logfile}')
   print(f'PASS {minor} {suite}/mid-run-resume: {logfile}')

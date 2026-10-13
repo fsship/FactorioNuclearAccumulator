@@ -1,0 +1,66 @@
+   0.000 2026-10-13 13:54:37; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/mods" "--start-server" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/test.zip" "--server-settings" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/server-settings.json" "--port" "34291" "--bind" "127.0.0.1" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/runtime [29688/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.010 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.010 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.012 Running in headless mode
+   0.012 Audio is disabled
+   0.014 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.014 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.014 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.014 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.014 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.014 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.014 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.014 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.016 Loading mod core 0.0.0 (data.lua)
+   0.026 Loading mod base 2.1.21 (data.lua)
+   0.158 Loading mod nuclear-accumulator 0.3.0 (data.lua)
+   0.176 Loading mod recycler 2.1.21 (data.lua)
+   0.192 Loading mod base 2.1.21 (data-updates.lua)
+   0.205 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.231 Loading mod nuclear-accumulator 0.3.0 (data-final-fixes.lua)
+   0.313 Loading mod zz-na-tank-tests 0.1.0 (data-final-fixes.lua)
+   0.314 Script @__zz-na-tank-tests__/data-final-fixes.lua:23: NA TANK STATIC PASS: 15x17, health x5, remote driving, electric-only buffer, native six-laser parameters, long cannon rounds
+   0.371 Checksum for core: 2791302773
+   0.371 Checksum of base: 1834856243
+   0.371 Checksum of nuclear-accumulator: 2103047708
+   0.371 Checksum of recycler: 3293728126
+   0.371 Checksum of zz-na-tank-tests: 1050227354
+   0.543 Prototype list checksum: 1125430762
+   0.589 Info PlayerData.cpp:580: Local player-data.json available
+   0.589 Info GlobalContext.cpp:1336: Resetting config.
+   0.590 Factorio initialised
+   0.590 Info ServerSynchronizer.cpp:22: nextHeartbeatSequenceNumber(0) initialized Synchronizer nextTickClosureTick(0).
+   0.590 Info ServerMultiplayerManager.cpp:809: updateTick(18446744073709551615) changing state from(Ready) to(PreparedToHostGame)
+   0.590 Info ServerMultiplayerManager.cpp:809: updateTick(18446744073709551615) changing state from(PreparedToHostGame) to(CreatingGame)
+   0.590 Loading map /workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/test.zip: 1033386 bytes.
+   0.605 Loading level.dat: 2115160 bytes.
+   0.605 Info Scenario.cpp:152: Map version 2.1.21-11
+   0.635 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.635 Loading script.dat: 3321 bytes.
+   0.638 Checksum for script __level__/control.lua: 3704017257
+   0.640 Checksum for script __nuclear-accumulator__/control.lua: 2524258479
+   0.641 Checksum for script __zz-na-tank-tests__/control.lua: 2544001218
+   0.642 Info UDPSocket.cpp:38: Opening socket at (IP ADDR:({127.0.0.1:34291}))
+   0.642 Hosting game at IP ADDR:({127.0.0.1:34291})
+   0.642 Info ServerMultiplayerManager.cpp:809: updateTick(0) changing state from(CreatingGame) to(InGame)
+   0.643 Info CommandLineMultiplayer.cpp:297: Maximum segment size = 100; minimum segment size = 25; maximum-segment-size peer count = 10; minimum-segment-size peer count = 20
+   0.831 Script @__zz-na-tank-tests__/control.lua:56: NA TEST PASS: native automatic laser hit is exactly 10x base turret damage, 200 laser
+   0.922 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: separate-process save/load retains internal equipment and helpers
+   0.922 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: motor and isolated radar receive only debited real battery joules
+   0.922 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: no reactor and no stored energy means no electric acceleration
+   5.672 Script @__zz-na-tank-tests__/control.lua:70: NA TANK MEASURE steady_speed base=0.23528789147645 electric=0.17640929094729 ratio=0.74975932607628
+   5.672 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native electric driving steady speed is 75% of vanilla coal tank
+   5.672 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: internal fission accessory bus powers equipment in the independent user grid
+   5.672 Script @__zz-na-tank-tests__/control.lua:73: NA TANK MEASURE automatic_laser_hits=175
+   5.672 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: six parked unoccupied automatic lasers sustain native fire at 60 tiles
+   5.672 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: 72-tile laser range leaves 85-tile enemy and friendly targets undamaged
+   5.672 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: actual long-range cannon projectiles hit walls 100 tiles away
+   5.676 Info AppManager.cpp:424: Saving game as /workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/runtime/saves/na-tank-moving
+   5.725 Info AppManagerStates.cpp:2131: Saving finished
+   5.726 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: mid-run partially charged moving vehicle state and all native equipment references survive save/load

@@ -1,0 +1,78 @@
+   0.000 2026-10-13 13:54:40; Factorio 2.0.77 (build 84539, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/mods" "--start-server" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/test.zip" "--server-settings" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/server-settings.json" "--port" "34290" "--bind" "127.0.0.1" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/config.ini
+   0.000 Read data path: /workspace/work/research/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/runtime [29688/32205MB]
+   0.000 Binaries path: /workspace/work/research/factorio/bin
+   0.007 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.007 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.008 Running in headless mode
+   0.008 Audio is disabled
+   0.009 Info ModManager.cpp:449: FeatureFlag expansion-shaders = false
+   0.009 Info ModManager.cpp:449: FeatureFlag freezing = false
+   0.009 Info ModManager.cpp:449: FeatureFlag quality = false
+   0.009 Info ModManager.cpp:449: FeatureFlag rail-bridges = false
+   0.009 Info ModManager.cpp:449: FeatureFlag segmented-units = false
+   0.009 Info ModManager.cpp:449: FeatureFlag space-travel = false
+   0.009 Info ModManager.cpp:449: FeatureFlag spoiling = false
+   0.011 Loading mod core 0.0.0 (data.lua)
+   0.024 Loading mod base 2.0.77 (data.lua)
+   0.146 Loading mod nuclear-accumulator 0.3.0 (data.lua)
+   0.160 Loading mod base 2.0.77 (data-updates.lua)
+   0.169 Loading mod nuclear-accumulator 0.3.0 (data-final-fixes.lua)
+   0.263 Loading mod zz-na-tank-tests 0.1.0 (data-final-fixes.lua)
+   0.264 Script @__zz-na-tank-tests__/data-final-fixes.lua:23: NA TANK STATIC PASS: 15x17, health x5, remote driving, electric-only buffer, native six-laser parameters, long cannon rounds
+   0.312 Checksum for core: 4187927925
+   0.313 Checksum of base: 1879415942
+   0.313 Checksum of nuclear-accumulator: 2103047708
+   0.313 Checksum of zz-na-tank-tests: 1050227354
+   0.463 Prototype list checksum: 2085403015
+   0.508 Info PlayerData.cpp:64: Local player-data.json available, timestamp 1791899680
+   0.508 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   0.509 Info GlobalContext.cpp:1300: Resetting config.
+   0.509 Factorio initialised
+   0.509 Info ServerSynchronizer.cpp:22: nextHeartbeatSequenceNumber(0) initialized Synchronizer nextTickClosureTick(0).
+   0.509 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(Ready) to(PreparedToHostGame)
+   0.509 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(PreparedToHostGame) to(CreatingGame)
+   0.510 Loading map /workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/test.zip: 1102886 bytes.
+   0.525 Loading level.dat: 2313819 bytes.
+   0.525 Info Scenario.cpp:154: Map version 2.0.77-0
+   0.559 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.559 Loading script.dat: 3321 bytes.
+   0.561 Checksum for script __level__/control.lua: 3792629764
+   0.563 Checksum for script __nuclear-accumulator__/control.lua: 2524258479
+   0.564 Checksum for script __zz-na-tank-tests__/control.lua: 2544001218
+   0.565 Info UDPSocket.cpp:38: Opening socket at (IP ADDR:({127.0.0.1:34290}))
+   0.565 Hosting game at IP ADDR:({127.0.0.1:34290})
+   0.565 Info ServerMultiplayerManager.cpp:808: updateTick(0) changing state from(CreatingGame) to(InGame)
+   0.565 Info CommandLineMultiplayer.cpp:292: Maximum segment size = 100; minimum segment size = 25; maximum-segment-size peer count = 10; minimum-segment-size peer count = 20
+   0.740 Script @__zz-na-tank-tests__/control.lua:56: NA TEST PASS: native automatic laser hit is exactly 10x base turret damage, 200 laser
+   0.844 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: separate-process save/load retains internal equipment and helpers
+   0.844 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: motor and isolated radar receive only debited real battery joules
+   0.844 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: no reactor and no stored energy means no electric acceleration
+   5.594 Script @__zz-na-tank-tests__/control.lua:70: NA TANK MEASURE steady_speed base=0.23528789147645 electric=0.17640929094729 ratio=0.74975932607628
+   5.594 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native electric driving steady speed is 75% of vanilla coal tank
+   5.594 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: internal fission accessory bus powers equipment in the independent user grid
+   5.594 Script @__zz-na-tank-tests__/control.lua:73: NA TANK MEASURE automatic_laser_hits=175
+   5.594 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: six parked unoccupied automatic lasers sustain native fire at 60 tiles
+   5.594 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: 72-tile laser range leaves 85-tile enemy and friendly targets undamaged
+   5.594 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: actual long-range cannon projectiles hit walls 100 tiles away
+   5.598 Info AppManager.cpp:416: Saving game as /workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/runtime/saves/na-tank-moving
+   5.648 Info AppManagerStates.cpp:2111: Saving finished
+   5.649 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: mid-run partially charged moving vehicle state and all native equipment references survive save/load
+   5.717 Received SIGTERM, shutting down
+   5.717 Quitting: signal.
+   5.717 Info MainLoop.cpp:437: Saving map as /workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/test.zip
+   5.736 Info MainLoop.cpp:448: Saving progress: 0.061237%
+   5.753 Info MainLoop.cpp:448: Saving progress: 100.000000%
+   5.764 Info ServerMultiplayerManager.cpp:119: Disconnecting multiplayer connection.
+   5.764 Info ServerMultiplayerManager.cpp:808: updateTick(1218) changing state from(InGame) to(DisconnectingScheduled)
+   5.798 Info ServerMultiplayerManager.cpp:808: updateTick(1218) changing state from(DisconnectingScheduled) to(Disconnecting)
+   5.831 Info ServerMultiplayerManager.cpp:808: updateTick(1218) changing state from(Disconnecting) to(Disconnected)
+   5.831 Info ServerMultiplayerManager.cpp:146: Quitting multiplayer connection.
+   5.831 Info ServerMultiplayerManager.cpp:808: updateTick(1218) changing state from(Disconnected) to(Closed)
+   5.831 Info ServerMultiplayerManager.cpp:166: Deleting active scenario (global = true).
+   6.074 Info UDPSocket.cpp:238: Closing socket
+   6.074 Info UDPSocket.cpp:268: Socket closed
+   6.099 Goodbye
