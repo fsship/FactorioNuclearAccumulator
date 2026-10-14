@@ -1,7 +1,7 @@
 -- Logic test with API doubles; this does NOT claim a graphical client test.
 local handlers,init_fn={},nil
 storage={};defines={events={},wire_connector_id={circuit_red=1,circuit_green=2},wire_origin={script=1}}
-for _,n in ipairs({'on_built_entity','on_robot_built_entity','script_raised_built','script_raised_revive','on_entity_cloned','on_player_mined_entity','on_robot_mined_entity','script_raised_destroy','on_entity_died','on_object_destroyed','on_gui_opened','on_gui_closed','on_gui_click','on_tick','on_forces_merging'}) do defines.events[n]=n end
+for _,n in ipairs({'on_built_entity','on_robot_built_entity','script_raised_built','script_raised_revive','on_entity_cloned','on_player_mined_entity','on_robot_mined_entity','script_raised_destroy','on_entity_died','on_entity_damaged','on_script_trigger_effect','on_object_destroyed','on_gui_opened','on_gui_closed','on_gui_click','on_tick','on_forces_merging'}) do defines.events[n]=n end
 script={on_init=function(f)init_fn=f end,on_configuration_changed=function()end,
  on_event=function(ids,f) if type(ids)=='table' then for _,id in ipairs(ids)do handlers[id]=f end else handlers[ids]=f end end,
  register_on_object_destroyed=function(e)return e.unit_number end}

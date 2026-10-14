@@ -1,0 +1,208 @@
+   0.000 2026-10-14 00:51:45; Factorio 2.0.77 (build 84539, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/repair-final20/tank/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/repair-final20/tank/mods" "--benchmark" "/workspace/FactorioNuclearAccumulator/work/repair-final20/tank/runtime/saves/na-tank-repairing.zip" "--benchmark-ticks" "14000" "--benchmark-runs" "1" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/repair-final20/tank/config.ini
+   0.000 Read data path: /workspace/work/research/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/repair-final20/tank/runtime [29627/32205MB]
+   0.000 Binaries path: /workspace/work/research/factorio/bin
+   0.009 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.009 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.009 Running in headless mode
+   0.010 Audio is disabled
+   0.010 Info ModManager.cpp:449: FeatureFlag expansion-shaders = false
+   0.010 Info ModManager.cpp:449: FeatureFlag freezing = false
+   0.010 Info ModManager.cpp:449: FeatureFlag quality = false
+   0.010 Info ModManager.cpp:449: FeatureFlag rail-bridges = false
+   0.010 Info ModManager.cpp:449: FeatureFlag segmented-units = false
+   0.010 Info ModManager.cpp:449: FeatureFlag space-travel = false
+   0.010 Info ModManager.cpp:449: FeatureFlag spoiling = false
+   0.013 Loading mod core 0.0.0 (data.lua)
+   0.024 Loading mod base 2.0.77 (data.lua)
+   0.130 Loading mod nuclear-accumulator 0.3.1 (data.lua)
+   0.148 Loading mod base 2.0.77 (data-updates.lua)
+   0.161 Loading mod nuclear-accumulator 0.3.1 (data-final-fixes.lua)
+   0.235 Loading mod zz-na-tank-tests 0.1.0 (data-final-fixes.lua)
+   0.235 Script @__zz-na-tank-tests__/data-final-fixes.lua:23: NA TANK STATIC PASS: 15x17, health x5, remote driving, electric-only buffer, native six-laser parameters, long cannon rounds
+   0.295 Checksum for core: 4187927925
+   0.295 Checksum of base: 1879415942
+   0.295 Checksum of nuclear-accumulator: 2407912216
+   0.295 Checksum of zz-na-tank-tests: 1050227354
+   0.470 Prototype list checksum: 2085403015
+   0.514 Info PlayerData.cpp:64: Local player-data.json available, timestamp 1791939105
+   0.514 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   0.515 Info GlobalContext.cpp:1300: Resetting config.
+   0.515 Factorio initialised
+   0.515 Loading map /workspace/FactorioNuclearAccumulator/work/repair-final20/tank/runtime/saves/na-tank-repairing.zip: 969191 bytes.
+   0.529 Loading level.dat: 1884744 bytes.
+   0.529 Info Scenario.cpp:154: Map version 2.0.77-0
+   0.555 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.555 Loading script.dat: 4491 bytes.
+   0.557 Checksum for script __level__/control.lua: 3792629764
+   0.559 Checksum for script __nuclear-accumulator__/control.lua: 3600154491
+   0.559 Checksum for script __zz-na-tank-tests__/control.lua: 1444554292
+Running update 0
+   0.560 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: saving during active regeneration neither resets the cooldown nor grants offline repair
+Running update 100
+Running update 200
+   0.647 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: automatic lasers and driver fire stopping both allow delayed repair
+   0.647 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: moving battery-powered radar completes genuine native sector scans without external grid
+   0.647 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native built-in reactor remains installed
+Running update 300
+   0.663 Script @__zz-na-tank-tests__/control.lua:144: NA TANK MEASURE isolated_radar_plus_idle_drive J/s=300000
+   0.663 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: radar consumes approximately 300kW of stored internal energy with reactor removed
+   0.663 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: energy credited to radar and motor exactly equals battery energy debited
+   0.663 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: cloning does not duplicate built-in stored energy
+   0.663 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: ordinary removal cleans all internal helpers without a nuclear explosion
+   0.663 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: cloned internal helper is discarded without reading a destroyed LuaEntity
+   0.842 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: cross-surface movement relocates internal grid and radar safely
+   0.842 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native internal laser source follows vehicle position
+   0.842 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: vehicle death cleans internal system
+   0.843 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native vehicle mining returns its item-with-entity-data
+   0.843 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: mined native vehicle item retains the full equipment grid
+   0.843 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native vehicle item retains exact user equipment energy on mining
+   0.843 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native mining cleans private reactor/weapon/radar helpers
+Running update 400
+   0.850 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: repair stops exactly at the real maximum health
+   0.850 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: different tanks keep independent repair and combat state
+   0.850 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: lethal damage removes the vehicle and repair state without resurrection
+Running update 500
+Running update 600
+Running update 700
+Running update 800
+Running update 900
+Running update 1000
+Running update 1100
+   1.094 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: actual assembling machine manufactures the enhanced tank from its complete recipe
+   1.094 Script @__zz-na-tank-tests__/control.lua:187: NA TANK COMPLETE
+Running update 1200
+Running update 1300
+Running update 1400
+Running update 1500
+Running update 1600
+Running update 1700
+Running update 1800
+Running update 1900
+Running update 2000
+Running update 2100
+Running update 2200
+Running update 2300
+Running update 2400
+Running update 2500
+Running update 2600
+Running update 2700
+Running update 2800
+Running update 2900
+Running update 3000
+Running update 3100
+Running update 3200
+Running update 3300
+Running update 3400
+Running update 3500
+Running update 3600
+Running update 3700
+Running update 3800
+Running update 3900
+Running update 4000
+Running update 4100
+Running update 4200
+Running update 4300
+Running update 4400
+Running update 4500
+Running update 4600
+Running update 4700
+Running update 4800
+Running update 4900
+Running update 5000
+Running update 5100
+Running update 5200
+Running update 5300
+Running update 5400
+Running update 5500
+Running update 5600
+Running update 5700
+Running update 5800
+Running update 5900
+Running update 6000
+Running update 6100
+Running update 6200
+Running update 6300
+Running update 6400
+Running update 6500
+Running update 6600
+Running update 6700
+Running update 6800
+Running update 6900
+Running update 7000
+Running update 7100
+Running update 7200
+Running update 7300
+Running update 7400
+Running update 7500
+Running update 7600
+Running update 7700
+Running update 7800
+Running update 7900
+Running update 8000
+Running update 8100
+Running update 8200
+Running update 8300
+Running update 8400
+Running update 8500
+Running update 8600
+Running update 8700
+Running update 8800
+Running update 8900
+Running update 9000
+Running update 9100
+Running update 9200
+Running update 9300
+Running update 9400
+Running update 9500
+Running update 9600
+Running update 9700
+Running update 9800
+Running update 9900
+Running update 10000
+Running update 10100
+Running update 10200
+Running update 10300
+Running update 10400
+Running update 10500
+Running update 10600
+Running update 10700
+Running update 10800
+Running update 10900
+Running update 11000
+Running update 11100
+Running update 11200
+Running update 11300
+Running update 11400
+Running update 11500
+Running update 11600
+Running update 11700
+Running update 11800
+Running update 11900
+Running update 12000
+Running update 12100
+Running update 12200
+Running update 12300
+Running update 12400
+Running update 12500
+Running update 12600
+Running update 12700
+Running update 12800
+Running update 12900
+Running update 13000
+Running update 13100
+Running update 13200
+Running update 13300
+Running update 13400
+Running update 13500
+Running update 13600
+Running update 13700
+Running update 13800
+Running update 13900
+  Performed 14000 updates in 3983.186 ms
+  avg: 0.285 ms, min: 0.106 ms, max: 166.623 ms
+  checksum: 1973763937
+   4.598 Goodbye

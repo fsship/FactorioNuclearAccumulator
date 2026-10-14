@@ -26,6 +26,8 @@ laser.attack_parameters=table.deepcopy(data.raw["electric-turret"]["laser-turret
 laser.attack_parameters.range=laser.attack_parameters.range*3
 laser.attack_parameters.damage_modifier=laser.attack_parameters.damage_modifier*10
 laser.attack_parameters.ammo_type.action.action_delivery.max_length=laser.attack_parameters.range
+-- Only this private weapon emits the event; ordinary lasers and nuclear damage stay native.
+laser.attack_parameters.ammo_type.action.action_delivery.source_effects={{type="script",effect_id="na-tank-weapon-fired"}}
 laser.energy_source={type="electric",usage_priority="secondary-input",buffer_capacity="801kJ"}
 local internal_items={}
 for _,e in ipairs({reactor,battery,laser}) do

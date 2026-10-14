@@ -6,7 +6,7 @@
 
 ```sh
 python3 tests/run.py --factorio /path/to/factorio/bin/x64/factorio --work work/new-test-run
-python3 tests/run.py --factorio /path/to/factorio/bin/x64/factorio --mod-zip releases/factorio-2.0/nuclear-accumulator_0.3.0.zip --work work/new-zip-run
+python3 tests/run.py --factorio /path/to/factorio/bin/x64/factorio --mod-zip releases/factorio-2.0/nuclear-accumulator_0.3.1.zip --work work/new-zip-run
 lua5.2 tests/gui-unit.lua mod/control.lua
 ```
 
@@ -16,7 +16,7 @@ lua5.2 tests/gui-unit.lua mod/control.lua
 - lifecycle：真实机器人、回收余电、蓝图、实际采矿产出、雷达扫描、克隆和清理。
 - tags：精确/零标签、物流、重复回收、真正配方制造、蓝图线路，以及回收后跨进程保存/读取。
 - queue：全局 1,024 调度额度、精确总数、阵营合并、地表删除和爆炸中途保存/读取。
-- tank：电驱、75% 速度、六门自动激光、120 格主炮/实弹、雷达扣电、真实制造回收、跨地表和行驶中保存。
+- tank：电驱、75% 速度、六门自动激光、120 格主炮/实弹、雷达扣电、真实制造回收、跨地表、脱战缓慢修复、受击/自动激光/驾驶者开火中断，以及冷却期和回血期跨进程保存读取。
 
 tags、queue 和 tank 的保存测试短暂运行只绑定 127.0.0.1 的私有服务器，需要本地 socket 权限。其他两套件不启动服务器。工作路径必须全新，已有套件目录会拒绝覆盖；源码及玩家已有游戏存档均不受影响。
 

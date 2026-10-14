@@ -2,11 +2,15 @@
 -- Target acquisition, laser damage, equipment generation and vehicle physics remain native.
 local M={}
 local MAIN="na-enhanced-tank"
+local REPAIR_DELAY=600 -- Ten seconds since the most recent damage or weapon activity.
+local REPAIR_INTERVAL=6
+local REPAIR_PER_SECOND=50
 local metadata
 local laser_positions={{5,0},{5,2},{0,4},{2,4},{4,4},{6,4}}
 local function valid(e)return e and e.valid end
 function M.init()
  storage.tank_system=storage.tank_system or {vehicles={},destroyed={}}
+ storage.tank_system.cores=storage.tank_system.cores or {}
 end
 local function helper(t,name)
  local e=t.main.surface.create_entity{name=name,position=t.main.position,force=t.main.force,quality="normal"}
@@ -15,7 +19,9 @@ local function helper(t,name)
  return e
 end
 local function core(t)
+ if t.core_id then storage.tank_system.cores[t.core_id]=nil end
  t.core=helper(t,"na-tank-core")
+ t.core_id=t.core.unit_number;storage.tank_system.cores[t.core_id]=t.id
  local grid=t.core.grid
  local reactor=assert(grid.put{name="na-tank-reactor",position={0,0}});reactor.energy=0
  t.battery=assert(grid.put{name="na-tank-battery",position={4,0}});t.battery.energy=0
@@ -26,7 +32,7 @@ local function core(t)
 end
 local function create(e)
  if not valid(e) or e.name~=MAIN or storage.tank_system.vehicles[e.unit_number] then return end
- local t={main=e,id=e.unit_number,motor_debit=0,radar_debit=0,equipment_debit=0}
+ local t={main=e,id=e.unit_number,motor_debit=0,radar_debit=0,equipment_debit=0,last_combat_tick=game.tick}
  e.burner.remaining_burning_fuel=0 -- Rebuilds/clones never reinterpret an old fuel record as fresh power.
  storage.tank_system.vehicles[t.id]=t
  core(t);t.radar=helper(t,"na-tank-radar");t.radar.energy=0
@@ -36,11 +42,18 @@ end
 local function clear(t)
  storage.tank_system.vehicles[t.id]=nil
  storage.tank_system.destroyed[t.registration]=nil
+ if t.core_id then storage.tank_system.cores[t.core_id]=nil end
  for _,name in ipairs({"core","radar"})do if valid(t[name])then t[name].destroy() end end
 end
 function M.build(event)create(event.entity)end
 function M.configuration()
  M.init()
+ for _,t in pairs(storage.tank_system.vehicles)do
+  t.last_combat_tick=t.last_combat_tick or game.tick
+  if valid(t.core)then
+   t.core_id=t.core.unit_number;storage.tank_system.cores[t.core_id]=t.id
+  end
+ end
  for _,surface in pairs(game.surfaces)do
   for _,e in ipairs(surface.find_entities_filtered{name=MAIN})do create(e)end
  end
@@ -59,6 +72,33 @@ end
 function M.object_destroyed(event)
  local id=storage.tank_system.destroyed[event.registration_number]
  local t=id and storage.tank_system.vehicles[id];if t then clear(t)end
+end
+function M.damaged(event)
+ local e=event.entity
+ -- Shielded/resisted incoming hits also count as combat; a zero-damage call does not.
+ if not valid(e)or event.original_damage_amount<=0 then return end
+ local t=storage.tank_system.vehicles[e.unit_number]
+ if t then t.last_combat_tick=event.tick end
+end
+function M.weapon_fired(event)
+ if event.effect_id~="na-tank-weapon-fired"or not valid(event.source_entity)then return end
+ local id=storage.tank_system.cores[event.source_entity.unit_number]
+ local t=id and storage.tank_system.vehicles[id]
+ if t then t.last_combat_tick=event.tick end
+end
+local function shooting(operator)
+ return valid(operator)and operator.shooting_state.state~=defines.shooting.not_shooting
+end
+local function repair(t,tick)
+ -- Read native driver/passenger input also while reloading or shooting at empty terrain.
+ if shooting(t.main.get_driver())or shooting(t.main.get_passenger())then t.last_combat_tick=tick end
+ t.last_combat_tick=t.last_combat_tick or tick
+ if tick%REPAIR_INTERVAL~=t.id%REPAIR_INTERVAL or tick-t.last_combat_tick<REPAIR_DELAY then return end
+ local health=t.main.health
+ if health and health>0 then
+  local maximum=t.main.prototype.get_max_health(t.main.quality)
+  if health<maximum then t.main.health=math.min(maximum,health+REPAIR_PER_SECOND*REPAIR_INTERVAL/60)end
+ end
 end
 local function debit(t,request)
  local amount=math.max(0,math.min(request,t.battery.energy))
@@ -86,6 +126,7 @@ function M.tick(event)
    end
    if not valid(t.radar)then t.radar=helper(t,"na-tank-radar");t.radar.energy=0 end
    t.core=move(t,t.core);t.radar=move(t,t.radar);t.core.orientation=t.main.orientation
+   repair(t,event.tick)
    metadata=metadata or prototypes.mod_data["na-tank-metadata"].data
    local meta=metadata
    local burner=t.main.burner
@@ -117,6 +158,7 @@ remote.add_interface(MAIN,{inspect=function(id)
  local t=storage.tank_system and storage.tank_system.vehicles[id];if not t or not valid(t.main)then return nil end
  return {main=t.main,core=t.core,radar=t.radar,battery=t.battery,lasers=t.lasers,
   energy=valid(t.battery)and t.battery.energy or 0,motor_buffer=t.main.burner.remaining_burning_fuel,
-  motor_debit=t.motor_debit,radar_debit=t.radar_debit,equipment_debit=t.equipment_debit}
+  motor_debit=t.motor_debit,radar_debit=t.radar_debit,equipment_debit=t.equipment_debit,
+  last_combat_tick=t.last_combat_tick,repair_delay_ticks=REPAIR_DELAY,repair_hp_per_second=REPAIR_PER_SECOND}
 end})
 return M

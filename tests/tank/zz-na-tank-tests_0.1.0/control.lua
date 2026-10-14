@@ -29,6 +29,8 @@ script.on_init(function()
  local a=inspect(storage.empty);a.core.grid.take{position={0,0}};a.battery.energy=0
  storage.empty.speed=0;storage.empty.burner.remaining_burning_fuel=0
  storage.laser_tank=make(s,{-200,40})
+ storage.repair=make(s,{-350,180})
+ storage.protected=make(s,{-350,140})
  storage.near=s.create_entity{name="na-tank-test-target",position={-140,40},force="enemy"}
  storage.far=s.create_entity{name="na-tank-test-target",position={-115,40},force="enemy"}
  storage.friend=s.create_entity{name="na-tank-test-target",position={-170,45},force="player"}
@@ -65,6 +67,30 @@ script.on_event(defines.events.on_tick,function(event)
   check(a.core.valid and a.radar.valid and a.battery.valid,"separate-process save/load retains internal equipment and helpers")
   check(a.motor_debit>0 and a.radar_debit>0,"motor and isolated radar receive only debited real battery joules")
   check(storage.empty.speed==0 and inspect(storage.empty).energy==0,"no reactor and no stored energy means no electric acceleration")
+ elseif tick==100 then
+  for _,e in ipairs({storage.repair,storage.protected,storage.laser_tank,storage.cannon})do
+   e.damage(1000,"enemy","electric")
+   check(e.health==9000,"real electric damage is applied before passive repair")
+  end
+ elseif tick==400 then
+  check(storage.repair.health==9000,"recent damage prevents immediate repair")
+  storage.repair.damage(1000,"enemy","electric")
+  check(inspect(storage.repair).last_combat_tick==400,"a repeated hit restarts the full out-of-combat cooldown")
+ elseif tick==999 then
+  check(storage.repair.health==8000,"no repair occurs during the full 600-tick cooldown after the last hit")
+ elseif tick==1120 then
+  local healed=storage.repair.health-8000
+  log("NA TANK REPAIR MEASURE 120-tick heal="..healed)
+  check(healed>=99.95 and healed<=105.05,"out-of-combat regeneration is 50 HP per game second")
+  check(storage.laser_tank.health==9000 and inspect(storage.laser_tank).last_combat_tick>1080,
+   "native automatic laser firing prevents passive healing even without incoming attacks")
+  check(storage.cannon.health==9000 and inspect(storage.cannon).last_combat_tick==1120,
+   "native driver weapon input prevents passive healing while attacking")
+  storage.protected.damage(100,"enemy","fire")
+  storage.protected_health=storage.protected.health
+  check(inspect(storage.protected).last_combat_tick==1120,"an incoming hit fully blocked by native resistance still restarts combat cooldown")
+ elseif tick==1150 then
+  storage.repair.damage(200,"enemy","electric");storage.repair_waiting_health=storage.repair.health
  elseif tick==1200 then
   local ratio=storage.mobile.speed/storage.base.speed
   log("NA TANK MEASURE steady_speed base="..storage.base.speed.." electric="..storage.mobile.speed.." ratio="..ratio)
@@ -84,7 +110,26 @@ script.on_event(defines.events.on_tick,function(event)
   local a=inspect(storage.mobile)
   check(a.core.valid and a.radar.valid and a.battery.valid and math.abs(a.energy-storage.saved_energy)<1000000,
    "mid-run partially charged moving vehicle state and all native equipment references survive save/load")
+  check(inspect(storage.repair).last_combat_tick==1150 and storage.repair.health==storage.repair_waiting_health,
+   "saved repair cooldown retains the last-hit tick and wounded health after process restart")
+ elseif tick==1210 then
+  storage.near.destroy()
+ elseif tick==1700 then
+  check(storage.protected.health==storage.protected_health,"resisted attacks pause repair despite causing no HP loss")
+ elseif tick==1749 then
+  check(storage.repair.health==storage.repair_waiting_health,"damage during regeneration immediately stops healing for another ten seconds")
+ elseif tick==1810 then
+  check(storage.repair.health>=storage.repair_waiting_health+49.95 and storage.repair.health<=storage.repair_waiting_health+55.05,
+   "healing resumes at the same slow rate after a new damage cooldown")
+ elseif tick==2100 then
+  storage.repair_saved_health=storage.repair.health
+  check(storage.repair_saved_health>storage.repair_waiting_health+250,"active regeneration has progressed before the second real save")
+  if game.is_multiplayer()then game.server_save("na-tank-repairing")end
+ elseif tick==2101 then
+  check(storage.repair.health>=storage.repair_saved_health and storage.repair.health<=storage.repair_saved_health+5,
+   "saving during active regeneration neither resets the cooldown nor grants offline repair")
  elseif tick==2400 then
+  check(storage.laser_tank.health>9000 and storage.cannon.health>9000,"automatic lasers and driver fire stopping both allow delayed repair")
   check(storage.scans>0,"moving battery-powered radar completes genuine native sector scans without external grid")
   local a=inspect(storage.laser_tank)
   check(a.core.grid.get({0,0}).name=="na-tank-reactor","native built-in reactor remains installed")
@@ -128,6 +173,14 @@ script.on_event(defines.events.on_tick,function(event)
   check(inv[1].grid.equipment[1].energy==1234567.89,"native vehicle item retains exact user equipment energy on mining")
   check(not a.core.valid and not a.radar.valid,"native mining cleans private reactor/weapon/radar helpers")
   inv.destroy()
+ elseif tick==2500 then
+  storage.repair.health=9998
+ elseif tick==2512 then
+  check(storage.repair.health==storage.repair.prototype.get_max_health(storage.repair.quality),"repair stops exactly at the real maximum health")
+  check(storage.empty.health==10000,"different tanks keep independent repair and combat state")
+  local a=inspect(storage.repair);local id=storage.repair.unit_number
+  storage.repair.damage(100000,"enemy","electric")
+  check(not a.core.valid and not a.radar.valid and not remote.call(NAME,"inspect",id),"lethal damage removes the vehicle and repair state without resurrection")
  elseif tick==3300 then
   local inv=storage.factory.get_inventory(defines.inventory.crafter_output or defines.inventory.assembling_machine_output)
   check(inv[1].valid_for_read and inv[1].name==NAME,"actual assembling machine manufactures the enhanced tank from its complete recipe")

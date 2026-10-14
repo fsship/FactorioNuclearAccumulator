@@ -1,0 +1,134 @@
+   0.000 2026-10-14 00:51:31; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/repair-final21/tank/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/repair-final21/tank/mods" "--benchmark" "/workspace/FactorioNuclearAccumulator/work/repair-final21/tank/test.zip" "--benchmark-ticks" "3400" "--benchmark-runs" "1" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/repair-final21/tank/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/repair-final21/tank/runtime [29632/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.008 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.008 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.010 Running in headless mode
+   0.010 Audio is disabled
+   0.011 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.011 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.011 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.011 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.011 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.011 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.011 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.011 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.013 Loading mod core 0.0.0 (data.lua)
+   0.024 Loading mod base 2.1.21 (data.lua)
+   0.161 Loading mod nuclear-accumulator 0.3.1 (data.lua)
+   0.176 Loading mod recycler 2.1.21 (data.lua)
+   0.189 Loading mod base 2.1.21 (data-updates.lua)
+   0.200 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.216 Loading mod nuclear-accumulator 0.3.1 (data-final-fixes.lua)
+   0.291 Loading mod zz-na-tank-tests 0.1.0 (data-final-fixes.lua)
+   0.292 Script @__zz-na-tank-tests__/data-final-fixes.lua:23: NA TANK STATIC PASS: 15x17, health x5, remote driving, electric-only buffer, native six-laser parameters, long cannon rounds
+   0.353 Checksum for core: 2791302773
+   0.353 Checksum of base: 1834856243
+   0.353 Checksum of nuclear-accumulator: 2407912216
+   0.353 Checksum of recycler: 3293728126
+   0.353 Checksum of zz-na-tank-tests: 1050227354
+   0.516 Prototype list checksum: 1125430762
+   0.565 Info PlayerData.cpp:580: Local player-data.json available
+   0.566 Info GlobalContext.cpp:1336: Resetting config.
+   0.566 Factorio initialised
+   0.566 Loading map /workspace/FactorioNuclearAccumulator/work/repair-final21/tank/test.zip: 1314619 bytes.
+   0.582 Loading level.dat: 2649996 bytes.
+   0.582 Info Scenario.cpp:152: Map version 2.1.21-11
+   0.614 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.614 Loading script.dat: 4379 bytes.
+   0.616 Checksum for script __level__/control.lua: 3704017257
+   0.618 Checksum for script __nuclear-accumulator__/control.lua: 3600154491
+   0.619 Checksum for script __zz-na-tank-tests__/control.lua: 1444554292
+Running update 0
+   0.645 Script @__zz-na-tank-tests__/control.lua:58: NA TEST PASS: native automatic laser hit is exactly 10x base turret damage, 200 laser
+   0.653 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: separate-process save/load retains internal equipment and helpers
+   0.653 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: motor and isolated radar receive only debited real battery joules
+   0.653 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: no reactor and no stored energy means no electric acceleration
+Running update 100
+   0.670 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: real electric damage is applied before passive repair
+   0.670 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: real electric damage is applied before passive repair
+   0.670 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: real electric damage is applied before passive repair
+   0.670 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: real electric damage is applied before passive repair
+Running update 200
+Running update 300
+Running update 400
+   0.786 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: recent damage prevents immediate repair
+   0.786 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: a repeated hit restarts the full out-of-combat cooldown
+Running update 500
+Running update 600
+Running update 700
+Running update 800
+Running update 900
+   1.001 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: no repair occurs during the full 600-tick cooldown after the last hit
+Running update 1000
+Running update 1100
+   1.043 Script @__zz-na-tank-tests__/control.lua:83: NA TANK REPAIR MEASURE 120-tick heal=99.99755859375
+   1.043 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: out-of-combat regeneration is 50 HP per game second
+   1.043 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native automatic laser firing prevents passive healing even without incoming attacks
+   1.043 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native driver weapon input prevents passive healing while attacking
+   1.043 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: an incoming hit fully blocked by native resistance still restarts combat cooldown
+Running update 1200
+   1.076 Script @__zz-na-tank-tests__/control.lua:96: NA TANK MEASURE steady_speed base=0.23528789147645 electric=0.17640929094729 ratio=0.74975932607628
+   1.076 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native electric driving steady speed is 75% of vanilla coal tank
+   1.076 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: internal fission accessory bus powers equipment in the independent user grid
+   1.076 Script @__zz-na-tank-tests__/control.lua:99: NA TANK MEASURE automatic_laser_hits=175
+   1.076 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: six parked unoccupied automatic lasers sustain native fire at 60 tiles
+   1.076 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: 72-tile laser range leaves 85-tile enemy and friendly targets undamaged
+   1.076 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: actual long-range cannon projectiles hit walls 100 tiles away
+   1.077 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: mid-run partially charged moving vehicle state and all native equipment references survive save/load
+   1.077 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: saved repair cooldown retains the last-hit tick and wounded health after process restart
+Running update 1300
+Running update 1400
+Running update 1500
+Running update 1600
+Running update 1700
+   1.228 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: resisted attacks pause repair despite causing no HP loss
+   1.241 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: damage during regeneration immediately stops healing for another ten seconds
+Running update 1800
+   1.256 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: healing resumes at the same slow rate after a new damage cooldown
+Running update 1900
+Running update 2000
+Running update 2100
+   1.338 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: active regeneration has progressed before the second real save
+   1.338 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: saving during active regeneration neither resets the cooldown nor grants offline repair
+Running update 2200
+Running update 2300
+Running update 2400
+   1.422 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: automatic lasers and driver fire stopping both allow delayed repair
+   1.422 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: moving battery-powered radar completes genuine native sector scans without external grid
+   1.422 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native built-in reactor remains installed
+   1.439 Script @__zz-na-tank-tests__/control.lua:144: NA TANK MEASURE isolated_radar_plus_idle_drive J/s=300000
+   1.439 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: radar consumes approximately 300kW of stored internal energy with reactor removed
+   1.439 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: energy credited to radar and motor exactly equals battery energy debited
+   1.440 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: cloning does not duplicate built-in stored energy
+   1.440 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: ordinary removal cleans all internal helpers without a nuclear explosion
+   1.440 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: cloned internal helper is discarded without reading a destroyed LuaEntity
+   1.640 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: cross-surface movement relocates internal grid and radar safely
+   1.640 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native internal laser source follows vehicle position
+   1.640 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: vehicle death cleans internal system
+   1.640 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native vehicle mining returns its item-with-entity-data
+   1.640 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: mined native vehicle item retains the full equipment grid
+   1.641 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native vehicle item retains exact user equipment energy on mining
+   1.641 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native mining cleans private reactor/weapon/radar helpers
+Running update 2500
+   1.651 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: repair stops exactly at the real maximum health
+   1.651 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: different tanks keep independent repair and combat state
+   1.651 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: lethal damage removes the vehicle and repair state without resurrection
+Running update 2600
+Running update 2700
+Running update 2800
+Running update 2900
+Running update 3000
+Running update 3100
+Running update 3200
+Running update 3300
+   1.828 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: actual assembling machine manufactures the enhanced tank from its complete recipe
+   1.828 Script @__zz-na-tank-tests__/control.lua:187: NA TANK COMPLETE
+  Performed 3400 updates in 1228.189 ms
+  avg: 0.361 ms, min: 0.095 ms, max: 191.915 ms
+  checksum: 845504938
+   1.903 Goodbye

@@ -6,6 +6,8 @@
 - `experiments/ammo/`、`experiments/tags/`：历史弹匣/物品标签实验日志。
 - [history-paths.json](history-paths.json)：旧路径、现路径、SHA-256 和对应 Git 源码快照，可逐文件核对迁移。
 - `releases/0.2.4/`：单一源码结构整理后新执行的验证记录，按游戏目标分开。
+- `releases/0.3.0/`：强化裂变坦克初版的原生驾驶、武器、供电与保存读取验证。
+- [releases/0.3.1/](releases/0.3.1/README.md)：两版最终 ZIP 的全部五套件回归、脱战修复、受击/开火中断，以及冷却期与回血期跨进程保存读取。
 
 历史 Mod 源码、旧测试脚本和报告均可在 Git 快照 `a67c4ca` 找到，旧 ZIP 保留在仓库 `releases/`。查看文件或重跑旧性能对照时使用独立工作树：
 

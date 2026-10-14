@@ -1,0 +1,6 @@
+PASS Lua 5.2 syntax: 19 source and test files
+PASS JSON manifests and Python syntax
+PASS existing GUI and exact-charge item logic (API doubles)
+PASS final ZIP source-byte equality and target parity except info.json
+PASS all current and historical release SHA-256 checksums
+PASS English and Simplified Chinese localization key parity, no duplicates

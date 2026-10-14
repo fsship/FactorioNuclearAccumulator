@@ -1,0 +1,2 @@
+PASS: GUI open, actual telemetry caption, confirmation gate, expiry, manual one-shot detonation (API doubles)
+PASS: player consumed-inventory and robot stack paths, exact mining/replacement, explicit zero, invalid tags and unknown state (API doubles)

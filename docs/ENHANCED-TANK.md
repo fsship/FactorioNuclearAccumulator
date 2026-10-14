@@ -1,6 +1,6 @@
 # 强化裂变坦克
 
-新增至当前 Mod，版本 0.3.0，仍维护一份 `mod/` 源码。支持原版 2.0.77 和 2.1.21 experimental，不依赖 Space Age。
+新增至当前 Mod，当前版本 0.3.1，仍维护一份 `mod/` 源码。支持原版 2.0.77 和 2.1.21 experimental，不依赖 Space Age。
 
 ## 参数
 
@@ -18,6 +18,7 @@
 | 激光射击 | 沿用 40 tick 冷却、800 kJ/次，停放或无人驾驶时也自动选敌 |
 | 雷达 | 原生揭示与扫描，额定 300 kW，从内置电池扣电 |
 | 外加装备供电 | 内置电池向玩家装备网格提供最高 1.5 MW 接口 |
+| 自动修复 | 脱战 10 秒后恢复 50 HP/秒，受击或开火重新计时 |
 
 研究“强化裂变坦克”解锁车辆和四种远程炮弹改装配方。前置为原版坦克、裂变反应堆装备、激光炮塔和电池组 MK2；科学包/研究时间沿用裂变装备科技。制造 60 秒，材料为：坦克×1、裂变反应堆装备×1、激光炮塔×6、雷达×1、电池组 MK2×1、电动机×40、处理器×100、轻质结构×50。
 
@@ -39,6 +40,14 @@
 
 速度经两版物理实测校准：最高速度燃料因子保持 1，以 0.75² 推力因子达到 75% 稳态速度。两版对小于一的最高速度因子处理不同，直接设 0.75 不能保证目标。对照以同地形、普通煤炭、无速度改写 Mod 的原版坦克为准，未替换加速/转向物理。
 
+## 脱战自动修复
+
+0.3.1 为强化坦克加入内置被动修复，无需修理包，不占装备格，也不从电池额外扣电。最后一次受到攻击、内置激光开火或驾驶者/乘客发出射击指令后，等待 **600 tick（10 秒）**；随后每 **6 tick（0.1 秒）** 恢复 **5 HP**，约 **50 HP/秒**。以基础 10,000 HP 计算，从极低血量回满约需 200 秒，加上初始 10 秒冷却。普通行驶不打断修复。
+
+新的伤害或射击立即重置冷却。原生抗性完全阻挡的正伤害攻击也算战斗；持续射击指令（包含装填或向空地射击）继续计时。激光使用仅属于该辅助系统的原生 `script` 源效果报告开火；受击事件由引擎过滤为主坦克，不处理全图伤害事件，不增加核爆每个小爆炸的 Lua 调用。没有为修复寻找或逐实体扫描附近敌人。
+
+修复读取真实 `LuaEntity.health` 和当前品质的 `prototype.get_max_health(quality)`，限制在最大生命值内，死亡车辆不复活。计时随各坦克分别保存在 `storage`；正常保存读取不会重置冷却，也不会按游戏外经过的时间补发回血。新建和克隆从新的 10 秒等待开始。未收到事件的第三方脚本直接写 `health` 不算一次攻击；玩家外加的独立攻击装备未额外追踪，内置六门激光与原生驾驶射击指令纳入计时。
+
 ## 生命周期与限制
 
 保存保留车辆、已付费缓冲、真实内置能量及装备引用。新建、克隆和修复缺失电池从零开始。正常回收使用原生 `item-with-entity-data`，保留玩家网格及其中电量；内置电池/雷达缓存丢弃，再放置后由裂变模块充入，不能重放满电。
@@ -49,7 +58,7 @@
 
 ## 测试入口
 
-`--suite tank` 验证真实驾驶对照、无电不能加速、6 门自动激光与敌友/边界、100 格实弹命中、原生雷达扫描与扣电、真实制造/回收、辅助克隆/清理、跨地表及行驶中部分充电保存/读取。最终证据在 `test-results/releases/0.3.0/`；预期失败的 electric-car API 探针单独标注。
+`--suite tank` 验证真实驾驶对照、无电不能加速、6 门自动激光与敌友/边界、100 格实弹命中、原生雷达扫描与扣电、真实制造/回收、辅助克隆/清理、跨地表及行驶中部分充电保存/读取；0.3.1 另验证脱战修复、受击/开火暂停、抗性完全挡伤、回血上限和修复中存档。当前证据在 `test-results/releases/0.3.1/`；初版坦克及预期失败的 electric-car API 探针保留在 `test-results/releases/0.3.0/`。
 
 2026-10-13 两版最终 ZIP 均完成全部五个引擎套件及 tags/queue/tank 三种真实服务器保存读取。坦克实测如下：
 
@@ -70,10 +79,12 @@
 
 原始日志、安装包哈希和机器可读结果见 [test-results/releases/0.3.0/](../test-results/releases/0.3.0/)。并行功能回归的耗时不作为新的性能对照。真人图形客户端远程驾驶和视觉没有混作上述 PASS。
 
+2026-10-14，0.3.1 两个最终 ZIP 在两版引擎均通过全部五个套件。新增修复实测：2 秒恢复约 99.998 HP（原生生命值浮点舍入），连续受击、自动激光开火、驾驶射击或完全被抗性挡住的攻击会暂停/重置计时；最大生命值停止，致死不复活。冷却期间 tick 1200 和回血期间 tick 2100 分别真实保存、停止进程、重新读取，两次都通过。完整日志、范围及未测项目见 [0.3.1 测试记录](../test-results/releases/0.3.1/README.md)。
+
 ```sh
 python3 scripts/package.py
 python3 tests/run.py --factorio /path/to/factorio --suite tank --work work/new-tank-run
-python3 tests/run.py --factorio /path/to/factorio --mod-zip releases/factorio-2.0/nuclear-accumulator_0.3.0.zip --work work/new-release-run
+python3 tests/run.py --factorio /path/to/factorio --mod-zip releases/factorio-2.0/nuclear-accumulator_0.3.1.zip --work work/new-release-run
 ```
 
 ## English quick guide
@@ -81,3 +92,5 @@ python3 tests/run.py --factorio /path/to/factorio --mod-zip releases/factorio-2.
 Research Enhanced Fission Tank after Tank, Fission Reactor Equipment, Laser Turret and Battery MK2. Craft from one tank/reactor/battery, six laser turrets, one radar, 40 electric engines, 100 processing units and 50 low density structures. The full 15×17 grid remains available, health is 10,000, native remote driving is enabled, and steady speed is 75% of a vanilla coal tank on identical terrain.
 
 The private native equipment system produces 10 MW, stores 100 MJ, powers six automatic 72-tile lasers (200 base damage) and a 300 kW radar. Actual battery joules fund a native drive buffer because cars cannot directly use an electric energy source; chemical fuel and infinite vehicle drive are not supplied. The accessory bus is limited to 1.5 MW. In 2.0 use 1:1 long-range shell conversions to bypass vanilla shells' 30-tile projectile cap; 2.1 follows native target range. The main cannon's base range is 120. Mining preserves user equipment and discards private storage, which recharges after placement. Real graphical remote-driving, multiplayer and broad compatibility checks remain pending.
+
+Version 0.3.1 adds passive self-repair: wait 10 game seconds after the last incoming hit, built-in laser shot or driver/passenger shooting input, then regenerate 50 HP/s, capped at the actual maximum health. New combat restarts the delay. It needs no repair packs or equipment slots and draws no additional power. Each vehicle's combat timer and health survive saving and reloading, with no offline healing. Independent player-added attack equipment and direct health edits by other scripts are outside the combat detector.

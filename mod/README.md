@@ -4,9 +4,9 @@
 
 ## 安装与版本
 
-- 当前 Mod 版本为 **0.3.0**，两版游戏共享 `mod/` 中同一份运行源码。
-- Factorio **2.0.77 稳定版**：使用仓库 `releases/factorio-2.0/nuclear-accumulator_0.3.0.zip`。
-- Factorio **2.1.21 experimental**：使用 `releases/factorio-2.1/nuclear-accumulator_0.3.0.zip`。本次未取得或验证 2.1 稳定版。
+- 当前 Mod 版本为 **0.3.1**，两版游戏共享 `mod/` 中同一份运行源码。
+- Factorio **2.0.77 稳定版**：使用仓库 `releases/factorio-2.0/nuclear-accumulator_0.3.1.zip`。
+- Factorio **2.1.21 experimental**：使用 `releases/factorio-2.1/nuclear-accumulator_0.3.1.zip`。本次未取得或验证 2.1 稳定版。
 - 将对应 ZIP 整体放入游戏 `mods` 文件夹，不必解压；只安装与你的游戏主次版本匹配的一个包。两个 ZIP 文件名相同，目标由其下载目录区分。
 - 打包脚本按 `scripts/build-targets.json` 生成不同 `info.json` 的 `factorio_version` 与基础游戏依赖，不修改源文件。源码默认清单面向 2.0；安装时推荐使用生成的 ZIP，避免直接将通用目录名 `mod/` 复制到游戏。
 - 常见 mods 路径：Windows `%APPDATA%/Factorio/mods`；Linux `~/.factorio/mods`；macOS `~/Library/Application Support/factorio/mods`。
@@ -14,7 +14,7 @@
 
 ## 强化裂变坦克
 
-新增车辆：15×17 完整玩家网格、10,000 基础生命值、电驱动、原版煤炭坦克 75% 稳态速度、原生远程驾驶、内置 10 MW 裂变模块与 100 MJ 电池、六门 72 格/200 基础伤害自动激光和真实耗电雷达。主炮基础 120 格；2.0 使用新增远程改装炮弹，2.1 沿用原生目标射程。内置系统不占玩家网格。
+新增车辆：15×17 完整玩家网格、10,000 基础生命值、电驱动、原版煤炭坦克 75% 稳态速度、原生远程驾驶、内置 10 MW 裂变模块与 100 MJ 电池、六门 72 格/200 基础伤害自动激光和真实耗电雷达。主炮基础 120 格；2.0 使用新增远程改装炮弹，2.1 沿用原生目标射程。内置系统不占玩家网格。脱战 10 秒后每秒自动恢复 50 点生命值，受击或开火重新计时，最多恢复到实际生命值上限。修复为内置被动能力，无需修理包，不占装备格。
 
 研究“强化裂变坦克”解锁车辆及四种 1:1 炮弹改装配方。完整制造材料、驱动缓冲原理、能量预算、回收行为与验收范围见 [强化坦克说明](https://github.com/fsship/FactorioNuclearAccumulator/blob/work/docs/ENHANCED-TANK.md)。
 
@@ -111,7 +111,7 @@
 ```sh
 python3 scripts/package.py
 python3 tests/run.py --factorio /path/to/factorio/bin/x64/factorio --work /path/to/fresh/work/na-tests
-python3 tests/run.py --factorio /path/to/factorio/bin/x64/factorio --mod-zip releases/factorio-2.0/nuclear-accumulator_0.3.0.zip --work /path/to/fresh/work/na-zip-tests
+python3 tests/run.py --factorio /path/to/factorio/bin/x64/factorio --mod-zip releases/factorio-2.0/nuclear-accumulator_0.3.1.zip --work /path/to/fresh/work/na-zip-tests
 lua5.2 tests/gui-unit.lua mod/control.lua
 ```
 

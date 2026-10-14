@@ -178,6 +178,9 @@ script.on_event(defines.events.on_entity_died,function(event)
  local e=event.entity
  if valid(e) and ismain(e) then blast(storage.stations[e.unit_number]) end
 end)
+-- Engine filtering excludes other entities, including the nuclear shockwave damage stream.
+script.on_event(defines.events.on_entity_damaged,Tank.damaged,{{filter="name",name="na-enhanced-tank"}})
+script.on_event(defines.events.on_script_trigger_effect,Tank.weapon_fired)
 script.on_event(defines.events.on_object_destroyed,function(event)
  Tank.object_destroyed(event)
  local id=storage.destroyed[event.registration_number]

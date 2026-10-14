@@ -69,25 +69,30 @@ for suite in ['acceptance','lifecycle','tags','queue','tank']:
   with serverlog.open('w') as out:
    server=subprocess.Popen(common+['--start-server',str(save),'--server-settings',str(settings),'--port',str(34290 if minor=='2.0' else 34291),'--bind','127.0.0.1'],stdin=subprocess.PIPE,stdout=out,stderr=subprocess.STDOUT)
    try:
-    deadline=time.monotonic()+45; saved=None
+    deadline=time.monotonic()+45; saved={}
+    save_names={'queue':['na-inflight'],'tags':['na-tags-recovered'],
+                'tank':['na-tank-moving','na-tank-repairing']}[suite]
     while time.monotonic()<deadline and server.poll() is None:
-     files=list((runtime/'saves').glob('*'+{'queue':'na-inflight','tags':'na-tags-recovered','tank':'na-tank-moving'}[suite]+'*.zip'))
-     if files:
-      try:
-       with zipfile.ZipFile(files[0]) as archive:
-        if archive.testzip() is None:saved=files[0];break
-      except (zipfile.BadZipFile,OSError):pass
+     for name in save_names:
+      files=list((runtime/'saves').glob('*'+name+'*.zip'))
+      if files:
+       try:
+        with zipfile.ZipFile(files[0]) as archive:
+         if archive.testzip() is None:saved[name]=files[0]
+       except (zipfile.BadZipFile,OSError):pass
+     if len(saved)==len(save_names):break
      time.sleep(.1)
-    if not saved:raise SystemExit(f'Missing mid-run {suite} server save: inspect {serverlog}')
+    if len(saved)!=len(save_names):raise SystemExit(f'Missing mid-run {suite} server save: inspect {serverlog}')
    finally:
     server.terminate()
     try:server.wait(timeout=10)
     except subprocess.TimeoutExpired:server.kill();server.wait()
-  logfile=folder/'resume.log'
-  with logfile.open('w') as out:
-   result=subprocess.run(common+['--benchmark',str(saved),'--benchmark-ticks',('350' if suite=='queue' else '14000'),'--benchmark-runs','1'],stdout=out,stderr=subprocess.STDOUT)
-  logtext=logfile.read_text()
-  marker={'queue':'NA QUEUE COMPLETE','tags':'NA TAG COMPLETE','tank':'NA TANK COMPLETE'}[suite]
-  if result.returncode or 'NA TEST FAIL:' in logtext or marker not in logtext:
-   raise SystemExit(f'Mid-run {suite} reload failed: inspect {logfile}')
-  print(f'PASS {minor} {suite}/mid-run-resume: {logfile}')
+  for index,name in enumerate(save_names):
+   logfile=folder/('resume.log' if index==0 else 'resume-repairing.log')
+   with logfile.open('w') as out:
+    result=subprocess.run(common+['--benchmark',str(saved[name]),'--benchmark-ticks',('350' if suite=='queue' else '14000'),'--benchmark-runs','1'],stdout=out,stderr=subprocess.STDOUT)
+   logtext=logfile.read_text()
+   marker={'queue':'NA QUEUE COMPLETE','tags':'NA TAG COMPLETE','tank':'NA TANK COMPLETE'}[suite]
+   if result.returncode or 'NA TEST FAIL:' in logtext or marker not in logtext:
+    raise SystemExit(f'Mid-run {suite} reload failed: inspect {logfile}')
+   print(f'PASS {minor} {suite}/mid-run-resume ({name}): {logfile}')
