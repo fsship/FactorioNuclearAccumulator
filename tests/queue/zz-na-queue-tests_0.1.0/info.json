@@ -1,0 +1,10 @@
+{
+  "name": "zz-na-queue-tests",
+  "version": "0.1.0",
+  "title": "Nuclear wave queue tests",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "nuclear-accumulator"
+  ],
+  "author": "Codex"
+}

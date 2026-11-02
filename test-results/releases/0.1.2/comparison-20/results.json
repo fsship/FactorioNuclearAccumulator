@@ -1,0 +1,15 @@
+{
+  "baseline": {
+    "avg_ms": 31.742,
+    "min_ms": 0.124,
+    "max_ms": 1347.765
+  },
+  "batched": {
+    "avg_ms": 15.806,
+    "min_ms": 0.155,
+    "max_ms": 132.152
+  },
+  "max_reduction_percent": 90.1947297933987,
+  "engine_version": "Version: 2.0.77 (build 84539, linux64, headless)\nVersion: 64\nMap input version: 1.0.0-0\nMap output version: 2.0.77-0",
+  "ticks": 3200
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-14",
+  "version": "0.3.1",
+  "repair": {
+    "delay_ticks": 600,
+    "nominal_hp_per_second": 50,
+    "update_interval_ticks": 6,
+    "additional_energy_or_repair_packs_required": false
+  },
+  "targets": {
+    "2.0": {
+      "engine": "2.0.77 stable",
+      "artifact": "releases/factorio-2.0/nuclear-accumulator_0.3.1.zip",
+      "sha256": "3cceb96c30b4ae2b7d97bc46a394c8f4ade01dd8ff7ac97f5813140bcaf20e35",
+      "final_zip_suites": [
+        "acceptance",
+        "lifecycle",
+        "tags",
+        "queue",
+        "tank"
+      ],
+      "mid_run_server_resume": [
+        "tags",
+        "queue",
+        "tank cooldown at tick 1200",
+        "tank active repair at tick 2100"
+      ],
+      "measured_health_repaired_in_120_ticks": 99.99755859375,
+      "measured_hp_per_second": 49.998779296875,
+      "damage_cooldown_and_reset": true,
+      "native_laser_and_driver_fire_stop_repair": true,
+      "resisted_hits_restart_cooldown": true,
+      "real_maximum_health_cap": true,
+      "independent_vehicle_state_and_death_cleanup": true
+    },
+    "2.1": {
+      "engine": "2.1.21 experimental",
+      "artifact": "releases/factorio-2.1/nuclear-accumulator_0.3.1.zip",
+      "sha256": "06d59c29535bb6328d4e64d9cf6c0c1c8f2a3cc4cd92b4e17232d2eeffe31eb4",
+      "final_zip_suites": [
+        "acceptance",
+        "lifecycle",
+        "tags",
+        "queue",
+        "tank"
+      ],
+      "mid_run_server_resume": [
+        "tags",
+        "queue",
+        "tank cooldown at tick 1200",
+        "tank active repair at tick 2100"
+      ],
+      "measured_health_repaired_in_120_ticks": 99.99755859375,
+      "measured_hp_per_second": 49.998779296875,
+      "damage_cooldown_and_reset": true,
+      "native_laser_and_driver_fire_stop_repair": true,
+      "resisted_hits_restart_cooldown": true,
+      "real_maximum_health_cap": true,
+      "independent_vehicle_state_and_death_cleanup": true
+    }
+  },
+  "not_executed": [
+    "Graphical client local/remote driver and passenger shooting",
+    "Multiplayer player interactions",
+    "Quality/DLC and arbitrary other mods"
+  ]
+}

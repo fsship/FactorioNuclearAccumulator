@@ -1,0 +1,1 @@
+PASS: all mod/test Lua 5.2 syntax, JSON/Python syntax, final ZIP/source byte equality, two-target parity, SHA-256 sums and current Markdown links. Existing GUI logic uses API doubles.

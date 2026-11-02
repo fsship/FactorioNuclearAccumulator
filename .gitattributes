@@ -1,0 +1,2 @@
+# Preserve engine-generated log bytes; trailing spaces in logs are intentional.
+*.log -whitespace

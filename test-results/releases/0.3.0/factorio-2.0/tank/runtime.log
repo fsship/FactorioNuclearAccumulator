@@ -1,0 +1,109 @@
+   0.000 2026-10-13 13:54:38; Factorio 2.0.77 (build 84539, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/mods" "--benchmark" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/test.zip" "--benchmark-ticks" "3400" "--benchmark-runs" "1" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/config.ini
+   0.000 Read data path: /workspace/work/research/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/runtime [29688/32205MB]
+   0.000 Binaries path: /workspace/work/research/factorio/bin
+   0.008 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.008 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.008 Running in headless mode
+   0.008 Audio is disabled
+   0.009 Info ModManager.cpp:449: FeatureFlag expansion-shaders = false
+   0.009 Info ModManager.cpp:449: FeatureFlag freezing = false
+   0.009 Info ModManager.cpp:449: FeatureFlag quality = false
+   0.009 Info ModManager.cpp:449: FeatureFlag rail-bridges = false
+   0.009 Info ModManager.cpp:449: FeatureFlag segmented-units = false
+   0.009 Info ModManager.cpp:449: FeatureFlag space-travel = false
+   0.009 Info ModManager.cpp:449: FeatureFlag spoiling = false
+   0.012 Loading mod core 0.0.0 (data.lua)
+   0.022 Loading mod base 2.0.77 (data.lua)
+   0.132 Loading mod nuclear-accumulator 0.3.0 (data.lua)
+   0.145 Loading mod base 2.0.77 (data-updates.lua)
+   0.156 Loading mod nuclear-accumulator 0.3.0 (data-final-fixes.lua)
+   0.226 Loading mod zz-na-tank-tests 0.1.0 (data-final-fixes.lua)
+   0.227 Script @__zz-na-tank-tests__/data-final-fixes.lua:23: NA TANK STATIC PASS: 15x17, health x5, remote driving, electric-only buffer, native six-laser parameters, long cannon rounds
+   0.276 Checksum for core: 4187927925
+   0.276 Checksum of base: 1879415942
+   0.276 Checksum of nuclear-accumulator: 2103047708
+   0.276 Checksum of zz-na-tank-tests: 1050227354
+   0.417 Prototype list checksum: 2085403015
+   0.456 Info PlayerData.cpp:64: Local player-data.json available, timestamp 1791899678
+   0.456 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   0.456 Info GlobalContext.cpp:1300: Resetting config.
+   0.457 Factorio initialised
+   0.457 Loading map /workspace/FactorioNuclearAccumulator/work/tank-release/complete20/tank/test.zip: 1102886 bytes.
+   0.470 Loading level.dat: 2313819 bytes.
+   0.470 Info Scenario.cpp:154: Map version 2.0.77-0
+   0.498 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.498 Loading script.dat: 3321 bytes.
+   0.500 Checksum for script __level__/control.lua: 3792629764
+   0.502 Checksum for script __nuclear-accumulator__/control.lua: 2524258479
+   0.503 Checksum for script __zz-na-tank-tests__/control.lua: 2544001218
+Running update 0
+   0.518 Script @__zz-na-tank-tests__/control.lua:56: NA TEST PASS: native automatic laser hit is exactly 10x base turret damage, 200 laser
+   0.528 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: separate-process save/load retains internal equipment and helpers
+   0.528 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: motor and isolated radar receive only debited real battery joules
+   0.528 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: no reactor and no stored energy means no electric acceleration
+Running update 100
+Running update 200
+Running update 300
+Running update 400
+Running update 500
+Running update 600
+Running update 700
+Running update 800
+Running update 900
+Running update 1000
+Running update 1100
+Running update 1200
+   1.023 Script @__zz-na-tank-tests__/control.lua:70: NA TANK MEASURE steady_speed base=0.23528789147645 electric=0.17640929094729 ratio=0.74975932607628
+   1.023 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native electric driving steady speed is 75% of vanilla coal tank
+   1.023 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: internal fission accessory bus powers equipment in the independent user grid
+   1.023 Script @__zz-na-tank-tests__/control.lua:73: NA TANK MEASURE automatic_laser_hits=175
+   1.023 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: six parked unoccupied automatic lasers sustain native fire at 60 tiles
+   1.023 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: 72-tile laser range leaves 85-tile enemy and friendly targets undamaged
+   1.023 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: actual long-range cannon projectiles hit walls 100 tiles away
+   1.023 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: mid-run partially charged moving vehicle state and all native equipment references survive save/load
+Running update 1300
+Running update 1400
+Running update 1500
+Running update 1600
+Running update 1700
+Running update 1800
+Running update 1900
+Running update 2000
+Running update 2100
+Running update 2200
+Running update 2300
+Running update 2400
+   1.437 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: moving battery-powered radar completes genuine native sector scans without external grid
+   1.437 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native built-in reactor remains installed
+   1.458 Script @__zz-na-tank-tests__/control.lua:99: NA TANK MEASURE isolated_radar_plus_idle_drive J/s=300000
+   1.458 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: radar consumes approximately 300kW of stored internal energy with reactor removed
+   1.458 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: energy credited to radar and motor exactly equals battery energy debited
+   1.458 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: cloning does not duplicate built-in stored energy
+   1.458 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: ordinary removal cleans all internal helpers without a nuclear explosion
+   1.458 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: cloned internal helper is discarded without reading a destroyed LuaEntity
+   1.636 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: cross-surface movement relocates internal grid and radar safely
+   1.636 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native internal laser source follows vehicle position
+   1.636 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: vehicle death cleans internal system
+   1.636 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native vehicle mining returns its item-with-entity-data
+   1.636 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: mined native vehicle item retains the full equipment grid
+   1.636 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native vehicle item retains exact user equipment energy on mining
+   1.636 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: native mining cleans private reactor/weapon/radar helpers
+Running update 2500
+Running update 2600
+Running update 2700
+Running update 2800
+Running update 2900
+Running update 3000
+Running update 3100
+Running update 3200
+Running update 3300
+   1.952 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: actual assembling machine manufactures the enhanced tank from its complete recipe
+   1.952 Script @__zz-na-tank-tests__/control.lua:134: NA TANK COMPLETE
+  Performed 3400 updates in 1486.893 ms
+  avg: 0.437 ms, min: 0.170 ms, max: 167.453 ms
+  checksum: 495522731
+   2.044 Goodbye

@@ -1,0 +1,31 @@
+   0.000 2026-10-09 10:19:13; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/prototype-limits21/threshold-overflow/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/prototype-limits21/threshold-overflow/mods" "--create" "/workspace/FactorioNuclearAccumulator/work/prototype-limits21/threshold-overflow/test.zip" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/prototype-limits21/threshold-overflow/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/prototype-limits21/threshold-overflow/runtime [29759/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.007 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.007 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.010 Running in headless mode
+   0.010 Audio is disabled
+   0.010 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.010 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.010 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.010 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.010 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.010 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.010 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.010 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.014 Loading mod core 0.0.0 (data.lua)
+   0.038 Loading mod base 2.1.21 (data.lua)
+   0.168 Loading mod na-api-probe 0.1.0 (data.lua)
+   0.178 Loading mod recycler 2.1.21 (data.lua)
+   0.190 Loading mod base 2.1.21 (data-updates.lua)
+   0.201 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.255 Checksum for core: 2791302773
+   0.255 Checksum of base: 1834856243
+   0.255 Checksum of na-api-probe: 2100322289
+   0.255 Checksum of recycler: 3293728126
+   0.426 Error Util.cpp:81: Error while loading entity prototype "na-unused-api-probe" (projectile): Value (65536) outside of range. The data type allows values from 0 to 65535 in property tree at ROOT.projectile.na-unused-api-probe.action[0].action_delivery.target_effects.upper_distance_threshold
+Modifications: Local prototype parser probe

@@ -1,0 +1,1 @@
+PASS: all Lua files parse with luac5.2; all JSON parses; native progressbar style exists in both local official base games; ZIP files exactly match runtime sources.

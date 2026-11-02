@@ -1,0 +1,49 @@
+   0.000 2026-10-14 00:51:21; Factorio 2.0.77 (build 84539, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/repair-final20/tank/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/repair-final20/tank/mods" "--create" "/workspace/FactorioNuclearAccumulator/work/repair-final20/tank/test.zip" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/repair-final20/tank/config.ini
+   0.000 Read data path: /workspace/work/research/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/repair-final20/tank/runtime [29634/32205MB]
+   0.000 Binaries path: /workspace/work/research/factorio/bin
+   0.008 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.008 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.008 Running in headless mode
+   0.008 Audio is disabled
+   0.009 Info ModManager.cpp:449: FeatureFlag expansion-shaders = false
+   0.009 Info ModManager.cpp:449: FeatureFlag freezing = false
+   0.009 Info ModManager.cpp:449: FeatureFlag quality = false
+   0.009 Info ModManager.cpp:449: FeatureFlag rail-bridges = false
+   0.009 Info ModManager.cpp:449: FeatureFlag segmented-units = false
+   0.009 Info ModManager.cpp:449: FeatureFlag space-travel = false
+   0.009 Info ModManager.cpp:449: FeatureFlag spoiling = false
+   0.011 Loading mod core 0.0.0 (data.lua)
+   0.022 Loading mod base 2.0.77 (data.lua)
+   0.168 Loading mod nuclear-accumulator 0.3.1 (data.lua)
+   0.187 Loading mod base 2.0.77 (data-updates.lua)
+   0.203 Loading mod nuclear-accumulator 0.3.1 (data-final-fixes.lua)
+   0.293 Loading mod zz-na-tank-tests 0.1.0 (data-final-fixes.lua)
+   0.293 Script @__zz-na-tank-tests__/data-final-fixes.lua:23: NA TANK STATIC PASS: 15x17, health x5, remote driving, electric-only buffer, native six-laser parameters, long cannon rounds
+   0.350 Checksum for core: 4187927925
+   0.350 Checksum of base: 1879415942
+   0.350 Checksum of nuclear-accumulator: 2407912216
+   0.350 Checksum of zz-na-tank-tests: 1050227354
+   0.502 Prototype list checksum: 2085403015
+   0.552 Info PlayerData.cpp:66: Local player-data.json unavailable
+   0.552 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   0.552 Info GlobalContext.cpp:1300: Resetting config.
+   0.553 Factorio initialised
+   0.553 Info Create.cpp:31: Creating new map /workspace/FactorioNuclearAccumulator/work/repair-final20/tank/test.zip
+   0.559 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   2.023 Loading level.dat: 752841 bytes.
+   2.023 Info Scenario.cpp:154: Map version 2.0.77-0
+   2.038 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   2.041 Checksum for script __level__/control.lua: 3792629764
+   2.044 Checksum for script __nuclear-accumulator__/control.lua: 3600154491
+   2.045 Checksum for script __zz-na-tank-tests__/control.lua: 1444554292
+   6.521 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: real player equipment grid is fully usable 15x17
+   6.521 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: built-in reactor/lasers do not occupy player grid slots
+   6.521 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: normal-quality health is 5x vanilla, 10000 HP
+   6.521 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: six separate native automatic defense modules exist
+   6.522 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: new technology actually unlocks tank manufacturing
+Done.
+   6.712 Goodbye

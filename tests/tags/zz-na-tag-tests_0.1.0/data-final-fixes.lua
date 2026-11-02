@@ -1,0 +1,5 @@
+local p=assert(data.raw["item-with-tags"]["nuclear-accumulator"])
+assert(p.stack_size==1 and p.place_result=="nuclear-accumulator")
+assert(data.raw["electric-pole"]["nuclear-accumulator"].minable.result=="nuclear-accumulator")
+assert(not data.raw.item["nuclear-accumulator-used"] and not data.raw["electric-pole"]["nuclear-accumulator-used"])
+log("NA PROTOTYPE PASS: one tag item, one main entity, same recovery and blueprint item")

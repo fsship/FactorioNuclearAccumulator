@@ -1,0 +1,60 @@
+{
+  "version": "0.3.0",
+  "date": "2026-10-13",
+  "targets": {
+    "2.0": {
+      "engine": "2.0.77 stable",
+      "artifact": "releases/factorio-2.0/nuclear-accumulator_0.3.0.zip",
+      "sha256": "6b74f996e6455345b2174024fa51398fd8e169af62416a9ca4c5ed1416d31ccf",
+      "final_zip_suites": [
+        "acceptance",
+        "lifecycle",
+        "tags",
+        "queue",
+        "tank"
+      ],
+      "mid_run_server_resume": [
+        "tags",
+        "queue",
+        "tank"
+      ],
+      "speed_ratio_at_tick_1200": 0.74975932607628,
+      "six_laser_hits_at_tick_1200": 175,
+      "native_laser_damage_per_hit": 200,
+      "laser_range": 72,
+      "cannon_base_range": 120,
+      "actual_cannon_hits_at_100_tiles": true,
+      "isolated_radar_debit_j_per_s": 300000.0,
+      "factory_crafting_and_native_mining": true,
+      "cross_surface_and_helper_clone_cleanup": true
+    },
+    "2.1": {
+      "engine": "2.1.21 experimental",
+      "artifact": "releases/factorio-2.1/nuclear-accumulator_0.3.0.zip",
+      "sha256": "c58119d64168c9fc06ba93f8291c73cfb7786d9af0da1751d66f2389b1987627",
+      "final_zip_suites": [
+        "acceptance",
+        "lifecycle",
+        "tags",
+        "queue",
+        "tank"
+      ],
+      "mid_run_server_resume": [
+        "tags",
+        "queue",
+        "tank"
+      ],
+      "speed_ratio_at_tick_1200": 0.74975932607628,
+      "six_laser_hits_at_tick_1200": 175,
+      "native_laser_damage_per_hit": 200,
+      "laser_range": 72,
+      "cannon_base_range": 120,
+      "actual_cannon_hits_at_100_tiles": true,
+      "isolated_radar_debit_j_per_s": 300000.0,
+      "factory_crafting_and_native_mining": true,
+      "cross_surface_and_helper_clone_cleanup": true
+    }
+  },
+  "remote_driving": "Native flag enabled; real graphical player session not executed",
+  "gui": "Existing GUI API doubles pass; real client appearance/remote-control pending"
+}

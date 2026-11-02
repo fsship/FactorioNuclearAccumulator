@@ -1,0 +1,68 @@
+{
+  "2.0.77": {
+    "mod_version": "0.2.0",
+    "artifact": "nuclear-accumulator_0.2.0.zip",
+    "sha256": "d74871a706725f9962ac804742577bf4e661323b4f75efbf0eea7dcba16630d5",
+    "archive_files": 12,
+    "final_zip_suites": [
+      "acceptance",
+      "lifecycle",
+      "tags",
+      "queue"
+    ],
+    "live_save_resume": [
+      "recovered_tags_and_partial_battery",
+      "inflight_explosion"
+    ],
+    "full_charge_first_damage_tick": {
+      "10": 1445,
+      "25": 1464,
+      "300": 2280
+    },
+    "full_charge_blast_tick": 1400,
+    "full_charge_damage_seconds": {
+      "10": 0.75,
+      "25": 1.067,
+      "300": 14.667
+    },
+    "power_j_per_s": {
+      "discharge": 5000000.0001526,
+      "radar": 300166.66666794,
+      "charge": 5000000.0001526
+    },
+    "gui_and_player_path": "API doubles only; graphical-client acceptance pending"
+  },
+  "2.1.21": {
+    "mod_version": "0.2.1",
+    "artifact": "nuclear-accumulator_0.2.1.zip",
+    "sha256": "20c8114d406851efbe7119557fc637adc95b17e822e69298594337c37c28ad41",
+    "archive_files": 12,
+    "final_zip_suites": [
+      "acceptance",
+      "lifecycle",
+      "tags",
+      "queue"
+    ],
+    "live_save_resume": [
+      "recovered_tags_and_partial_battery",
+      "inflight_explosion"
+    ],
+    "full_charge_first_damage_tick": {
+      "10": 1446,
+      "25": 1471,
+      "300": 2301
+    },
+    "full_charge_blast_tick": 1400,
+    "full_charge_damage_seconds": {
+      "10": 0.767,
+      "25": 1.183,
+      "300": 15.017
+    },
+    "power_j_per_s": {
+      "discharge": 5000000.0001526,
+      "radar": 300166.66666794,
+      "charge": 5000000.0001526
+    },
+    "gui_and_player_path": "API doubles only; graphical-client acceptance pending"
+  }
+}

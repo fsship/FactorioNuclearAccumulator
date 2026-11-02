@@ -1,0 +1,403 @@
+   0.000 2026-10-10 03:11:58; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/restructure/final21/queue/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/restructure/final21/queue/mods" "--benchmark" "/workspace/FactorioNuclearAccumulator/work/restructure/final21/queue/runtime/saves/na-inflight.zip" "--benchmark-ticks" "350" "--benchmark-runs" "1" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/restructure/final21/queue/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/restructure/final21/queue/runtime [29711/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.007 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.007 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.009 Running in headless mode
+   0.009 Audio is disabled
+   0.010 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.010 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.010 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.010 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.010 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.010 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.010 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.010 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.012 Loading mod core 0.0.0 (data.lua)
+   0.022 Loading mod base 2.1.21 (data.lua)
+   0.147 Loading mod nuclear-accumulator 0.2.4 (data.lua)
+   0.162 Loading mod recycler 2.1.21 (data.lua)
+   0.175 Loading mod base 2.1.21 (data-updates.lua)
+   0.186 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.201 Loading mod nuclear-accumulator 0.2.4 (data-final-fixes.lua)
+   0.321 Checksum for core: 2791302773
+   0.321 Checksum of base: 1834856243
+   0.321 Checksum of nuclear-accumulator: 3023417350
+   0.321 Checksum of recycler: 3293728126
+   0.321 Checksum of zz-na-queue-tests: 0
+   0.499 Prototype list checksum: 2090654350
+   0.548 Info PlayerData.cpp:580: Local player-data.json available
+   0.549 Info GlobalContext.cpp:1336: Resetting config.
+   0.549 Factorio initialised
+   0.549 Loading map /workspace/FactorioNuclearAccumulator/work/restructure/final21/queue/runtime/saves/na-inflight.zip: 3765939 bytes.
+   0.562 Loading level.dat: 9059821 bytes.
+   0.562 Info Scenario.cpp:152: Map version 2.1.21-11
+   0.643 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.643 Loading script.dat: 2198 bytes.
+   0.646 Checksum for script __level__/control.lua: 3704017257
+   0.648 Checksum for script __nuclear-accumulator__/control.lua: 3269885383
+   0.648 Checksum for script __zz-na-queue-tests__/control.lua: 846737763
+Running update 0
+   0.650 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 30
+   0.663 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 31
+   0.675 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 32
+   0.688 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 33
+   0.700 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 34
+   0.712 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 35
+   0.727 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 36
+   0.741 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 37
+   0.755 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 38
+   0.770 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 39
+   0.796 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 40
+   0.830 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 41
+   0.857 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 42
+   0.877 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 43
+   0.897 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 44
+   0.914 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 45
+   0.933 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 46
+   0.952 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 47
+   0.972 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 48
+   0.995 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 49
+   1.016 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 50
+   1.038 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 51
+   1.069 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 52
+   1.097 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 53
+   1.128 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 54
+   1.151 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 55
+   1.179 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 56
+   1.207 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 57
+   1.242 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 58
+   1.277 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 59
+   1.305 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 60
+   1.331 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 61
+   1.356 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 62
+   1.387 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 63
+   1.412 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 64
+   1.440 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 65
+   1.470 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 66
+   1.501 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 67
+   1.530 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 68
+   1.560 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 69
+   1.591 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 70
+   1.620 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 71
+   1.649 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 72
+   1.677 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 73
+   1.708 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 74
+   1.745 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 75
+   1.777 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 76
+   1.812 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 77
+   1.848 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 78
+   1.882 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 79
+   1.914 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 80
+   1.952 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 81
+   1.986 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 82
+   2.021 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 83
+   2.056 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 84
+   2.095 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 85
+   2.132 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 86
+   2.170 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 87
+   2.209 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 88
+   2.246 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 89
+   2.278 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 90
+   2.313 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 91
+   2.353 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 92
+   2.390 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 93
+   2.427 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 94
+   2.471 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 95
+   2.509 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 96
+   2.549 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 97
+   2.591 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 98
+   2.629 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 99
+   2.671 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 100
+   2.717 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 101
+   2.789 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 102
+   2.844 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 103
+   2.892 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 104
+   2.940 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 105
+   2.989 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 106
+   3.034 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 107
+   3.081 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 108
+   3.125 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 109
+   3.164 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 110
+   3.210 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 111
+   3.253 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 112
+   3.295 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 113
+   3.343 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 114
+   3.394 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 115
+   3.436 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 116
+   3.484 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 117
+   3.531 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 118
+   3.575 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 119
+   3.616 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 120
+   3.656 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 121
+   3.701 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 122
+   3.746 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 123
+   3.790 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 124
+   3.836 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 125
+   3.880 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 126
+   3.926 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 127
+   3.973 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 128
+   4.016 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 129
+Running update 100
+   4.062 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 130
+   4.107 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 131
+   4.155 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 132
+   4.208 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 133
+   4.259 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 134
+   4.312 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 135
+   4.364 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 136
+   4.418 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 137
+   4.466 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 138
+   4.519 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 139
+   4.569 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 140
+   4.623 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 141
+   4.680 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 142
+   4.730 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 143
+   4.783 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 144
+   4.842 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 145
+   4.896 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 146
+   4.951 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 147
+   5.006 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 148
+   5.058 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 149
+   5.115 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 150
+   5.171 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 151
+   5.229 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 152
+   5.290 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 153
+   5.344 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 154
+   5.397 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 155
+   5.456 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 156
+   5.510 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 157
+   5.563 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 158
+   5.637 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 159
+   5.696 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 160
+   5.756 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 161
+   5.808 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 162
+   5.873 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 163
+   5.931 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 164
+   5.990 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 165
+   6.045 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 166
+   6.107 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 167
+   6.162 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 168
+   6.224 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 169
+   6.285 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 170
+   6.350 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 171
+   6.406 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 172
+   6.468 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 173
+   6.523 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 174
+   6.586 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 175
+   6.650 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 176
+   6.710 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 177
+   6.773 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 178
+   6.838 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 179
+   6.899 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 180
+   6.958 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 181
+   7.020 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 182
+   7.085 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 183
+   7.141 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 184
+   7.200 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 185
+   7.266 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 186
+   7.331 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 187
+   7.390 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 188
+   7.447 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 189
+   7.508 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 190
+   7.569 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 191
+   7.633 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 192
+   7.690 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 193
+   7.749 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 194
+   7.817 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 195
+   7.876 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 196
+   7.937 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 197
+   7.996 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 198
+   8.056 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 199
+   8.122 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 200
+   8.184 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 201
+   8.248 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 202
+   8.307 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 203
+   8.367 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 204
+   8.421 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 205
+   8.480 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 206
+   8.543 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 207
+   8.603 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 208
+   8.667 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 209
+   8.730 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 210
+   8.792 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 211
+   8.846 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 212
+   8.908 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 213
+   8.969 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 214
+   9.026 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 215
+   9.090 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 216
+   9.153 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 217
+   9.218 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 218
+   9.276 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 219
+   9.336 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 220
+   9.392 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 221
+   9.451 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 222
+   9.512 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 223
+   9.569 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 224
+   9.626 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 225
+   9.683 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 226
+   9.745 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 227
+   9.807 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 228
+   9.868 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 229
+Running update 200
+   9.933 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 230
+  10.001 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 231
+  10.064 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 232
+  10.127 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 233
+  10.191 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 234
+  10.255 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 235
+  10.313 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 236
+  10.376 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 237
+  10.437 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 238
+  10.496 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 239
+  10.561 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 240
+  10.624 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 241
+  10.686 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 242
+  10.749 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 243
+  10.812 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 244
+  10.876 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 245
+  10.943 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 246
+  11.005 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 247
+  11.066 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 248
+  11.131 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 249
+  11.201 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 250
+  11.263 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 251
+  11.330 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 252
+  11.402 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 253
+  11.476 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 254
+  11.546 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 255
+  11.616 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 256
+  11.683 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 257
+  11.752 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 258
+  11.821 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 259
+  11.892 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 260
+  11.961 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 261
+  12.036 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 262
+  12.116 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 263
+  12.187 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 264
+  12.265 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 265
+  12.338 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 266
+  12.408 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 267
+  12.479 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 268
+  12.550 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 269
+  12.638 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 270
+  12.714 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 271
+  12.786 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 272
+  12.857 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 273
+  12.931 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 274
+  12.997 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 275
+  13.066 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 276
+  13.132 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 277
+  13.195 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 278
+  13.263 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 279
+  13.330 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 280
+  13.394 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 281
+  13.458 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 282
+  13.521 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 283
+  13.583 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 284
+  13.651 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 285
+  13.723 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 286
+  13.802 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 287
+  13.872 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 288
+  13.941 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 289
+  14.010 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 290
+  14.077 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 291
+  14.143 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 292
+  14.211 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 293
+  14.279 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 294
+  14.355 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 295
+  14.423 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 296
+  14.490 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 297
+  14.555 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 298
+  14.621 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 299
+  14.683 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 300
+  14.683 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: exact total populations, merged force, deleted surface, and queue cleanup
+  14.683 Script @__zz-na-queue-tests__/control.lua:30: NA QUEUE COMPLETE
+  14.743 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 301
+  14.802 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 302
+  14.859 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 303
+  14.922 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 304
+  14.985 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 305
+  15.043 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 306
+  15.101 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 307
+  15.157 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 308
+  15.215 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 309
+  15.273 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 310
+  15.333 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 311
+  15.390 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 312
+  15.451 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 313
+  15.507 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 314
+  15.562 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 315
+  15.619 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 316
+  15.676 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 317
+  15.730 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 318
+  15.787 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 319
+  15.841 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 320
+  15.894 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 321
+  15.947 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 322
+  16.001 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 323
+  16.057 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 324
+  16.110 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 325
+  16.163 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 326
+  16.216 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 327
+  16.269 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 328
+  16.321 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 329
+Running update 300
+  16.373 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 330
+  16.425 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 331
+  16.477 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 332
+  16.526 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 333
+  16.575 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 334
+  16.623 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 335
+  16.671 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 336
+  16.718 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 337
+  16.770 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 338
+  16.820 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 339
+  16.868 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 340
+  16.915 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 341
+  16.963 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 342
+  17.011 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 343
+  17.059 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 344
+  17.110 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 345
+  17.157 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 346
+  17.205 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 347
+  17.252 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 348
+  17.300 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 349
+  17.348 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 350
+  17.394 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 351
+  17.439 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 352
+  17.486 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 353
+  17.533 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 354
+  17.578 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 355
+  17.623 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 356
+  17.666 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 357
+  17.709 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 358
+  17.753 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 359
+  17.795 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 360
+  17.839 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 361
+  17.881 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 362
+  17.924 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 363
+  17.965 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 364
+  18.007 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 365
+  18.049 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 366
+  18.089 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 367
+  18.129 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 368
+  18.168 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 369
+  18.209 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 370
+  18.249 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 371
+  18.288 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 372
+  18.328 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 373
+  18.367 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 374
+  18.407 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 375
+  18.452 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 376
+  18.489 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 377
+  18.526 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 378
+  18.564 Script @__zz-na-queue-tests__/control.lua:1: NA TEST PASS: global scheduled population never exceeds 1024 in tick 379
+  Performed 350 updates in 17954.069 ms
+  avg: 51.297 ms, min: 11.772 ms, max: 88.356 ms
+  checksum: 621722498
+  18.872 Goodbye

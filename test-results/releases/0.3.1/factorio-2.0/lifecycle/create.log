@@ -1,0 +1,43 @@
+   0.000 2026-10-14 00:50:12; Factorio 2.0.77 (build 84539, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/repair-final20/lifecycle/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/repair-final20/lifecycle/mods" "--create" "/workspace/FactorioNuclearAccumulator/work/repair-final20/lifecycle/test.zip" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/repair-final20/lifecycle/config.ini
+   0.000 Read data path: /workspace/work/research/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/repair-final20/lifecycle/runtime [29653/32205MB]
+   0.000 Binaries path: /workspace/work/research/factorio/bin
+   0.007 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.007 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.008 Running in headless mode
+   0.008 Audio is disabled
+   0.009 Info ModManager.cpp:449: FeatureFlag expansion-shaders = false
+   0.009 Info ModManager.cpp:449: FeatureFlag freezing = false
+   0.009 Info ModManager.cpp:449: FeatureFlag quality = false
+   0.009 Info ModManager.cpp:449: FeatureFlag rail-bridges = false
+   0.009 Info ModManager.cpp:449: FeatureFlag segmented-units = false
+   0.009 Info ModManager.cpp:449: FeatureFlag space-travel = false
+   0.009 Info ModManager.cpp:449: FeatureFlag spoiling = false
+   0.012 Loading mod core 0.0.0 (data.lua)
+   0.024 Loading mod base 2.0.77 (data.lua)
+   0.163 Loading mod nuclear-accumulator 0.3.1 (data.lua)
+   0.180 Loading mod base 2.0.77 (data-updates.lua)
+   0.193 Loading mod nuclear-accumulator 0.3.1 (data-final-fixes.lua)
+   0.327 Checksum for core: 4187927925
+   0.327 Checksum of base: 1879415942
+   0.327 Checksum of nuclear-accumulator: 2407912216
+   0.327 Checksum of zz-na-lifecycle: 0
+   0.466 Prototype list checksum: 420059365
+   0.502 Info PlayerData.cpp:66: Local player-data.json unavailable
+   0.502 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   0.503 Info GlobalContext.cpp:1300: Resetting config.
+   0.503 Factorio initialised
+   0.503 Info Create.cpp:31: Creating new map /workspace/FactorioNuclearAccumulator/work/repair-final20/lifecycle/test.zip
+   0.509 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   1.933 Loading level.dat: 957764 bytes.
+   1.933 Info Scenario.cpp:154: Map version 2.0.77-0
+   1.948 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   1.951 Checksum for script __level__/control.lua: 3792629764
+   1.953 Checksum for script __nuclear-accumulator__/control.lua: 3600154491
+   1.954 Checksum for script __zz-na-lifecycle__/control.lua: 2492268146
+   2.135 Script @__zz-na-lifecycle__/control.lua:1: NA TEST PASS: runtime GUI wave metadata exists
+Done.
+   2.222 Goodbye

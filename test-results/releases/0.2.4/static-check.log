@@ -1,0 +1,1 @@
+PASS: unique runtime source; unchanged Lua/locales; shared tests; reproducible two-target ZIPs; only manifest compatibility fields differ; all SHA-256 values and local Markdown links match.

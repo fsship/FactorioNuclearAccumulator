@@ -1,0 +1,246 @@
+   0.000 2026-10-10 03:11:29; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/restructure/final21/tags/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/restructure/final21/tags/mods" "--benchmark" "/workspace/FactorioNuclearAccumulator/work/restructure/final21/tags/runtime/saves/na-tags-recovered.zip" "--benchmark-ticks" "14000" "--benchmark-runs" "1" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/restructure/final21/tags/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/restructure/final21/tags/runtime [29720/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.007 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.007 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.009 Running in headless mode
+   0.009 Audio is disabled
+   0.010 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.010 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.010 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.010 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.010 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.010 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.010 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.010 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.012 Loading mod core 0.0.0 (data.lua)
+   0.021 Loading mod base 2.1.21 (data.lua)
+   0.141 Loading mod nuclear-accumulator 0.2.4 (data.lua)
+   0.151 Loading mod recycler 2.1.21 (data.lua)
+   0.162 Loading mod base 2.1.21 (data-updates.lua)
+   0.173 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.193 Loading mod nuclear-accumulator 0.2.4 (data-final-fixes.lua)
+   0.272 Loading mod zz-na-tag-tests 0.1.0 (data-final-fixes.lua)
+   0.272 Script @__zz-na-tag-tests__/data-final-fixes.lua:5: NA PROTOTYPE PASS: one tag item, one main entity, same recovery and blueprint item
+   0.343 Checksum for core: 2791302773
+   0.343 Checksum of base: 1834856243
+   0.343 Checksum of nuclear-accumulator: 3023417350
+   0.343 Checksum of recycler: 3293728126
+   0.343 Checksum of zz-na-tag-tests: 1964310995
+   0.530 Prototype list checksum: 2090654350
+   0.569 Info PlayerData.cpp:580: Local player-data.json available
+   0.570 Info GlobalContext.cpp:1336: Resetting config.
+   0.570 Factorio initialised
+   0.570 Loading map /workspace/FactorioNuclearAccumulator/work/restructure/final21/tags/runtime/saves/na-tags-recovered.zip: 462070 bytes.
+   0.580 Loading level.dat: 840806 bytes.
+   0.580 Info Scenario.cpp:152: Map version 2.1.21-11
+   0.591 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.591 Loading script.dat: 2786 bytes.
+   0.594 Checksum for script __level__/control.lua: 3704017257
+   0.595 Checksum for script __nuclear-accumulator__/control.lua: 3269885383
+   0.596 Checksum for script __zz-na-tag-tests__/control.lua: 1868643626
+Running update 0
+   0.597 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: mid-run save retains partially discharged native battery and valid helper references
+Running update 100
+Running update 200
+Running update 300
+   0.656 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native robot event exposes the actual consumed tagged item
+   0.656 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native battery exactly restores consumed item energy
+   0.656 Script @__zz-na-tag-tests__/control.lua:59: NA TAG BUILD tick=2769 charge=35989199916.667 energy=35989199916.667
+Running update 400
+   0.662 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native robot event exposes the actual consumed tagged item
+   0.662 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native battery exactly restores consumed item energy
+   0.662 Script @__zz-na-tag-tests__/control.lua:59: NA TAG BUILD tick=2811 charge=12344150566.667 energy=12344150566.667
+   0.664 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native robot event exposes the actual consumed tagged item
+   0.664 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native battery exactly restores consumed item energy
+   0.664 Script @__zz-na-tag-tests__/control.lua:59: NA TAG BUILD tick=2820 charge=0 energy=0
+Running update 500
+Running update 600
+Running update 700
+Running update 800
+Running update 900
+Running update 1000
+Running update 1100
+   0.780 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native blueprint and ghosts rebuild all recovered items
+   0.781 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: one prototype rebuilds from all three charge states
+   0.781 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: rebuild cannot add energy, state 1
+   0.781 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: rebuild cannot add energy, state 2
+   0.781 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: rebuild cannot add energy, state 3
+   0.781 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: blueprint centers on intended recycle position
+Running update 1200
+Running update 1300
+Running update 1400
+Running update 1500
+   0.839 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native mining buffer has serialized charge
+   0.839 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: mining tag equals the actual immediately preceding battery energy, with no MJ rounding
+   0.839 Script @__zz-na-tag-tests__/control.lua:79: NA TAG RECOVERY tick=3968 charge=11998227654
+Running update 1600
+Running update 1700
+Running update 1800
+Running update 1900
+   0.896 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: cycle recovery preserves fractional joules without increase
+Running update 2000
+Running update 2100
+Running update 2200
+Running update 2300
+Running update 2400
+   0.992 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native robot event exposes the actual consumed tagged item
+   0.992 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native battery exactly restores consumed item energy
+   0.992 Script @__zz-na-tag-tests__/control.lua:59: NA TAG BUILD tick=4849 charge=11998227654 energy=11998227654
+Running update 2500
+   1.004 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: repeated rebuild cannot reset to full
+   1.020 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native mining buffer has serialized charge
+   1.020 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: mining tag equals the actual immediately preceding battery energy, with no MJ rounding
+   1.020 Script @__zz-na-tag-tests__/control.lua:79: NA TAG RECOVERY tick=4992 charge=11997154820.667
+Running update 2600
+Running update 2700
+Running update 2800
+Running update 2900
+   1.096 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: cycle recovery preserves fractional joules without increase
+Running update 3000
+Running update 3100
+Running update 3200
+Running update 3300
+Running update 3400
+Running update 3500
+   1.206 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native robot event exposes the actual consumed tagged item
+   1.206 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native battery exactly restores consumed item energy
+   1.206 Script @__zz-na-tag-tests__/control.lua:59: NA TAG BUILD tick=5976 charge=11997154820.667 energy=11997154820.667
+   1.210 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: repeated rebuild cannot reset to full
+Running update 3600
+   1.215 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native mining buffer has serialized charge
+   1.215 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: mining tag equals the actual immediately preceding battery energy, with no MJ rounding
+   1.215 Script @__zz-na-tag-tests__/control.lua:79: NA TAG RECOVERY tick=6025 charge=11996786987.333
+Running update 3700
+Running update 3800
+Running update 3900
+   1.273 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: cycle recovery preserves fractional joules without increase
+Running update 4000
+Running update 4100
+Running update 4200
+Running update 4300
+   1.344 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native robot event exposes the actual consumed tagged item
+   1.344 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native battery exactly restores consumed item energy
+   1.344 Script @__zz-na-tag-tests__/control.lua:59: NA TAG BUILD tick=6794 charge=11996786987.333 energy=11996786987.333
+Running update 4400
+   1.352 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: repeated rebuild cannot reset to full
+   1.352 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: actual recipe crafting produces untagged factory-new item
+   1.352 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: three extra native recycle/build cycles completed
+   1.352 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: real crafted item transfers into native logistics storage without a charge tag
+   1.352 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: source blueprint has native wire connector 1
+   1.352 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: source blueprint has native wire connector 2
+   1.352 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: source blueprint has native wire connector 5
+   1.352 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: wired blueprint contains only visible station and standard pole
+Running update 4500
+Running update 4600
+Running update 4700
+Running update 4800
+Running update 4900
+Running update 5000
+Running update 5100
+   1.479 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native robot event exposes the actual consumed tagged item
+   1.479 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native battery exactly restores consumed item energy
+   1.479 Script @__zz-na-tag-tests__/control.lua:59: NA TAG BUILD tick=7562 charge=nil energy=36000000000
+   1.479 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: actual freshly crafted untagged item is placed factory-full by a robot
+   1.479 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: ten native robot builds include three extra recycle cycles and real crafted output
+Running update 5200
+   1.499 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native blueprint restores the red-wire connection to main battery telemetry
+   1.499 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native blueprint restores the green-wire connection to main battery telemetry
+   1.499 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: blueprint-built pole and hidden battery join the same real copper network
+   1.499 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: all normal recovery cycles and blueprint builds remain non-explosive
+   1.499 Script @__zz-na-tag-tests__/control.lua:163: NA TAG COMPLETE
+Running update 5300
+Running update 5400
+Running update 5500
+Running update 5600
+Running update 5700
+Running update 5800
+Running update 5900
+Running update 6000
+Running update 6100
+Running update 6200
+Running update 6300
+Running update 6400
+Running update 6500
+Running update 6600
+Running update 6700
+Running update 6800
+Running update 6900
+Running update 7000
+Running update 7100
+Running update 7200
+Running update 7300
+Running update 7400
+Running update 7500
+Running update 7600
+Running update 7700
+Running update 7800
+Running update 7900
+Running update 8000
+Running update 8100
+Running update 8200
+Running update 8300
+Running update 8400
+Running update 8500
+Running update 8600
+Running update 8700
+Running update 8800
+Running update 8900
+Running update 9000
+Running update 9100
+Running update 9200
+Running update 9300
+Running update 9400
+Running update 9500
+Running update 9600
+Running update 9700
+Running update 9800
+Running update 9900
+Running update 10000
+Running update 10100
+Running update 10200
+Running update 10300
+Running update 10400
+Running update 10500
+Running update 10600
+Running update 10700
+Running update 10800
+Running update 10900
+Running update 11000
+Running update 11100
+Running update 11200
+Running update 11300
+Running update 11400
+Running update 11500
+Running update 11600
+Running update 11700
+Running update 11800
+Running update 11900
+Running update 12000
+Running update 12100
+Running update 12200
+Running update 12300
+Running update 12400
+Running update 12500
+Running update 12600
+Running update 12700
+Running update 12800
+Running update 12900
+Running update 13000
+Running update 13100
+Running update 13200
+Running update 13300
+Running update 13400
+Running update 13500
+Running update 13600
+Running update 13700
+Running update 13800
+Running update 13900
+  Performed 14000 updates in 2337.770 ms
+  avg: 0.167 ms, min: 0.055 ms, max: 6.721 ms
+  checksum: 2879071866
+   2.989 Goodbye

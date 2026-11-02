@@ -1,0 +1,110 @@
+   0.000 2026-10-10 03:11:20; Factorio 2.0.77 (build 84539, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/restructure/final20/tags/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/restructure/final20/tags/mods" "--start-server" "/workspace/FactorioNuclearAccumulator/work/restructure/final20/tags/test.zip" "--server-settings" "/workspace/FactorioNuclearAccumulator/work/restructure/final20/tags/server-settings.json" "--port" "34290" "--bind" "127.0.0.1" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/restructure/final20/tags/config.ini
+   0.000 Read data path: /workspace/work/research/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/restructure/final20/tags/runtime [29719/32205MB]
+   0.000 Binaries path: /workspace/work/research/factorio/bin
+   0.007 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.007 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.007 Running in headless mode
+   0.007 Audio is disabled
+   0.008 Info ModManager.cpp:449: FeatureFlag expansion-shaders = false
+   0.008 Info ModManager.cpp:449: FeatureFlag freezing = false
+   0.008 Info ModManager.cpp:449: FeatureFlag quality = false
+   0.008 Info ModManager.cpp:449: FeatureFlag rail-bridges = false
+   0.008 Info ModManager.cpp:449: FeatureFlag segmented-units = false
+   0.008 Info ModManager.cpp:449: FeatureFlag space-travel = false
+   0.008 Info ModManager.cpp:449: FeatureFlag spoiling = false
+   0.011 Loading mod core 0.0.0 (data.lua)
+   0.020 Loading mod base 2.0.77 (data.lua)
+   0.132 Loading mod nuclear-accumulator 0.2.4 (data.lua)
+   0.145 Loading mod base 2.0.77 (data-updates.lua)
+   0.159 Loading mod nuclear-accumulator 0.2.4 (data-final-fixes.lua)
+   0.239 Loading mod zz-na-tag-tests 0.1.0 (data-final-fixes.lua)
+   0.239 Script @__zz-na-tag-tests__/data-final-fixes.lua:5: NA PROTOTYPE PASS: one tag item, one main entity, same recovery and blueprint item
+   0.290 Checksum for core: 4187927925
+   0.290 Checksum of base: 1879415942
+   0.290 Checksum of nuclear-accumulator: 3023417350
+   0.290 Checksum of zz-na-tag-tests: 1964310995
+   0.433 Prototype list checksum: 2124573910
+   0.473 Info PlayerData.cpp:64: Local player-data.json available, timestamp 1791601880
+   0.473 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   0.473 Info GlobalContext.cpp:1300: Resetting config.
+   0.474 Factorio initialised
+   0.474 Info ServerSynchronizer.cpp:22: nextHeartbeatSequenceNumber(0) initialized Synchronizer nextTickClosureTick(0).
+   0.474 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(Ready) to(PreparedToHostGame)
+   0.474 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(PreparedToHostGame) to(CreatingGame)
+   0.474 Loading map /workspace/FactorioNuclearAccumulator/work/restructure/final20/tags/test.zip: 447823 bytes.
+   0.486 Loading level.dat: 781486 bytes.
+   0.486 Info Scenario.cpp:154: Map version 2.0.77-0
+   0.498 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.498 Loading script.dat: 2377 bytes.
+   0.501 Checksum for script __level__/control.lua: 3792629764
+   0.502 Checksum for script __nuclear-accumulator__/control.lua: 3269885383
+   0.503 Checksum for script __zz-na-tag-tests__/control.lua: 1868643626
+   0.503 Info UDPSocket.cpp:38: Opening socket at (IP ADDR:({127.0.0.1:34290}))
+   0.503 Hosting game at IP ADDR:({127.0.0.1:34290})
+   0.503 Info ServerMultiplayerManager.cpp:808: updateTick(0) changing state from(CreatingGame) to(InGame)
+   0.504 Info CommandLineMultiplayer.cpp:292: Maximum segment size = 100; minimum segment size = 25; maximum-segment-size peer count = 10; minimum-segment-size peer count = 20
+   0.537 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: separate-process save/load retains a partially charged station and its helper references
+   0.537 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: save/load preserves exact item tag 36000000000
+   0.537 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: save/load preserves exact item tag 18000000000
+   0.537 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: save/load preserves exact item tag 0
+   1.229 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native robot event exposes the actual consumed tagged item
+   1.229 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native battery exactly restores consumed item energy
+   1.229 Script @__zz-na-tag-tests__/control.lua:59: NA TAG BUILD tick=167 charge=18000000000 energy=18000000000
+   1.500 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native robot event exposes the actual consumed tagged item
+   1.500 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native battery exactly restores consumed item energy
+   1.500 Script @__zz-na-tag-tests__/control.lua:59: NA TAG BUILD tick=232 charge=36000000000 energy=36000000000
+   1.563 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native robot event exposes the actual consumed tagged item
+   1.563 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native battery exactly restores consumed item energy
+   1.563 Script @__zz-na-tag-tests__/control.lua:59: NA TAG BUILD tick=247 charge=0 energy=0
+   5.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: robots built full, partial and empty items using same ghost prototype
+   5.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: case 1 robot construction succeeds
+   5.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: full item restores 36 GJ
+   5.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: all charge states serialize to same one-entity blueprint
+   5.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: blueprint does not copy the source battery charge
+   5.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: case 2 robot construction succeeds
+   5.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: partial item restores 18 GJ without reset
+   5.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: all charge states serialize to same one-entity blueprint
+   5.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: blueprint does not copy the source battery charge
+   5.534 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: case 3 robot construction succeeds
+   5.534 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: explicit zero tag restores empty battery
+   5.534 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: all charge states serialize to same one-entity blueprint
+   5.534 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: blueprint does not copy the source battery charge
+   6.233 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native mining buffer has serialized charge
+   6.233 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: mining tag equals the actual immediately preceding battery energy, with no MJ rounding
+   6.233 Script @__zz-na-tag-tests__/control.lua:79: NA TAG RECOVERY tick=1368 charge=12344150566.667
+   6.416 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native mining buffer has serialized charge
+   6.416 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: mining tag equals the actual immediately preceding battery energy, with no MJ rounding
+   6.416 Script @__zz-na-tag-tests__/control.lua:79: NA TAG RECOVERY tick=1412 charge=35989199916.667
+   6.417 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: native mining buffer has serialized charge
+   6.417 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: mining tag equals the actual immediately preceding battery energy, with no MJ rounding
+   6.417 Script @__zz-na-tag-tests__/control.lua:79: NA TAG RECOVERY tick=1412 charge=0
+  10.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: robots mined every state without a nuclear explosion
+  10.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: normal robot mining removes original station
+  10.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: normal robot mining removes original station
+  10.533 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: normal robot mining removes original station
+  10.534 Script @__zz-na-tag-tests__/control.lua:121: NA STORAGE ENERGY={0, 12344150566.666809, 35989199916.66748}
+  10.534 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: three distinct tagged items survive logistics storage, including zero charge
+  10.534 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: partial recovered item carries remaining real energy
+  10.534 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: used full item no longer factory-full after consumption
+  10.537 Info AppManager.cpp:416: Saving game as /workspace/FactorioNuclearAccumulator/work/restructure/final20/tags/runtime/saves/na-tags-recovered
+  10.570 Info AppManagerStates.cpp:2111: Saving finished
+  10.571 Script @__zz-na-tag-tests__/control.lua:2: NA TEST PASS: mid-run save retains partially discharged native battery and valid helper references
+  10.626 Received SIGTERM, shutting down
+  10.626 Quitting: signal.
+  10.626 Info MainLoop.cpp:437: Saving map as /workspace/FactorioNuclearAccumulator/work/restructure/final20/tags/test.zip
+  10.646 Info MainLoop.cpp:448: Saving progress: 0.168919%
+  10.653 Info MainLoop.cpp:448: Saving progress: 100.000000%
+  10.662 Info ServerMultiplayerManager.cpp:119: Disconnecting multiplayer connection.
+  10.662 Info ServerMultiplayerManager.cpp:808: updateTick(2415) changing state from(InGame) to(DisconnectingScheduled)
+  10.695 Info ServerMultiplayerManager.cpp:808: updateTick(2415) changing state from(DisconnectingScheduled) to(Disconnecting)
+  10.729 Info ServerMultiplayerManager.cpp:808: updateTick(2415) changing state from(Disconnecting) to(Disconnected)
+  10.729 Info ServerMultiplayerManager.cpp:146: Quitting multiplayer connection.
+  10.729 Info ServerMultiplayerManager.cpp:808: updateTick(2415) changing state from(Disconnected) to(Closed)
+  10.729 Info ServerMultiplayerManager.cpp:166: Deleting active scenario (global = true).
+  11.019 Info UDPSocket.cpp:238: Closing socket
+  11.019 Info UDPSocket.cpp:268: Socket closed
+  11.048 Goodbye

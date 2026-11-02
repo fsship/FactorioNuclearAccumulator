@@ -1,0 +1,52 @@
+   0.000 2026-10-13 13:54:27; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/config.ini" "--mod-directory" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/mods" "--create" "/workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/test.zip" 
+   0.000 Config path: /workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/runtime [29692/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.010 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.010 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.014 Running in headless mode
+   0.014 Audio is disabled
+   0.016 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.016 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.016 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.016 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.016 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.016 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.016 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.016 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.020 Loading mod core 0.0.0 (data.lua)
+   0.035 Loading mod base 2.1.21 (data.lua)
+   0.192 Loading mod nuclear-accumulator 0.3.0 (data.lua)
+   0.208 Loading mod recycler 2.1.21 (data.lua)
+   0.222 Loading mod base 2.1.21 (data-updates.lua)
+   0.235 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.260 Loading mod nuclear-accumulator 0.3.0 (data-final-fixes.lua)
+   0.355 Loading mod zz-na-tank-tests 0.1.0 (data-final-fixes.lua)
+   0.355 Script @__zz-na-tank-tests__/data-final-fixes.lua:23: NA TANK STATIC PASS: 15x17, health x5, remote driving, electric-only buffer, native six-laser parameters, long cannon rounds
+   0.434 Checksum for core: 2791302773
+   0.434 Checksum of base: 1834856243
+   0.434 Checksum of nuclear-accumulator: 2103047708
+   0.434 Checksum of recycler: 3293728126
+   0.434 Checksum of zz-na-tank-tests: 1050227354
+   0.690 Prototype list checksum: 1125430762
+   0.733 Info PlayerData.cpp:582: Local player-data.json unavailable
+   0.734 Info GlobalContext.cpp:1336: Resetting config.
+   0.734 Factorio initialised
+   0.734 Info Create.cpp:32: Creating new map /workspace/FactorioNuclearAccumulator/work/tank-release/complete21/tank/test.zip
+   0.743 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   2.178 Loading level.dat: 814720 bytes.
+   2.178 Info Scenario.cpp:152: Map version 2.1.21-11
+   2.194 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   2.198 Checksum for script __level__/control.lua: 3704017257
+   2.199 Checksum for script __nuclear-accumulator__/control.lua: 2524258479
+   2.200 Checksum for script __zz-na-tank-tests__/control.lua: 2544001218
+   7.222 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: real player equipment grid is fully usable 15x17
+   7.222 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: built-in reactor/lasers do not occupy player grid slots
+   7.222 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: normal-quality health is 5x vanilla, 10000 HP
+   7.222 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: six separate native automatic defense modules exist
+   7.223 Script @__zz-na-tank-tests__/control.lua:2: NA TEST PASS: new technology actually unlocks tank manufacturing
+Done.
+   7.408 Goodbye

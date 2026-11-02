@@ -1,0 +1,48 @@
+   0.000 2026-10-09 08:52:15; Factorio 2.0.77 (build 84539, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/factorio/bin/x64/factorio" "--config" "/workspace/work/final-validation20/acceptance/config.ini" "--mod-directory" "/workspace/work/final-validation20/acceptance/mods" "--create" "/workspace/work/final-validation20/acceptance/test.zip" 
+   0.000 Config path: /workspace/work/final-validation20/acceptance/config.ini
+   0.000 Read data path: /workspace/work/research/factorio/data
+   0.000 Write data path: /workspace/work/final-validation20/acceptance/runtime [29826/32205MB]
+   0.000 Binaries path: /workspace/work/research/factorio/bin
+   0.007 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.007 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.007 Running in headless mode
+   0.007 Audio is disabled
+   0.008 Info ModManager.cpp:449: FeatureFlag expansion-shaders = false
+   0.008 Info ModManager.cpp:449: FeatureFlag freezing = false
+   0.008 Info ModManager.cpp:449: FeatureFlag quality = false
+   0.008 Info ModManager.cpp:449: FeatureFlag rail-bridges = false
+   0.008 Info ModManager.cpp:449: FeatureFlag segmented-units = false
+   0.008 Info ModManager.cpp:449: FeatureFlag space-travel = false
+   0.008 Info ModManager.cpp:449: FeatureFlag spoiling = false
+   0.010 Loading mod core 0.0.0 (data.lua)
+   0.024 Loading mod base 2.0.77 (data.lua)
+   0.144 Loading mod nuclear-accumulator 0.1.0 (data.lua)
+   0.158 Loading mod zz-na-tests 0.1.0 (data.lua)
+   0.179 Loading mod base 2.0.77 (data-updates.lua)
+   0.199 Loading mod nuclear-accumulator 0.1.0 (data-final-fixes.lua)
+   0.239 Loading mod zz-na-tests 0.1.0 (data-final-fixes.lua)
+   0.257 Script @__zz-na-tests__/data-final-fixes.lua:44: NA STATIC PASS: 101 tiers, area-scaled populations, uint16 splitting, native speed/damage/radius/falloff, recipe
+   0.306 Checksum for core: 4187927925
+   0.306 Checksum of base: 1879415942
+   0.306 Checksum of nuclear-accumulator: 1729176519
+   0.306 Checksum of zz-na-tests: 3154753558
+   0.454 Prototype list checksum: 2649974303
+   0.490 Info PlayerData.cpp:66: Local player-data.json unavailable
+   0.490 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   0.491 Info GlobalContext.cpp:1300: Resetting config.
+   0.491 Factorio initialised
+   0.491 Info Create.cpp:31: Creating new map /workspace/work/final-validation20/acceptance/test.zip
+   0.495 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   1.920 Loading level.dat: 701663 bytes.
+   1.920 Info Scenario.cpp:154: Map version 2.0.77-0
+   1.936 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   1.940 Checksum for script __level__/control.lua: 3792629764
+   1.941 Checksum for script __nuclear-accumulator__/control.lua: 588278163
+   1.943 Checksum for script __zz-na-tests__/control.lua: 1239690525
+   9.419 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: new station 36 GJ
+   9.419 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: native battery and radar share electrical network
+   9.419 Script @__zz-na-tests__/control.lua:1: NA TEST PASS: helpers join substation
+Done.
+   9.654 Goodbye

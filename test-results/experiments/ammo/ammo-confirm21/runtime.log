@@ -1,0 +1,113 @@
+   0.000 2026-10-09 09:17:29; Factorio 2.1.21 (build 87673, linux64, headless, space-age)
+   0.000 Operating system: Linux
+   0.000 Program arguments: "/workspace/work/research/experimental/factorio/bin/x64/factorio" "--config" "/workspace/work/ammo-confirm21/ammo/config.ini" "--mod-directory" "/workspace/work/ammo-confirm21/ammo/mods" "--benchmark" "/workspace/work/ammo-confirm21/ammo/test.zip" "--benchmark-ticks" "7900" "--benchmark-runs" "1" 
+   0.000 Config path: /workspace/work/ammo-confirm21/ammo/config.ini
+   0.000 Read data path: /workspace/work/research/experimental/factorio/data
+   0.000 Write data path: /workspace/work/ammo-confirm21/ammo/runtime [29810/32205MB]
+   0.000 Binaries path: /workspace/work/research/experimental/factorio/bin
+   0.008 System info: [CPU: AMD EPYC 9V74 80-Core Processor, 5 cores, RAM: 18007 MB]
+   0.008 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEO_DRIVER=<unset> SDL_ENABLE_STEAM_SCREEN_KEYBOARD=<unset> SteamDeck=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.011 Running in headless mode
+   0.011 Audio is disabled
+   0.012 Info ModManager.cpp:450: FeatureFlag expansion = true
+   0.012 Info ModManager.cpp:450: FeatureFlag expansion-shaders = false
+   0.012 Info ModManager.cpp:450: FeatureFlag freezing = false
+   0.012 Info ModManager.cpp:450: FeatureFlag quality = false
+   0.012 Info ModManager.cpp:450: FeatureFlag rail-bridges = false
+   0.012 Info ModManager.cpp:450: FeatureFlag segmented-units = false
+   0.012 Info ModManager.cpp:450: FeatureFlag space-travel = false
+   0.012 Info ModManager.cpp:450: FeatureFlag spoiling = false
+   0.014 Loading mod core 0.0.0 (data.lua)
+   0.025 Loading mod base 2.1.21 (data.lua)
+   0.168 Loading mod nuclear-accumulator 0.2.0 (data.lua)
+   0.179 Loading mod recycler 2.1.21 (data.lua)
+   0.191 Loading mod base 2.1.21 (data-updates.lua)
+   0.201 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.229 Loading mod nuclear-accumulator 0.2.0 (data-final-fixes.lua)
+   0.269 Loading mod zz-na-ammo-tests 0.1.0 (data-final-fixes.lua)
+   0.269 Script @__zz-na-ammo-tests__/data-final-fixes.lua:6: NA PROTOTYPE PASS: stack_size=1, magazine_size=36001, not-stackable flag verified
+   0.322 Checksum for core: 2791302773
+   0.322 Checksum of base: 1834856243
+   0.322 Checksum of nuclear-accumulator: 136199968
+   0.322 Checksum of recycler: 3293728126
+   0.322 Checksum of zz-na-ammo-tests: 4095041834
+   0.483 Prototype list checksum: 43636937
+   0.520 Info PlayerData.cpp:580: Local player-data.json available
+   0.521 Info GlobalContext.cpp:1336: Resetting config.
+   0.521 Factorio initialised
+   0.521 Loading map /workspace/work/ammo-confirm21/ammo/test.zip: 887224 bytes.
+   0.540 Loading level.dat: 1285841 bytes.
+   0.540 Info Scenario.cpp:152: Map version 2.1.21-11
+   0.556 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   0.556 Loading script.dat: 2264 bytes.
+   0.559 Checksum for script __level__/control.lua: 3704017257
+   0.560 Checksum for script __nuclear-accumulator__/control.lua: 2065017812
+   0.561 Checksum for script __zz-na-ammo-tests__/control.lua: 2587550974
+Running update 0
+   0.563 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: save/load preserves partial magazine state 36001
+   0.563 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: save/load preserves partial magazine state 18001
+   0.563 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: save/load preserves partial magazine state 1
+Running update 100
+   0.595 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: native robot build event exposes consumed magazine state
+   0.595 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: restored real battery equals consumed ammo mapping: 18001
+   0.595 Script @__zz-na-ammo-tests__/control.lua:53: NA AMMO EVENT tick=167 ammo=18001 energy=18000000000
+Running update 200
+   0.608 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: native robot build event exposes consumed magazine state
+   0.608 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: restored real battery equals consumed ammo mapping: 36001
+   0.608 Script @__zz-na-ammo-tests__/control.lua:53: NA AMMO EVENT tick=232 ammo=36001 energy=36000000000
+   0.611 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: native robot build event exposes consumed magazine state
+   0.611 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: restored real battery equals consumed ammo mapping: 1
+   0.611 Script @__zz-na-ammo-tests__/control.lua:53: NA AMMO EVENT tick=247 ammo=1 energy=0
+Running update 300
+Running update 400
+Running update 500
+Running update 600
+Running update 700
+Running update 800
+Running update 900
+Running update 1000
+Running update 1100
+Running update 1200
+   0.779 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: robots built full, partial and empty magazines using same ghost prototype
+   0.779 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: case 1 robot construction succeeds
+   0.779 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: full magazine restores 36 GJ
+   0.779 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: all charge states serialize to same one-entity blueprint
+   0.779 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: case 2 robot construction succeeds
+   0.779 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: partial magazine restores 18 GJ without reset
+   0.779 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: all charge states serialize to same one-entity blueprint
+   0.779 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: case 3 robot construction succeeds
+   0.779 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: sentinel ammo=1 restores empty battery
+   0.779 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: all charge states serialize to same one-entity blueprint
+Running update 1300
+   0.808 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: native mining buffer has serialized charge
+   0.808 Script @__zz-na-ammo-tests__/control.lua:62: NA AMMO RECOVERY tick=1368 ammo=12345
+Running update 1400
+   0.816 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: native mining buffer has serialized charge
+   0.816 Script @__zz-na-ammo-tests__/control.lua:62: NA AMMO RECOVERY tick=1412 ammo=35990
+   0.816 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: native mining buffer has serialized charge
+   0.816 Script @__zz-na-ammo-tests__/control.lua:62: NA AMMO RECOVERY tick=1412 ammo=1
+Running update 1500
+Running update 1600
+Running update 1700
+Running update 1800
+Running update 1900
+Running update 2000
+Running update 2100
+Running update 2200
+Running update 2300
+Running update 2400
+   0.994 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: robots mined every state without a nuclear explosion
+   0.994 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: normal robot mining removes original station
+   0.994 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: normal robot mining removes original station
+   0.994 Script @__zz-na-ammo-tests__/control.lua:2: NA TEST PASS: normal robot mining removes original station
+   0.994 Script @__zz-na-ammo-tests__/control.lua:100: NA STORAGE AMMO={12335, 36001}
+   0.995 Error Util.cpp:81: The mod Native magazine energy persistence tests (0.1.0) caused a non-recoverable error.
+Please report this error to the mod author.
+
+Error while running event zz-na-ammo-tests::on_tick (ID 0)
+__zz-na-ammo-tests__/control.lua:2: NA TEST FAIL: empty recovered item survives storage, remains ammo=1
+stack traceback:
+	[C]: in function 'assert'
+	__zz-na-ammo-tests__/control.lua:2: in function 'check'
+	__zz-na-ammo-tests__/control.lua:100: in function <__zz-na-ammo-tests__/control.lua:66>
+   1.032 Goodbye
